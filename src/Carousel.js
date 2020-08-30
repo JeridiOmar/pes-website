@@ -9,7 +9,7 @@ import {jsx, css} from '@emotion/core'
 const Carousel = () => {
 
     return (
-        <div css={css`
+        <div className={"carousel-resp"} css={css`
   
  
  clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);

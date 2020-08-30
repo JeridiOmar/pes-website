@@ -263,5 +263,8 @@ footer i {
         right: 60%;
         bottom: 0;
     }
+    .carousel-resp{
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%)!important;
+    }
 }
 
