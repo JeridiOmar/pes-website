@@ -5,7 +5,7 @@ import {css, jsx} from "@emotion/core";
 /** @jsx jsx */
 const Activity = ({title,description,picture}) => {
     return(
-        <div className="col-md-4 col-sm-12 card-wrapper ">
+        <div data-aos="zoom-in" data-aos-duration="1500"  className="col-md-4  col-sm-12 card-wrapper  " css={css`padding-bottom: 1px!important;;`}>
             <div className="card p-lg-3" css={css` `} >
                 <img className="card-img-top" src={picture} alt="Card image cap"/>
                 <div className="card-body">

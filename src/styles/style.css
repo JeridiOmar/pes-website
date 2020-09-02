@@ -6,6 +6,8 @@ html, body {
 
 .navbar {
     padding: 25px !important;
+    transition: all 0.4s !important;
+    -webkit-transition: all 0.4s !important;
 }
 
 .scrolled {
@@ -137,7 +139,7 @@ html, body {
 }
 
 .team-link1 {
-    color: #2e5e34;
+    color: #fffbfd;
     position: absolute;
     bottom: 20%;
     left: 38%;
@@ -152,7 +154,7 @@ html, body {
     position: absolute;
     bottom: 20%;
     left: 49%;
-    color: #2e5e34;
+    color: #fffbfd;
     padding: 30px 15px;
     text-align: center;
     -webkit-transition: all .5s;
@@ -255,7 +257,7 @@ footer i {
         display: inline-block !important;
     }
     footer{
-        clip-path: polygon(49% 0, 99% 10%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 12%);
+        clip-path: polygon(50% 0, 99% 10%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 12%);
     }
 
     /* carousel caption */
