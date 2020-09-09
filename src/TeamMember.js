@@ -6,9 +6,9 @@ import omar from "./pictures/omar.jpg";
 /** @jsx jsx */
 const TeamMember = ({memberPic ,memberName,memberPoste}) => {
     return(
-        <div data-aos="flip-left" data-aos-duration="1000" className="col-md-4 pl-2 col-sm-12  p-2 " css={css` &> a{ font-size: 30px!important; } 
+        <div data-aos="flip-left" data-aos-duration="1000" className="col-md-4 pl-2 col-sm-12  p-2 team-member " css={css` &> a{ font-size: 30px!important; } 
           &> a:hover{ text-decoration: none ;}  `}>
-            <img src={memberPic} alt="" className="rounded-circle m-sm-4 team-img img-thumbnail" width="300"
+            <img src={memberPic} alt="" className="rounded-circle m-sm-4 team-img img-thumbnail team-image" width="300"
                  height="300" />
             <a className="fa fa-facebook-square team-link1" href="#"
                css={css` font-size: 30px!important;`}></a>

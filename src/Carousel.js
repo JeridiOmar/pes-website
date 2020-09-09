@@ -23,7 +23,7 @@ const Carousel = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
 
-                        <img className="d-block w-100 " src={banner4} alt="First slide"
+                        <img className="d-block w-100  " src={banner4} alt="First slide"
                              height={document.documentElement.clientHeight -2} /></div>
                     <div className="absolute-div">
                         <div className="carousel-caption d-none d-md-block">

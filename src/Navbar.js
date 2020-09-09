@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {css, jsx} from "@emotion/core";
 import logo from './pictures/logo.png'
-
+import {Link} from "@reach/router"
 /** @jsx jsx */
 const Navbar = () => {
     const [navState, setNavState] = useState('notScrolled');
@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-light fixed-top  ${navState}`}  >
             <div className="container">
-                <a className="navbar-brand" href="#"><img className={'p-0'} src={logo} alt="logo" width={'140'} height={'60'}/></a>
+                <a className="navbar-brand" href="#"><img className={'p-0'} src={logo} alt="logo" width={'120'} height={'60'}  css={css`object-fit: fill;`}/></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +43,14 @@ const Navbar = () => {
                           & a{
                           font-size: 13px !important;
                           text-transform: uppercase;
+                          color:black !important;
                           }
                           `}>
                         <li className="nav-item active ">
-                            <a className="nav-link pr-1" href="#">Home</a>
+                            <Link className="nav-link pr-1" to={"/"}>Home</Link>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link pr-1" href="#">About us</a>
+                            <Link className="nav-link pr-1" to={'/about'}>About us</Link>
                         </li>
                         <li className="nav-item ">
                             <a className="nav-link pr-1" href="#">Activities</a>
