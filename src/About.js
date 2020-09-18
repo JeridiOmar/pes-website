@@ -3,7 +3,7 @@ import {css, jsx} from "@emotion/core";
 
 
 /** @jsx jsx */
-const About = () => {
+const About = ({title1, title2, text}) => {
     const titleStyle = css`
     //text-decoration:  underline overline;
     font-weight: bold;
@@ -36,13 +36,12 @@ const About = () => {
 
     return (
         <div>
-            <div className="container justify-content-center">
-                <div className="row" >
+            <div className="container justify-content-center about-box">
+                <div className="row">
                     <div className="col-12">
-                    <h1 className="text-center   " css={titleStyle} >About <span
-                        css={css`color: #1c7430`}>Us</span></h1>
-                    <p className="aboutText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae, eos et harum nesciunt quidem quod soluta? Enim nihil, omnis. Delectus dolore eius ipsam iste laboriosam omnis recusandae similique vero?</span><span>Ad amet aperiam cupiditate delectus dolore eligendi ex expedita fuga laborum mollitia perferendis quam rerum sit, ullam vel. Accusantium cupiditate ea eligendi expedita facilis ipsam iure nisi odio porro quod.</span>
-                    </p>
+                        <h1 className="text-center   " css={titleStyle}>{title1} <span
+                            css={css`color: #1c7430`}>{title2}</span></h1>
+                        <p className="aboutText">{text}</p>
                     </div>
                 </div>
             </div>

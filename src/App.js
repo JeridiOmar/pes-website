@@ -4,7 +4,7 @@ import {Router} from "@reach/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Home from "./Home"
-import AboutUs from "./AboutUs";
+import AboutUs from "./about-us/AboutUs";
 const App = () => {
 
     return (

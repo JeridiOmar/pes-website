@@ -30,7 +30,9 @@ html, body {
 
 
 }
-
+.nav-item{
+    margin-right:20px!important; ;
+}
 .nav-link:hover {
     text-decoration: underline;
 }
@@ -294,7 +296,7 @@ footer i {
 
 
 footer p {
-    color: white;
+    color: #f2e8cf;
     font-size: 14px;
 }
 
@@ -363,10 +365,81 @@ footer p {
     font-size: 100px;
     font-family: railway sans-serif;
     margin: 10px 0;
-   color: #b1bfa7;
+    /*background:linear-gradient(94deg, rgba(83,141,34,1) 0%, rgba(94,142,86,0.0984768907563025) 88%, rgba(214,214,214,1) 99%);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+   color: #f2e8cf;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
+.about-box{
+    margin-top: 10px;
+    border: 4px black;
+    box-shadow:  0 2px 12px rgba(0,0,0,.08);
+    }
 
+/*
+    Facts
+ */
+.facts {
+    background: url("https://www.enelx.com/content/dam/enel-x-na/for-business/products/solar-plus-storage.jpg.resize.1440.700.center.center.jpeg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    position: relative;
+}
+
+.facts::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.88);
+    z-index: 9;
+}
+.facts .container {
+    position: relative;
+    z-index: 10;
+}
+.section-title{
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    animation-delay: .6s;
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Rubik', sans-serif;
+}
+.facts{
+    margin-top: 30px;
+}
+.facts-content{
+    margin-top: 45px;
+}
+.facts h3{
+    color:#133b5c;
+    position: relative;
+    /*font-weight: 700;*/
+}
+.facts-number{
+    color:#a7c957;
+    margin-top:5px;
+}
+.facts-name{
+    color:#bc4749;
+}
+.about-box {
+    margin-top: 30px;
+}
+.facts-logo{
+    object-fit: fill;
+}
+@media (max-width: 750px){
+    .facts img{
+        margin-top: 20px;
+    }
+}

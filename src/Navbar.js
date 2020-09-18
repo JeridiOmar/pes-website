@@ -5,6 +5,7 @@ import {Link} from "@reach/router"
 /** @jsx jsx */
 const Navbar = () => {
     const [navState, setNavState] = useState('notScrolled');
+    const menuIcon=css`margin-right: 4px`;
     const navStyle = css`
         &.scrolled {
         background-color: #2e911f !important;
@@ -23,8 +24,7 @@ const Navbar = () => {
                 setNavState("scrolled");
             }
 
-            console.log(scrolled);
-            console.log()
+
         });
     },[]);
 
@@ -47,19 +47,19 @@ const Navbar = () => {
                           }
                           `}>
                         <li className="nav-item active ">
-                            <Link className="nav-link pr-1" to={"/"}>Home</Link>
+                            <Link className="nav-link pr-1" to={"/"}><i className="fas fa-home" css={menuIcon}></i>Home</Link>
                         </li>
                         <li className="nav-item ">
-                            <Link className="nav-link pr-1" to={'/about'}>About us</Link>
+                            <Link className="nav-link pr-1" to={'/about'}><i className="far fa-address-card" css={menuIcon}></i>About us</Link>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link pr-1" href="#">Activities</a>
+                            <a className="nav-link pr-1" href="#"><i className="far fa-newspaper"css={menuIcon}></i>Activities</a>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link pr-1" href="#">Awards</a>
+                            <a className="nav-link pr-1" href="#"><i className="fas fa-award"css={menuIcon}></i>Awards</a>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link pr-1" href="#">Our community</a>
+                            <a className="nav-link pr-1" href="#"><i className=" fas fa-user-friends"css={menuIcon}></i>Our community</a>
                         </li>
                     </ul>
                 </div>
