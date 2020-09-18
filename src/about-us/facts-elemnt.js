@@ -6,22 +6,24 @@ import Fade from "react-reveal/Fade";
 /** @jsx jsx */
 const FactElemnt = ({icon, title, number, isVisible, left,right,top,bottom}) => {
     // console.log(isVisible);
-    const [spy, setSpy] = useState(0);
+    const [spy, setSpy] = useState(false);
     const {countUp, start, pauseResume, reset, update} = useCountUp({end: number, duration: 5});
     useEffect(() => {
         if (isVisible) {
+            setSpy(true);
             start();
         } else {
+            setSpy(false);
             reset();
         }
 
-       setSpy(spy+1);
-        console.log(spy)
+
+        
     }, [isVisible]);
 
 
     return (
-        <Fade left={left} right={right} top={top} bottom={bottom} big spy={spy}>
+        <Fade left={left} right={right} top={top} bottom={bottom} in={spy}    duration={1500}>
             <div className="col-md-3 col-sm-6 col-6 text-center">
 
                 <img src={icon}/>
