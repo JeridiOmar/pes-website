@@ -1,26 +1,35 @@
-import React ,{useEffect} from 'react'
+import React, {useEffect,useState} from 'react'
 import {css, jsx} from '@emotion/core'
-import { useCountUp } from "react-countup";
+import {useCountUp} from "react-countup";
+import Fade from "react-reveal/Fade";
+
 /** @jsx jsx */
-const FactElemnt = ({icon,title,number,isVisible,animation}) => {
-    console.log(isVisible);
-    const { countUp, start, pauseResume, reset, update } = useCountUp({end:number,duration: 5});
-    useEffect(()=>{
-        if (isVisible){
+const FactElemnt = ({icon, title, number, isVisible, left,right,top,bottom}) => {
+    // console.log(isVisible);
+    const [spy, setSpy] = useState(0);
+    const {countUp, start, pauseResume, reset, update} = useCountUp({end: number, duration: 5});
+    useEffect(() => {
+        if (isVisible) {
             start();
-        }else{
+        } else {
             reset();
         }
-    },[isVisible]);
+
+       setSpy(spy+1);
+        console.log(spy)
+    }, [isVisible]);
 
 
-    return(
-        <div className="col-md-3 col-sm-6 col-6 text-center" data-aos={animation} data-aos-duration="1500">
-            <img src={icon}/>
+    return (
+        <Fade left={left} right={right} top={top} bottom={bottom} big spy={spy}>
+            <div className="col-md-3 col-sm-6 col-6 text-center">
 
-            <h4 className={"facts-number"}>  {countUp}</h4>
-            <h4 className={"facts-name"}>{title}</h4>
-        </div>
+                <img src={icon}/>
+                <h4 className={"facts-number"}>  {countUp}</h4>
+                <h4 className={"facts-name"}>{title}</h4>
+
+            </div>
+        </Fade>
     )
 };
 export default FactElemnt;
