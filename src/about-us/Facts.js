@@ -48,14 +48,14 @@ const Facts = () => {
                     <img src={logo} alt="" width={"120px"} height={"60px"} className={"facts-logo text-center"}/>
                     <h3 className="text-center  section-title" css={titleStyle}>in numbers</h3>
                 </div>
-                <TrackVisibility className="row facts-content" >
+                <TrackVisibility className="row facts-content" partialVisibility>
 
 
-                        <FactElemnt title={'Members'} number={500} icon={students} animation={'fade-right'}/>
+                        <FactElemnt title={'Members'} number={500} icon={students} animation={'flip-left'}/>
 
-                        <FactElemnt title={'Award'} number={30} icon={medal} animation={'fade-up'}/>
-                        <FactElemnt title={'Event'} number={30} icon={training}animation={'fade-down'}/>
-                        <FactElemnt title={'Years old'} number={7} icon={counter}animation={'fade-left'}/>
+                        <FactElemnt title={'Award'} number={30} icon={medal} animation={'flip-right'}/>
+                        <FactElemnt title={'Event'} number={30} icon={training} animation={'flip-left'}/>
+                        <FactElemnt title={'Years old'} number={7} icon={counter} animation={'flip-right'}/>
 
 
 
