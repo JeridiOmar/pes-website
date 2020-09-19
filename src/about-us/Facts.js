@@ -8,7 +8,7 @@ import medal from '../pictures/about-us/medal.png'
 import counter from '../pictures/about-us/counter.png'
 import students from '../pictures/about-us/students.png'
 import training from '../pictures/about-us/training.png'
-import Fade from 'react-reveal/Fade';
+
 
 /** @jsx jsx */
 const Facts = () => {
@@ -51,7 +51,7 @@ const Facts = () => {
                 </div>
                 <TrackVisibility className="row facts-content" partialVisibility>
 
-                        <FactElemnt title={'Members'} number={500} icon={students} left={true} />
+                    <FactElemnt title={'Members'} number={500} icon={students} left={true}/>
 
                     <FactElemnt title={'Award'} number={30} icon={medal} top={true}/>
                     <FactElemnt title={'Event'} number={30} icon={training} bottom={true}/>

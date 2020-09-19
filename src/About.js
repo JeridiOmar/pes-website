@@ -41,7 +41,7 @@ const About = ({title1, title2, text}) => {
                     <div className="col-12">
                         <h1 className="text-center   " css={titleStyle}>{title1} <span
                             css={css`color: #1c7430`}>{title2}</span></h1>
-                        <p className="aboutText">{text}</p>
+                        <p className="aboutText text-center">{text}</p>
                     </div>
                 </div>
             </div>
