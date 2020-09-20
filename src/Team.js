@@ -28,7 +28,7 @@ const Team = () => {
             </div>
             <div className="container" css={poste}>
                 <div className="row justify-content-center text-center  ">
-                    <TeamMember memberName={'Emna bargui'} memberPic={emna} memberPoste={'Chair women'} animation={"flip-left"}/>
+                    <TeamMember memberName={'Emna bargui'} memberPic={emna} memberPoste={'ChairWomen'} animation={"flip-left"}/>
                     <TeamMember memberName={'Iheb Driouech'} memberPic={iheb} memberPoste={'Vice chair'} animation={"flip-left"}/>
                     <TeamMember memberName={'Kmar mhiri'} memberPic={kmar} memberPoste={'General secretary'} animation={"flip-left"}/>
 
@@ -45,7 +45,7 @@ const Team = () => {
             </div>
             <div className="container">
                 <div className="row justify-content-center text-center ">
-                    <TeamMember memberName={'Yassine ayadi'} memberPic={yessine} memberPoste={'media manager'} animation={"flip-left"}/>
+                    <TeamMember memberName={'Yassine ayadi'} memberPic={yessine} memberPoste={'media and communication manager'} animation={"flip-left"}/>
                     <TeamMember memberName={'Omar jridi'} memberPic={omar} memberPoste={'WebMaster'} animation={"flip-left"}/>
 
                 </div>
