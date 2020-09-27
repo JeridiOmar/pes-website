@@ -53,13 +53,13 @@ const Navbar = () => {
                             <Link className="nav-link pr-1" to={'/about'}><i className="far fa-address-card" css={menuIcon}></i>About us</Link>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link pr-1" href="#"><i className="far fa-newspaper"css={menuIcon}></i>Activities</a>
+                            <Link className="nav-link pr-1" to={'/activities'}><i className="far fa-newspaper"css={menuIcon}></i>Activities</Link>
                         </li>
                         <li className="nav-item ">
                             <a className="nav-link pr-1" href="#"><i className="fas fa-award"css={menuIcon}></i>Awards</a>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link pr-1" href="#"><i className=" fas fa-user-friends"css={menuIcon}></i>Our community</a>
+                            <Link className="nav-link pr-1 comm-link" to={'/community'}><i className=" fas fa-user-friends"css={menuIcon}></i>Our community</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "./pictures/logo.png";
+import logo from "./pictures/logo-white.png";
+
 import {css,jsx} from "@emotion/core";
 
 /** @jsx jsx */
@@ -11,7 +12,7 @@ const Footer = () => {
                     <div className="row ">
                         <div className="col-md-6 col-sm-12  footer-left ">
                             <img className="logo-footer " src={logo} alt="logo-footer"
-                                 data-at2x="assets/img/logo.png" width={'140'} height={"80"} css={css`object-fit: contain;`}/>
+                                 data-at2x="assets/img/logo.png" width={'140'} height={"80"} css={css`object-fit: contain;margin-left: -15px;`}/>
                             <h3>
                                 IEEE PES SB
                             </h3>

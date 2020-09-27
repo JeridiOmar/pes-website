@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
-    font-family: 'Montserrat', sans-serif !important;
+    /*font-family: 'Montserrat', sans-serif !important;*/
+    font-family: 'Roboto', sans-serif !important;
 
 }
 
@@ -56,7 +57,7 @@ html, body {
 /* Carousel caption styling */
 
 
-.carousel-caption {
+.carousel-caption-home {
     position: absolute;
     z-index: 1!important;
     display: table;
@@ -74,7 +75,7 @@ html, body {
     bottom: 0;
 }
 
-.carousel-caption h1 {
+.carousel-caption-home h1 {
     display: table-cell;
     vertical-align: middle;
     color: white !important;
@@ -89,7 +90,7 @@ html, body {
     animation-delay: .6s;
 }
 
-.carousel-caption h3 {
+.carousel-caption-home h3 {
 
     vertical-align: middle;
     color: white !important;
@@ -104,11 +105,11 @@ html, body {
     animation-delay: .6s;
 }
 
-.carousel-item {
+.carousel-item-home {
     position: relative;
 }
 
-.carousel-item img {
+.carousel-item-home  img {
     object-fit: cover !important;
 }
 
@@ -306,10 +307,10 @@ footer p {
     carousel caption
      */
 
-    .carousel-caption h1{
+    .carousel-caption-home h1{
         font-size: 20px;
     }
-    .carousel-caption h3{
+    .carousel-caption-home h3{
         font-size: 15px;
     }
     /* card responsive changes*/
@@ -353,10 +354,7 @@ footer p {
     }
 }
 
-.card-img-top{
-    height: 213px!important;
-    object-fit: fill;
-}
+
 
 .banner{
     /*background-image: url("https://webunwto.s3.eu-west-1.amazonaws.com/styles/article_main_image/s3/2019-09/hotel-energy.jpg");*/
@@ -498,3 +496,4 @@ text-align: center;
         margin-top: 20px;
     }
 }
+

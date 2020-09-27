@@ -22,24 +22,24 @@ const Carousel = () => {
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <div className="carousel-item carousel-item-home active">
 
                         <img className="d-block w-100  " src={banner4} alt="First slide"
                              height={document.documentElement.clientHeight - 2}/></div>
                     <div className="absolute-div">
                         <Jump forever duration={1500}>
-                            <div className="carousel-caption d-block ">
+                            <div className="carousel-caption carousel-caption-home d-block ">
                                 <h1>Discover
                                     IEEE PES Chapter</h1>
                                 <h3>INSAT Student Branch</h3>
                             </div>
                         </Jump>
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item carousel-item-home">
                         <img className="d-block w-100 " src={banner3} alt="Second slide"
                              height={document.documentElement.clientHeight - 2}/>
                     </div>
-                    <div className="carousel-item ">
+                    <div className="carousel-item carousel-item-home ">
 
                         <img className="d-block w-100 " src={banner1} alt="Third slide"
                              height={document.documentElement.clientHeight - 2}/>
