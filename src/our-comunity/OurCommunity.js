@@ -1,13 +1,39 @@
-import React,{useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {css, jsx} from "@emotion/core";
 
 import Jump from "react-reveal/Jump";
 import banner from '../pictures/community/community-banner.jpg'
 import omar from '../pictures/omar.jpg'
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Galery from "./Galery";
+import Mom from './Mom'
+import {Link, Router} from "@reach/router";
+import About from "../About";
 
 /** @jsx jsx */
 const OurCommunity = () => {
+    const [momVisible, setmomVisible] = useState('initial');
+    const [galleryVisible, setgalleryVisible] = useState('none');
+    const handlemom = () => {
+        setgalleryVisible('none');
+        setmomVisible('initial');
+        console.log(momVisible);
+        console.log(galleryVisible);
+    };
+    const handlegallery = () => {
+        setgalleryVisible('initial');
+        setmomVisible('none');
+        console.log(momVisible);
+        console.log(galleryVisible);
+    };
+
+    const contentStyle = css`
+  & .mom {
+    margin-top: 20px;
+  }
+  
+`;
     const bannerStyle = css`
     &{
        background-image: url(${banner});
@@ -48,6 +74,20 @@ const OurCommunity = () => {
         
     }
   `;
+    const navStyle = css`
+    &{
+        margin-top: 30px;
+    }
+    & .active {
+      background-color: #28a745 !important;
+    }
+    @media(min-width: 720px){
+        &{
+            padding-left:300px;
+            padding-right: 250px;
+        }
+    }
+    `;
     // useEffect(
     //     ()=>{
     //         $(document).ready(function() {
@@ -68,133 +108,35 @@ const OurCommunity = () => {
             <div css={bannerStyle} className={'comm-banner'}>
                 <Jump forever duration={1500}>
                     <div css={headerStyle}>
-                        <h1 style={{textAlign:"center"}}>Our</h1><h1> Community</h1>
+                        <h1 style={{textAlign: "center"}}>Our</h1><h1> Community</h1>
                     </div>
                 </Jump>
             </div>
 
-            <div class=" mom">
+            <ul className="nav nav-pills nav-fill text-center" role="tablist" css={navStyle}>
 
-                <ul id="autoWidth" class="cs-hidden">
+                <li className="nav-item">
+                    <Link className="nav-link mom-button active" id="mom-tab" data-toggle="tab"
+                          to={'memberofthemonth'}
+                          aria-selected="true">Member of the month</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link " id="gallery-tab" data-toggle="tab" to={'gallery'}
+                          aria-selected="true">Gallery</Link>
+                </li>
 
-                    <li class="item-a">
+            </ul>
+            <div className="tab-content" id="myTabContent" css={contentStyle}>
 
-                        <div class="box">
-                            <p class="mom-pic">Member of the month</p>
-
-                            <img src={omar} class="model rounded-circle img-thumbnail  "/>
-
-                            <div class="details">
-
-                                <h3>01-01-2021</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum illo magnam
-                                    minima nulla qui sit unde! Beatae enim eveniet excepturi fugit in, itaque nemo
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="item-a">
-                        <div className="box">
-                            <p className="mom-pic">Member of the month</p>
-
-                            <img src={omar} className="model rounded-circle img-thumbnail  "/>
-
-                            <div className="details">
-
-                                <h3>01-01-2021</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum illo magnam
-                                    minima nulla qui sit unde! Beatae enim eveniet excepturi fugit in, itaque nemo
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="item-a">
-
-                        <div className="box">
-                            <p className="mom-pic">Member of the month</p>
-
-                            <img src={omar} className="model rounded-circle img-thumbnail  "/>
-
-                            <div className="details">
-
-                                <h3>01-01-2021</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum illo magnam
-                                    minima nulla qui sit unde! Beatae enim eveniet excepturi fugit in, itaque nemo
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="item-a">
-
-                        <div className="box">
-                            <p className="mom-pic">Member of the month</p>
-
-                            <img src={omar} className="model rounded-circle img-thumbnail  "/>
-
-                            <div className="details">
-
-                                <h3>01-01-2021</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum illo magnam
-                                    minima nulla qui sit unde! Beatae enim eveniet excepturi fugit in, itaque nemo
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="item-a">
-
-                        <div className="box">
-                            <p className="mom-pic">Member of the month</p>
-
-                            <img src={omar} className="model rounded-circle img-thumbnail  "/>
-
-                            <div className="details">
-
-                                <h3>01-01-2021</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum illo magnam
-                                    minima nulla qui sit unde! Beatae enim eveniet excepturi fugit in, itaque nemo
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="item-a">
-
-                        <div className="box">
-                            <p className="mom-pic">Member of the month</p>
-
-                            <img src={omar} className="model rounded-circle img-thumbnail  "/>
-
-                            <div className="details">
-
-                                <h3>01-01-2021</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum illo magnam
-                                    minima nulla qui sit unde! Beatae enim eveniet excepturi fugit in, itaque nemo
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-                </ul>
+                <Router>
 
 
+                    <Galery path={'gallery'}/>
+
+                    <Mom path={'memberofthemonth'}/>
+
+                </Router>
             </div>
-
-
         </div>
     )
 };

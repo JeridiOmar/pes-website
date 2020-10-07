@@ -31,12 +31,12 @@ html, body {
 
 
 }
-.nav-item{
+.pes-nav .nav-item{
     margin-right:20px!important; ;
 }
-.nav-link:hover {
-    text-decoration: underline;
-}
+/*.pes-nav .nav-link:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
 
 .scrolled .nav-link {
     /*color: #241e20 !important;*/
@@ -46,7 +46,7 @@ html, body {
     font-size: 14px;
 }
 
-.nav-item:hover a {
+.pes-nav .nav-item:hover a {
 
     font-weight: bold !important;
     font-size: 15px;
@@ -152,8 +152,8 @@ html, body {
 .team-link1 {
     color: #fffbfd;
     position: absolute;
-    bottom: 20%;
-    left: 38%;
+    bottom: 22%;
+    left: 31%;
     padding: 30px 15px;
     text-align: center;
     -webkit-transition: all .5s;
@@ -163,8 +163,19 @@ html, body {
 
 .team-link2 {
     position: absolute;
-    bottom: 20%;
-    left: 49%;
+    bottom: 22%;
+    left: 43%;
+    color: #fffbfd;
+    padding: 30px 15px;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index: 3;
+}
+.team-link3 {
+    position: absolute;
+    bottom: 22%;
+    left: 54%;
     color: #fffbfd;
     padding: 30px 15px;
     text-align: center;
@@ -201,7 +212,7 @@ html, body {
     bottom: 30%;
 }
 
-.team-member:hover .team-link1, .team-member:hover .team-link2 {
+.team-member:hover .team-link1, .team-member:hover .team-link2,.team-member:hover .team-link3 {
     bottom: 45% !important;
 
 }
