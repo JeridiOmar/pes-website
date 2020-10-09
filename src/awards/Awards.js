@@ -54,13 +54,16 @@ const Awards = () => {
   `;
     const galeryStyle = css`
        & {
-        margin-top:15px;
+        margin-top:30px;
         transition: all ease 0.3s;
        }
       & .card {
-      width: 18rem;
+      //width: 18rem;
       border-radius :10px;
       position: relative;
+      margin-right: 15px;
+      margin-left: 15px;
+      margin-bottom: 15px;
       }
       & .card-img{
         border-radius: 10px;
@@ -142,6 +145,15 @@ const Awards = () => {
     z-index: 10;
 }
 `;
+    const modalStyle= css`
+  & img {
+  border-radius: 10px;
+  
+  }
+  & .modal-text{
+    margin-top: 10px;
+  }
+`;
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -170,46 +182,21 @@ const Awards = () => {
 
                         <div className="col-12 col-md-4">
 
-                            <div data-aos="flip-left" className="card">
+                            <div data-aos="flip-left " className="card ">
                                 <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
                                 <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
                             </div>
                         </div>
                         <div className="col-12 col-md-4">
 
-                            <div data-aos="flip-left" className="card">
+                            <div data-aos="flip-left " className="card ">
                                 <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
                                 <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
                             </div>
                         </div>
                         <div className="col-12 col-md-4">
 
-                            <div data-aos="flip-left" className="card">
-                                <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
-                                <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row text-center" css={galeryStyle}>
-
-                        <div className="col-12 col-md-4">
-
-                            <div className="card">
-                                <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
-                                <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-4">
-
-                            <div className="card">
-                                <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
-                                <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-4">
-
-                            <div className="card">
+                            <div data-aos="flip-left" className="card ">
                                 <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
                                 <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
                             </div>
@@ -220,21 +207,47 @@ const Awards = () => {
 
                         <div className="col-12 col-md-4">
 
-                            <div className="card">
+                            <div className="card ">
+                                <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
+                                <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-4 ">
+
+                            <div className="card ">
                                 <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
                                 <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
                             </div>
                         </div>
                         <div className="col-12 col-md-4">
 
-                            <div className="card">
+                            <div className="card ">
+                                <img className="card-img " src={awarding} alt="Card image cap" height={300}
+                                     width={300}/>
+                                <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row text-center" css={galeryStyle}>
+
+                        <div className="col-12 col-md-4">
+
+                            <div className="card ">
                                 <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
                                 <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
                             </div>
                         </div>
                         <div className="col-12 col-md-4">
 
-                            <div className="card">
+                            <div className="card ">
+                                <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
+                                <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-4">
+
+                            <div className="card ">
                                 <img className="card-img" src={awarding} alt="Card image cap" height={300} width={300}/>
                                 <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
                             </div>
@@ -242,6 +255,24 @@ const Awards = () => {
                     </div>
                 </div>
             </div>
+            <Modal show={show} onHide={handleClose} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Award</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className={"text-center"} css ={modalStyle}>
+                    <img className={'w-100'} src={awarding} alt=""/>
+                    <div className="modal-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius excepturi facilis fugiat hic nihil
+                    officia perferendis quaerat quo sint temporibus! Adipisci animi asperiores deserunt dolor et illum
+                    impedit minima vero.</div>
+                </Modal.Body>
+                <Modal.Footer>
+
+                    <Button variant="primary" onClick={handleClose}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 };
