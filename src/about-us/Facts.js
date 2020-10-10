@@ -35,7 +35,7 @@ const Facts = () => {
     display: block;
     width: 40px;
     height: 3px;
-    background: #bc4749;
+    background: #a7c957;
    bottom:0%;
     left: calc(50% - 20px);
 }
@@ -44,10 +44,10 @@ const Facts = () => {
      `;
     return (
         <div className={"facts"}>
-            <div className="container">
+            <div className="container" style={{'margin-bottom':' 50px'}}>
                 <div className="text-center">
-                    <img src={logo} alt="" width={"120px"} height={"60px"} className={"facts-logo text-center"}/>
-                    <h3 className="text-center  section-title" css={titleStyle}>in numbers</h3>
+                    {/*<img src={logo} alt="" width={"120px"} height={"60px"} className={"facts-logo text-center"}/>*/}
+                    <h3 className="text-center  section-title" css={titleStyle}><span style={{color:"#a7c957"}}>PES</span> numbers</h3>
                 </div>
                 <TrackVisibility className="row facts-content" partialVisibility>
 

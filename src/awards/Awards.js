@@ -22,7 +22,7 @@ const Awards = () => {
         display: flex;
         align-items: center;
         justify-content: space-around; 
-        clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
+        //clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
   }
   @media(max-width: 750px){
     &{

@@ -12,8 +12,8 @@ const Carousel = () => {
     return (
         <div className={"carousel-resp"} css={css`
   
- 
- clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
+ //
+ //clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
 `}>
             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">

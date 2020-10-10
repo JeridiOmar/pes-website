@@ -20,7 +20,7 @@ const Activities = () => {
         display: flex;
         align-items: center;
         justify-content: space-around; 
-        clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
+        //clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
   }
   @media(max-width: 750px){
     &{
@@ -162,7 +162,7 @@ const Activities = () => {
                     </div>
                 </Jump>
             </div>
-            <div className="container">
+            <div className="container" style={{'margin-bottom':' 50px'}}>
                 <div className="row">
                     <div className="col-12">
                         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel"

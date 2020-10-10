@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from "react";
 import {css, jsx} from "@emotion/core";
-import logo from './pictures/logo.png'
+import logoPes from './pictures/logo.png'
+import logoWhite from './pictures/logo-white.png'
 import {Link} from "@reach/router"
 /** @jsx jsx */
 const Navbar = () => {
     const [navState, setNavState] = useState('notScrolled');
+    const [logo, setlogo] = useState(logoWhite);
     const menuIcon=css`margin-right: 4px`;
     const navStyle = css`
         &.scrolled {
@@ -20,8 +22,10 @@ const Navbar = () => {
             let scrolled = document.scrollingElement.scrollTop;
             if(scrolled < 150){
                 setNavState("notScrolled");
+                setlogo(logoWhite);
             }else{
                 setNavState("scrolled");
+                setlogo(logoPes);
             }
 
 
@@ -31,7 +35,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-light fixed-top pes-nav  ${navState}`}  >
             <div className="container">
-                <a className="navbar-brand" href="#"><img className={'p-0'} src={logo} alt="logo" width={'120'} height={'60'}  css={css`object-fit: fill;`}/></a>
+                <a className="navbar-brand" href="#"><img className={'p-0'} src={logo} alt="logo" width={'120'} height={'60'}  css={css`object-fit: cover;`}/></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">

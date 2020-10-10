@@ -32,14 +32,15 @@ html, body {
 
 }
 .pes-nav .nav-item{
-    margin-right:20px!important; ;
+    margin-right:20px!important;
 }
-/*.pes-nav .nav-link:hover {*/
-/*    text-decoration: underline;*/
-/*}*/
+
+.pes-nav .nav-link {
+    color:white!important;
+}
 
 .scrolled .nav-link {
-    /*color: #241e20 !important;*/
+    color: #241e20 !important;
 }
 
 .aboutText {
@@ -139,7 +140,7 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 10%;
-    clip-path: polygon(49% 0, 100% 19%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);
+    /*clip-path: polygon(49% 0, 100% 19%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);*/
 }
 
 .team-img {
@@ -243,7 +244,7 @@ Latest Activities
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 10%;
-    clip-path: polygon(49% 0, 100% 19%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);
+    /*clip-path: polygon(49% 0, 100% 19%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);*/
 }
 
 .team-member:hover .team-img {
@@ -264,7 +265,7 @@ footer {
     /*background: linear-gradient(0deg, rgba(32,37,31,1) 1%, rgba(59,109,50,1) 13%, rgba(255,255,255,1) 61%);*/
     background-color: #538d22;
     /*clip-path: polygon(49% 0, 100% 19%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);*/
-    margin-top: 50px;
+    /*margin-top: 50px;*/
 }
 
 .footer-top {
@@ -378,7 +379,7 @@ footer p {
     align-items: center;
     justify-content: space-around;
 
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
+    /*clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);*/
 
 }
 .header-text h1{
@@ -442,7 +443,7 @@ footer p {
     margin-top: 45px;
 }
 .facts h3{
-    color:#133b5c;
+    color:#212529;
     position: relative;
     /*font-weight: 700;*/
 }
@@ -451,7 +452,7 @@ footer p {
     margin-top:5px;
 }
 .facts-name{
-    color:#bc4749;
+    color:#212529;
 }
 .about-box {
     margin-top: 30px;
@@ -476,7 +477,7 @@ footer p {
 
 }
 .about-section {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     background: url("https://assets.weforum.org/report/image/BTFcwc6o2ETUOAoa0j84XOrtOF6g79UsTXJpzazgM0U.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 60px 0;

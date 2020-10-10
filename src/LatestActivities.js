@@ -45,7 +45,7 @@ const LatestActivities = () => {
             <div className="act-header">
                 <h3 className="text-center">Latest activities</h3>
             </div>
-            <div className="container">
+            <div className="container" style={{'margin-bottom':' 50px'}}>
                 <div className="row " css={cardStyle}>
 
                     <Activity picture={summerSchool} title={"Summer School"}
