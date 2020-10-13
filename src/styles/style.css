@@ -31,12 +31,13 @@ html, body {
 
 
 }
-.pes-nav .nav-item{
-    margin-right:20px!important;
+
+.pes-nav .nav-item {
+    margin-right: 20px !important;
 }
 
 .pes-nav .nav-link {
-    color:white!important;
+    color: white !important;
 }
 
 .scrolled .nav-link {
@@ -60,11 +61,11 @@ html, body {
 
 .carousel-caption-home {
     position: absolute;
-    z-index: 1!important;
+    z-index: 1 !important;
     display: table;
     width: 100%;
     height: 100%;
-    text-align: left!important;
+    text-align: left !important;
 
 }
 
@@ -110,7 +111,7 @@ html, body {
     position: relative;
 }
 
-.carousel-item-home  img {
+.carousel-item-home img {
     object-fit: cover !important;
 }
 
@@ -120,7 +121,7 @@ html, body {
 */
 
 
-.team-header h3{
+.team-header h3 {
     font-size: 50px;
     font-weight: 100;
     text-transform: uppercase;
@@ -173,6 +174,7 @@ html, body {
     transition: all .5s;
     z-index: 3;
 }
+
 .team-link3 {
     position: absolute;
     bottom: 22%;
@@ -213,7 +215,7 @@ html, body {
     bottom: 30%;
 }
 
-.team-member:hover .team-link1, .team-member:hover .team-link2,.team-member:hover .team-link3 {
+.team-member:hover .team-link1, .team-member:hover .team-link2, .team-member:hover .team-link3 {
     bottom: 45% !important;
 
 }
@@ -254,7 +256,7 @@ Latest Activities
 
 .btn-primary {
     background-color: #538d22 !important;
-    border-color: #7cac3fc9!important;
+    border-color: #7cac3fc9 !important;
 }
 
 /*
@@ -299,7 +301,7 @@ footer i {
         padding-top: 15px;
         padding-left: 50px;
         padding-bottom: 15px;
-        padding-right: 50px!important;
+        padding-right: 50px !important;
     }
 
     .footer-top {
@@ -318,13 +320,14 @@ footer p {
     /*
     carousel caption
      */
-
-    .carousel-caption-home h1{
+    .carousel-caption-home h1 {
         font-size: 20px;
     }
-    .carousel-caption-home h3{
+
+    .carousel-caption-home h3 {
         font-size: 15px;
     }
+
     /* card responsive changes*/
     .card-wrapper {
         margin-bottom: 5px;
@@ -340,9 +343,10 @@ footer p {
     }
 
     footer {
-        clip-path: polygon(50% 0, 99% 10%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 12%);
+        /*clip-path: polygon(50% 0, 99% 10%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 12%);*/
     }
-    .footer-top{
+
+    .footer-top {
         padding-top: 50px;
         padding-bottom: 15px;
         padding-left: 15px;
@@ -354,26 +358,27 @@ footer p {
         width: 90%;
         position: absolute;
         top: 40%;
-         left: 20px;
+        left: 20px;
         right: 60%;
         bottom: 0px;
     }
-    .banner{
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
+
+    .banner {
+        /*clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;*/
     }
+
     .carousel-resp {
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
+        /*clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;*/
     }
 }
 
 
-
-.banner{
+.banner {
     /*background-image: url("https://webunwto.s3.eu-west-1.amazonaws.com/styles/article_main_image/s3/2019-09/hotel-energy.jpg");*/
-   background-image: url("../pictures/about-banner2.jpg");
+    background-image: url("../pictures/about-banner2.webp");
     height: 100vh;
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
     background-position: center center;
     display: flex;
     align-items: center;
@@ -382,7 +387,8 @@ footer p {
     /*clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);*/
 
 }
-.header-text h1{
+
+.header-text h1 {
 
     font-size: 100px;
     font-family: railway sans-serif;
@@ -390,17 +396,18 @@ footer p {
     /*background:linear-gradient(94deg, rgba(83,141,34,1) 0%, rgba(94,142,86,0.0984768907563025) 88%, rgba(214,214,214,1) 99%);*/
     /*-webkit-background-clip: text;*/
     /*-webkit-text-fill-color: transparent;*/
-   color: #f2e8cf;
+    color: #f2e8cf;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
-.about-box{
+
+.about-box {
     /*margin-top: 10px;*/
     /*border: 4px black;*/
     /*box-shadow:  0 2px 12px rgba(0,0,0,.08);*/
-    }
+}
 
 /*
     Facts
@@ -422,11 +429,13 @@ footer p {
     background: rgba(255, 255, 255, 0.88);
     z-index: 9;
 }
+
 .facts .container {
     position: relative;
     z-index: 10;
 }
-.section-title{
+
+.section-title {
     font-size: 50px;
     font-weight: 100;
     text-transform: uppercase;
@@ -436,46 +445,57 @@ footer p {
     color: rgba(255, 255, 255, .8);
     font-family: 'Rubik', sans-serif;
 }
-.facts{
+
+.facts {
     margin-top: 30px;
 }
-.facts-content{
+
+.facts-content {
     margin-top: 45px;
 }
-.facts h3{
-    color:#212529;
+
+.facts h3 {
+    color: #212529;
     position: relative;
     /*font-weight: 700;*/
 }
-.facts-number{
-    color:#a7c957;
-    margin-top:5px;
+
+.facts-number {
+    color: #a7c957;
+    margin-top: 5px;
 }
-.facts-name{
-    color:#212529;
+
+.facts-name {
+    color: #212529;
 }
+
 .about-box {
     margin-top: 30px;
 }
-.facts-logo{
+
+.facts-logo {
     object-fit: fill;
 }
-.plan-box{
+
+.plan-box {
     margin-top: 15px;
     background-color: white;
     border-radius: 4px;
     border: 1px solid #eaeaea;
-    box-shadow:  0 2px 12px rgba(0,0,0,.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
 }
-.box-inner{
-    padding:20px;
+
+.box-inner {
+    padding: 20px;
     text-align: center;
 }
-.box-inner h4{
-    color:#133b5c;
+
+.box-inner h4 {
+    color: #133b5c;
     text-align: center;
 
 }
+
 .about-section {
     /*margin-top: 20px;*/
     background: url("https://assets.weforum.org/report/image/BTFcwc6o2ETUOAoa0j84XOrtOF6g79UsTXJpzazgM0U.jpg") center top no-repeat fixed;
@@ -484,9 +504,10 @@ footer p {
     position: relative;
 
 }
-.box-icon{
 
-text-align: center;
+.box-icon {
+
+    text-align: center;
 }
 
 .about-section::after {
@@ -499,12 +520,14 @@ text-align: center;
     background: rgba(255, 255, 255, 0.88);
     z-index: 9;
 }
+
 .about-section .container {
     position: relative;
     z-index: 10;
 }
-@media (max-width: 750px){
-    .facts img{
+
+@media (max-width: 750px) {
+    .facts img {
         margin-top: 20px;
     }
 }

@@ -1,12 +1,13 @@
 import React from 'react'
 import {css, jsx} from '@emotion/core'
 import Jump from "react-reveal/Jump";
-import banner from '../pictures/activities/banner-activities.jpg'
+import banner from '../pictures/activities/banner-activities.webp'
 import summerSchool from '../pictures/SummerSchool.jpg';
 import tsyp from '../pictures/tsyp.jpg';
 import zhd from '../pictures/zhd.jpg'
 import LatestActivities from "../LatestActivities";
 import Activity from "../Activity";
+import CarouselItem from "./CarouselItem";
 
 /** @jsx jsx */
 const Activities = () => {
@@ -24,7 +25,7 @@ const Activities = () => {
   }
   @media(max-width: 750px){
     &{
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
+        //clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
     }
   }
    
@@ -168,15 +169,9 @@ const Activities = () => {
                         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel"
                              css={carouselStyle}>
                             <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img className="d-block w-100" src={zhd} alt="First slide"/>
-                                    <div className="carousel-caption  d-md-block">
-                                        <h3>Zero hunger day</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi
-                                            debitis eos minus natus odit quibusdam rem. Assumenda cupiditate dignissimos
-                                            ...</p>
-                                    </div>
-                                </div>
+
+                                <CarouselItem title={'Zero Hunger Day'} picture={zhd } classAct={'carousel-item active'} text={'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day (Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES WiP, IEEE and PES volunteers  made food donation based on food donations campaigns with main focus on 17 UN Sustainable Development goals(2030).. For our chapter , we made a food donation campaign in our unit and we were glad to host our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the IEEE day and PES zero hunger day at the same Time . The meeting was not only about delivering the food donations that we collected but also it was a chance to exchange goals and values of both organizations. Everyone was really satisfied with this ZHD first edition so we  promised more impactful editions in the future.'}/>
+
                                 <div className="carousel-item">
                                     <img className="d-block w-100" src={tsyp} alt="Second slide"/>
                                     <div className="carousel-caption  d-md-block">

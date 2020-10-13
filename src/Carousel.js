@@ -1,8 +1,7 @@
 import React from "react";
-import banner1 from "./pictures/banner1.png";
-import banner2 from "./pictures/banner2.jpg";
-import banner3 from './pictures/banner3.jpg'
-import banner4 from './pictures/about-back.jpg'
+import banner1 from "./pictures/banner7.webp";
+import banner5 from './pictures/banner4.webp'
+import banner6 from './pictures/banner6.webp'
 import Jump from 'react-reveal/Jump';
 import {jsx, css} from '@emotion/core'
 
@@ -24,8 +23,8 @@ const Carousel = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item carousel-item-home active">
 
-                        <img className="d-block w-100  " src={banner4} alt="First slide"
-                             height={document.documentElement.clientHeight - 2}/></div>
+                        <img className="d-block w-100  " src={banner5} alt="First slide" style={{filter: 'brightness(50%)'}}
+                             height={document.documentElement.clientHeight }/></div>
                     <div className="absolute-div">
                         <Jump forever duration={1500}>
                             <div className="carousel-caption carousel-caption-home d-block ">
@@ -36,13 +35,13 @@ const Carousel = () => {
                         </Jump>
                     </div>
                     <div className="carousel-item carousel-item-home">
-                        <img className="d-block w-100 " src={banner3} alt="Second slide"
-                             height={document.documentElement.clientHeight - 2}/>
+                        <img className="d-block w-100 " src={banner6} alt="Second slide"
+                             height={document.documentElement.clientHeight } style={{filter: 'brightness(50%)'}}/>
                     </div>
                     <div className="carousel-item carousel-item-home ">
 
-                        <img className="d-block w-100 " src={banner1} alt="Third slide"
-                             height={document.documentElement.clientHeight - 2}/>
+                        <img className="d-block w-100 " src={banner1} alt="Third slide" style={{filter: 'brightness(50%)'}}
+                             height={document.documentElement.clientHeight }/>
                     </div>
                 </div>
                 <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -39,7 +39,7 @@ const TeamMember = ({memberPic, memberName, memberPoste, animation}) => {
     width: 160px;
     height: 1px;
     background: #ddd;
-    top: 54px;
+    top: 94%;
     //bottom: 90px;
     left: calc(50% - 77px);
 }

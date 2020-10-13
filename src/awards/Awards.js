@@ -4,7 +4,7 @@ import {css, jsx} from "@emotion/core";
 import {Modal} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Jump from "react-reveal/Jump";
-import banner from "../pictures/community/community-banner.jpg";
+import banner from "../pictures/awards/awards-banner.webp";
 import omar from "../pictures/omar.jpg";
 import Carousel from "react-multi-carousel";
 import awarding from '../pictures/awards/award.jpg'
@@ -14,7 +14,7 @@ import About from "../About";
 const Awards = () => {
     const bannerStyle = css`
     &{
-       background-image: url('https://ec.europa.eu/jrc/sites/jrcsh/files/styles/normal-responsive/public/mike_mareen_adobestock_260782601.jpeg?itok=hk125loW');
+       background-image: url(${banner});
         height: 100vh;
         background-attachment: fixed;
         background-size:cover;

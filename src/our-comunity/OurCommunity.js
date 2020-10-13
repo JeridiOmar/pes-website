@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {css, jsx} from "@emotion/core";
 
 import Jump from "react-reveal/Jump";
-import banner from '../pictures/community/community-banner.jpg'
+import banner from '../pictures/community/community-banner.webp'
 import omar from '../pictures/omar.jpg'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -48,7 +48,7 @@ const OurCommunity = () => {
   }
   @media(max-width: 750px){
     &{
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
+        //clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
     }
   }
    
@@ -70,7 +70,7 @@ const OurCommunity = () => {
     }
     @media(max-width: 750px){
        & h1{ 
-        font-size: 60px;
+        font-size: 55px;
         
     }
   `;
