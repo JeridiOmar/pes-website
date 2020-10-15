@@ -34,7 +34,8 @@ const Activity = ({title, description, picture}) => {
                 <img className="card-img-top" src={picture} alt="Card image cap"/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
-                    <p className="card-text card-text1">{description}</p>
+                    <p className="card-text card-text1">{description.split(' ').slice(0,16).join(' ')}
+                        ...</p>
                     <p className="card-meta">
 
                         <img alt=""
@@ -61,16 +62,9 @@ const Activity = ({title, description, picture}) => {
                 <Modal.Body>
                     <img src={picture} alt="" height={'500'}/>
                     <div className="modal-text">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus eligendi facilis
-                            ipsam libero nobis odio quas. Consectetur consequuntur maxime minus ratione soluta.
-                            Accusamus
-                            cupiditate dolore eveniet provident reprehenderit velit.
+                        <div>{description}
                         </div>
-                        <div>Debitis esse eum ex incidunt ipsam sunt ullam unde voluptatem? Consectetur dolor earum
-                            error
-                            excepturi libero minus molestias, nesciunt nobis optio quas qui, quod reiciendis repellat
-                            sapiente similique unde veniam.
-                        </div>
+
                     </div>
                 </Modal.Body>
                 <Modal.Footer>

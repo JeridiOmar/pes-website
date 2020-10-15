@@ -5,7 +5,7 @@ import {Modal} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 /** @jsx jsx */
-const BigArticle = ({title, picture, text}) => {
+const SmallArticle = ({title, picture, text}) => {
     const modalStyle = css`
       & img{
         width: 100%;
@@ -28,27 +28,27 @@ const BigArticle = ({title, picture, text}) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <div data-aos="fade-right" className="card p-lg-3">
+        <div data-aos="fade-right" className="row">
 
-            <img width="768px" height="517px"
-                 src={picture} onClick={handleShow} style={{ cursor: 'pointer' }}
-                 className="card-img-top card-bigger-img " alt=""
-                />
-            <div className="card-body">
-                <h5 className="card-title" onClick={handleShow} style={{ cursor: 'pointer' }}>{title}</h5>
-                <p className="card-text card-text1">{text.split(' ').slice(0,23).join(' ')}
-                    ...</p>
+            <div className="col-12 col-md-6">
+                <img
+                    src={picture}
+                    alt="pic" className={'right-article-img w-100'}
+                    style={{'margin-top': '14px', cursor: 'pointer',height:'172px'}} onClick={handleShow} />
+            </div>
+            <div className="col-12 col-md-6">
+                <h5 className="title" onClick={handleShow} style={{ cursor: 'pointer','margin-top': '15px' }}>{title}</h5>
                 <p className="card-meta">
 
                     <img alt=""
                          src="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=20&amp;d=mm&amp;r=g"
                          srcSet="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=40&amp;d=mm&amp;r=g 2x"
-                         className="useravatar avatar-20 photo rounded-circle"
+                         className="  rounded-circle"
                          height="20"
                          width="20"/> <span className="author"><a
                     href="https://litmotion.net/demo/neori/author/admin/"
                     title="Posts by Lora"
-                    rel="author">Omar</a></span>
+                    rel="author">omar</a></span>
                     <span className="date">January 28, 2018</span>
                     <span className="min-read"><span
                         className="span-reading-time rt-reading-time"><span
@@ -57,7 +57,6 @@ const BigArticle = ({title, picture, text}) => {
                         className="rt-label rt-postfix"></span></span>min</span>
 
                 </p>
-
 
             </div>
             <Modal show={show} onHide={handleClose} size="lg" css={modalStyle}>
@@ -82,4 +81,4 @@ const BigArticle = ({title, picture, text}) => {
         </div>
     )
 };
-export default BigArticle;
+export default SmallArticle;

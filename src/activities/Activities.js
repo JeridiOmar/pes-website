@@ -2,16 +2,21 @@ import React from 'react'
 import {css, jsx} from '@emotion/core'
 import Jump from "react-reveal/Jump";
 import banner from '../pictures/activities/banner-activities.webp'
-import summerSchool from '../pictures/SummerSchool.jpg';
-import tsyp from '../pictures/tsyp.jpg';
-import zhd from '../pictures/zhd.jpg'
+
+import zhd from '../pictures/activities/zhd.webp'
 import yfc from '../pictures/activities/yfc.webp'
 import LatestActivities from "../LatestActivities";
 import rip from '../pictures/activities/recitup.webp'
+import pam from '../pictures/activities/pam.webp'
 import sc from '../pictures/activities/sc.webp'
+import rflc from '../pictures/activities/rftlc.webp'
+import sc2 from '../pictures/activities/sc2.webp'
+import sc3 from '../pictures/activities/sc3.webp'
+import wip from '../pictures/activities/wip.webp'
 import Activity from "../Activity";
 import CarouselItem from "./CarouselItem";
 import BigArticle from "./BigArticle";
+import SmallArticle from "./SmallArticle";
 
 /** @jsx jsx */
 const Activities = () => {
@@ -135,7 +140,7 @@ const Activities = () => {
     
     & .upcomming .card-img-top{
     height: 213px!important;
-    object-fit: fill;
+    object-fit: cover;
 }
 //  & .latest-left-bigger img{
 //    height: 167px;
@@ -182,7 +187,7 @@ const Activities = () => {
                                               text={"The first ever ‘REC iT Up’ 24-hours challenge was organized by IEEE Power & Energy Society Chapter INSAT Student Branch.\n" +
                                               "Renewable Energies Challenge “REC iT Up” is an entrepreneurship challenge in which IEEE members participated. In the beginning, the participants attended technical and soft skills training. The participants were divided into teams. They were then required to follow the instructions of the jury to represent their renewable energy related projects.  At the end of the challenge, the jury nominated the winning team based on its project’s innovation, feasibility and business plan. This challenge was open to all the IEEE members from all Student Branches in Tunisia which gave them an opportunity to network with fellow IEEE members from other student branches in Tunisia."}/>
 
-                                <CarouselItem title={'Women in POWER'} picture={rip} classAct={'carousel-item'}
+                                <CarouselItem title={'Women in POWER'} picture={wip} classAct={'carousel-item'}
                                               text={'The first edition of WOMEN in POWER was organized by IEEE PES INSAT Student Chapter in collaboration with IEEE WIE INSAT Student Affinity Group. This event takes up a whole day where conferences, success stories of women of women in the field of power and energy. We dedicate this day to appreciate , celebrate and empower women in the field of energy.\n' +
                                               'The first edition took place on the 20th of February 2019. The conference had six speakers (Mrs Kaouther Lihidheb ,Mrs Nedra Mtimet ,Mrs Tesnime Ben Dekhil,Mrs Nourane Bouadjila ,Mrs Soumaya Alouane and Mrs Awatef Siala). This much-anticipated event portrayed female energy experts who left their fingerprint in the energy domain. This conference both covered the most pressing and controversial issues in the energy sector and tackled the most interesting and updated topics such as Energy efficiency, Renewable energy in Tunisia, Oil exploration and production in Tunisia and also Environmental and social safeguards of energy projects.  The success of this event was enormous as both attendees and students were able to socialize and share expertise.'}/>
                             </div>
@@ -205,26 +210,39 @@ const Activities = () => {
                         <div className="row ">
                             <h2>upcomming events</h2>
                             <div className="row upcomming">
-                                <Activity picture={summerSchool} title={"Summer School"}
-                                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa, labore libero odit rem repellat vitae."}/>
-                                <Activity picture={tsyp} title={"Pes insat in TSYP"}
-                                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa, labore libero odit rem repellat vitae."}/>
-                                <Activity picture={zhd} title={"Zero hunguer day"}
-                                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa, labore libero odit rem repellat vitae."}/>
-
-                                <Activity picture={summerSchool} title={"Summer School"}
-                                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa, labore libero odit rem repellat vitae."}/>
-                                <Activity picture={tsyp} title={"Pes insat in TSYP"}
-                                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa, labore libero odit rem repellat vitae."}/>
-                                <Activity picture={zhd} title={"Zero hunguer day"}
-                                          description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa, labore libero odit rem repellat vitae."}/>
+                                <Activity picture={pam} title={'PES anunual meeting'}
+                                          description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +
+                                          'experience, PES chapter presents to you the PES General Meeting Congress where you\'ll be introduced to this\n' +
+                                          'new domain and how it is making a progressive impact on the world.\n' +
+                                          '\n' +
+                                          'Organized for its first time by the IEEE PES INSAT Student Branch Chapter, the meeting will take place in\n' +
+                                          'November themed ENERGY TRANSITION!\n' +
+                                          '\n' +
+                                          'The seminar will include workshops and a conference bringing together professionals, inspiring speakers and\n' +
+                                          'motivational trainers.'}/>
+                                <Activity title={'Recycle for the life CYCLE'} picture={rflc}
+                                          description={'In collaboration with “Emel Tounes“ association, we will be collecting plastic caps in a box that will be prepared by the PES chapter and\n' +
+                                          'located in the club room to be accessible to anyone willing to help.\n' +
+                                          'All the collected caps will be recycled and transformed to a wheelchair that will be given to a handicap person.\n' +
+                                          'This action is a volunteering and an environmental protection one because plastic is a material that Earth cannot digest.'}/>
+                                <Activity title={'Youth for CHANGE'} picture={yfc}
+                                          description={'YFC consists of school visits in different regions of Tunisia where PES members will help students develop a better understanding of\n' +
+                                          'renewable energy.\n' +
+                                          '\n' +
+                                          'The team will organize a range of training courses and workshops in order to hopefully help nurture a whole generation and ignite a spark of\n' +
+                                          'passion in their spirit.\n' +
+                                          '\n' +
+                                          'PES members will also organize a competition between the participants at the end of the day in every visit to nominate the winning team.\n' +
+                                          'From every school, we will have a winning team, we will give them an idea about a project that they should realize.\n' +
+                                          'The final will be in INSAT, all the teams will pitch their fresh ideas and there will be awards to encourage and to show them that we do\n' +
+                                          'believe that young people will make this world better.'}/>
 
                             </div>
                             <h2>Latest ativities</h2>
                             <div className="row latest">
                                 <div className="col-12 col-md-6">
 
-                                    <BigArticle title={"boost your career summer school 3.0" } picture={sc}
+                                    <BigArticle title={"boost your career summer school 3.0"} picture={sc}
                                                 text={'This workshop was presented by AI developer advocate and teacher, Mr. Elyes\n' +
                                                 'Manai. The trainer dived into the secrets of the professional world to prepare\n' +
                                                 'the attendees for the future of their career.\n' +
@@ -251,106 +269,59 @@ const Activities = () => {
                                 </div>
 
                                 <div className="col-12 col-md-6 latest-left-bigger ">
-                                    <div data-aos="fade-right" className="row">
-
-                                        <div className="col-12 col-md-6">
-                                            <img
-                                                src="https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-300x202.jpg"
-                                                alt="pic" className={'right-article-img w-100'}
-                                                style={{'margin-top': '14px'}}/>
-                                        </div>
-                                        <div className="col-12 col-md-6">
-                                            <h5 className="title">Ac mauris consectetur, et pharetra nisl aliquet
-                                                nam ac
-                                                quam vel felis</h5>
-                                            <p className="card-meta">
-
-                                                <img alt=""
-                                                     src="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=20&amp;d=mm&amp;r=g"
-                                                     srcSet="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=40&amp;d=mm&amp;r=g 2x"
-                                                     className="  rounded-circle"
-                                                     height="20"
-                                                     width="20"/> <span className="author"><a
-                                                href="https://litmotion.net/demo/neori/author/admin/"
-                                                title="Posts by Lora"
-                                                rel="author">omar</a></span>
-                                                <span className="date">January 28, 2018</span>
-                                                <span className="min-read"><span
-                                                    className="span-reading-time rt-reading-time"><span
-                                                    className="rt-label"></span> <span
-                                                    className="rt-time"> 3</span> <span
-                                                    className="rt-label rt-postfix"></span></span>min</span>
-
-                                            </p>
-
-                                        </div>
-
-
-                                    </div>
-                                    <div data-aos="fade-right" className="row">
-                                        <div className="col-12 col-md-6">
-                                            <img
-                                                src="https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-300x202.jpg"
-                                                alt="pic" className='right-article-img w-100 '/>
-                                        </div>
-                                        <div className="col-12 col-md-6">
-                                            <h5 className="title">Ac mauris consectetur, et pharetra nisl aliquet nam ac
-                                                quam vel felis</h5>
-                                            <p className="card-meta">
-
-                                                <img alt=""
-                                                     src="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=20&amp;d=mm&amp;r=g"
-                                                     srcSet="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=40&amp;d=mm&amp;r=g 2x"
-                                                     className="  rounded-circle"
-                                                     height="20"
-                                                     width="20"/> <span className="author"><a
-                                                href="https://litmotion.net/demo/neori/author/admin/"
-                                                title="Posts by Lora"
-                                                rel="author">omar</a></span>
-                                                <span className="date">January 28, 2018</span>
-                                                <span className="min-read"><span
-                                                    className="span-reading-time rt-reading-time"><span
-                                                    className="rt-label"></span> <span
-                                                    className="rt-time"> 3</span> <span
-                                                    className="rt-label rt-postfix"></span></span>min</span>
-
-                                            </p>
-                                        </div>
+                                    <SmallArticle title={'IEEE Summer school 3.0: Energy transition workshop'}
+                                                  picture={sc2}
+                                                  text={'This workshop was presented by Mr.\n' +
+                                                  'Samer Zwaydeh, an independent\n' +
+                                                  'internationally recognized energy expert\n' +
+                                                  'and lecturer at Al Hussein Technical\n' +
+                                                  'University with twenty-six years of\n' +
+                                                  'management experience around the\n' +
+                                                  'world. This certified carbon reduction\n' +
+                                                  'manager introduced energy transition\n' +
+                                                  'from its concept to its real life application.\n' +
+                                                  '\n' +
+                                                  'Energy transition is oriented towards the use of renewable energy in place of\n' +
+                                                  'fossil energy to minimize the emission of dioxide carbon and hopefully\n' +
+                                                  'eliminating it completely towards the end of the century. Energy transition\n' +
+                                                  'aims to limit climate change through the disposal of carbon emitters.\n' +
+                                                  '\n' +
+                                                  'In more details, Mr. Samer Zwaydeh explained the methods used in providing\n' +
+                                                  'renewable energy such as solar energy. The trainer went as far as to provide\n' +
+                                                  'examples different examples of the application of energy transition in real life\n' +
+                                                  'and in the current crisis the world is suffering from: corona.\n' +
+                                                  '\n' +
+                                                  'The workshop picked the attention of most of the attendees as the trainer\n' +
+                                                  'introduced energy transition through the current situation by explaining this\n' +
+                                                  'concept use. This workshop proved that energy transition is an important\n' +
+                                                  'carbon-neutral strategy that we should aim to use in life.'}/>
+                                    <SmallArticle title={'Zero HUNGER DAY 2019'} picture={zhd}
+                                                  text={'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day\n' +
+                                                  '(Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES\n' +
+                                                  'WiP, IEEE and PES volunteers made food donation based on food donations\n' +
+                                                  'campaigns with main focus on 17 UN Sustainable Development goals(2030).. For\n' +
+                                                  'our chapter , we made a food donation campaign in our unit and we were glad to host\n' +
+                                                  'our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the\n' +
+                                                  'IEEE day and PES zero hunger day at the same Time . The meeting was not only about\n' +
+                                                  'delivering the food donations that we collected but also it was a chance to exchange goals and\n' +
+                                                  'values of both organizations. Everyone was really satisfied with this ZHD first edition so we\n' +
+                                                  'promised more impactful editions in the future'}/>
+                                    <SmallArticle title={'Summer SCHOOL 2.0'} picture={sc3}
+                                                  text={'The IEEE NSAT SB found it a great idea to start this academic year with the\n' +
+                                                  '2nd edition of Summer school .This very first event took place 6–8 September 2019\n' +
+                                                  'in INSAT . It gathered more than one hundred students from different backgrounds\n' +
+                                                  'and levels of studies , making it so far the largest summer school since its\n' +
+                                                  'establishment in 2017. The purpose of the summer school was to provide the\n' +
+                                                  'participating students with a large variety of workshops , conferences , and many\n' +
+                                                  'other activities .It was also a great opportunity for the freshmen to discover the IEEE\n' +
+                                                  'family and its activities and to get more familiar with INSAT’s corners and walls in an\n' +
+                                                  'academic context .\n' +
+                                                  'For the PES chapter , the summer school consisted of a workshop and a conference\n' +
+                                                  'that were provided by 2 experts covering topics from Solar energy and electricity\n' +
+                                                  'consumption and plastic and circular economy'}/>
 
 
-                                    </div>
-                                    <div data-aos="fade-right" className="row">
-                                        <div className="col-12 col-md-6">
-                                            <img
-                                                src="https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-300x202.jpg"
-                                                alt="pic" className={'right-article-img w-100'}/>
-                                        </div>
-                                        <div className="col-12 col-md-6">
-                                            <h5 className="title">Ac mauris consectetur, et pharetra nisl aliquet nam ac
-                                                quam vel felis</h5>
-                                            <p className="card-meta">
 
-                                                <img alt=""
-                                                     src="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=20&amp;d=mm&amp;r=g"
-                                                     srcSet="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=40&amp;d=mm&amp;r=g 2x"
-                                                     className="  rounded-circle"
-                                                     height="20"
-                                                     width="20"/> <span className="author"><a
-                                                href="https://litmotion.net/demo/neori/author/admin/"
-                                                title="Posts by Lora"
-                                                rel="author">omar</a></span>
-                                                <span className="date">January 28, 2018</span>
-                                                <span className="min-read"><span
-                                                    className="span-reading-time rt-reading-time"><span
-                                                    className="rt-label"></span> <span
-                                                    className="rt-time"> 3</span> <span
-                                                    className="rt-label rt-postfix"></span></span>min</span>
-
-                                            </p>
-                                        </div>
-
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
