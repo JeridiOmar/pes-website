@@ -5,9 +5,13 @@ import banner from '../pictures/activities/banner-activities.webp'
 import summerSchool from '../pictures/SummerSchool.jpg';
 import tsyp from '../pictures/tsyp.jpg';
 import zhd from '../pictures/zhd.jpg'
+import yfc from '../pictures/activities/yfc.webp'
 import LatestActivities from "../LatestActivities";
+import rip from '../pictures/activities/recitup.webp'
+import sc from '../pictures/activities/sc.webp'
 import Activity from "../Activity";
 import CarouselItem from "./CarouselItem";
+import BigArticle from "./BigArticle";
 
 /** @jsx jsx */
 const Activities = () => {
@@ -163,33 +167,24 @@ const Activities = () => {
                     </div>
                 </Jump>
             </div>
-            <div className="container" style={{'margin-bottom':' 50px'}}>
+            <div className="container" style={{'margin-bottom': ' 50px'}}>
                 <div className="row">
                     <div className="col-12">
                         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel"
                              css={carouselStyle}>
                             <div className="carousel-inner">
 
-                                <CarouselItem title={'Zero Hunger Day'} picture={zhd } classAct={'carousel-item active'} text={'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day (Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES WiP, IEEE and PES volunteers  made food donation based on food donations campaigns with main focus on 17 UN Sustainable Development goals(2030).. For our chapter , we made a food donation campaign in our unit and we were glad to host our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the IEEE day and PES zero hunger day at the same Time . The meeting was not only about delivering the food donations that we collected but also it was a chance to exchange goals and values of both organizations. Everyone was really satisfied with this ZHD first edition so we  promised more impactful editions in the future.'}/>
+                                <CarouselItem title={'Zero Hunger Day'} picture={zhd} classAct={'carousel-item active'}
+                                              text={'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day (Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES WiP, IEEE and PES volunteers  made food donation based on food donations campaigns with main focus on 17 UN Sustainable Development goals(2030).. For our chapter , we made a food donation campaign in our unit and we were glad to host our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the IEEE day and PES zero hunger day at the same Time . The meeting was not only about delivering the food donations that we collected but also it was a chance to exchange goals and values of both organizations. Everyone was really satisfied with this ZHD first edition so we  promised more impactful editions in the future.'}/>
+                                <CarouselItem title={'Youth For Change'} picture={yfc} classAct={'carousel-item'}
+                                              text={'Youth for change is an initiative that was first held in 2017 by PES volunteer members. This event’s goal is educating the younger generations about renewable energies in Tunisia as an investment for the future of our country and our planet as a whole. To achieve our goal, PES INSAT volunteers visit preparatory schools in many regions of TUNISIA and provide training sessions in the field of energy, for example how we produce electricity by using the solar energy, wind power, piezoelectric materials and hydro power. After this process, students are divided into teams in order to complete a challenge and the finals is held annually at our institute . Applying what they learnt and working in teams ,young students attempt to solve real-world challenges by conceiving projects related to renewable energies then their projects is put to the test as each team pitches their project idea in front of a global audience of their peers and a panel of judges.. It is fascinating to see this idea come to life as the influence of this experience left an impact on both the volunteers and the students. It was an honour to see their passion filled eyes as they emerge themselves in the process of learning. We are pleased to see the results of our work and are certain that this project will bear fruits in the future as such we hold it annually.'}/>
+                                <CarouselItem title={'Rec it UP'} picture={rip} classAct={'carousel-item'}
+                                              text={"The first ever ‘REC iT Up’ 24-hours challenge was organized by IEEE Power & Energy Society Chapter INSAT Student Branch.\n" +
+                                              "Renewable Energies Challenge “REC iT Up” is an entrepreneurship challenge in which IEEE members participated. In the beginning, the participants attended technical and soft skills training. The participants were divided into teams. They were then required to follow the instructions of the jury to represent their renewable energy related projects.  At the end of the challenge, the jury nominated the winning team based on its project’s innovation, feasibility and business plan. This challenge was open to all the IEEE members from all Student Branches in Tunisia which gave them an opportunity to network with fellow IEEE members from other student branches in Tunisia."}/>
 
-                                <div className="carousel-item">
-                                    <img className="d-block w-100" src={tsyp} alt="Second slide"/>
-                                    <div className="carousel-caption  d-md-block">
-                                        <h3>tsyp challenge</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi
-                                            debitis eos minus natus odit quibusdam rem. Assumenda cupiditate dignissimos
-                                            ...</p>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <img className="d-block w-100" src={summerSchool} alt="Third slide"/>
-                                    <div className="carousel-caption  d-md-block">
-                                        <h3>summer school</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi
-                                            debitis eos minus natus odit quibusdam rem. Assumenda cupiditate dignissimos
-                                            ...</p>
-                                    </div>
-                                </div>
+                                <CarouselItem title={'Women in POWER'} picture={rip} classAct={'carousel-item'}
+                                              text={'The first edition of WOMEN in POWER was organized by IEEE PES INSAT Student Chapter in collaboration with IEEE WIE INSAT Student Affinity Group. This event takes up a whole day where conferences, success stories of women of women in the field of power and energy. We dedicate this day to appreciate , celebrate and empower women in the field of energy.\n' +
+                                              'The first edition took place on the 20th of February 2019. The conference had six speakers (Mrs Kaouther Lihidheb ,Mrs Nedra Mtimet ,Mrs Tesnime Ben Dekhil,Mrs Nourane Bouadjila ,Mrs Soumaya Alouane and Mrs Awatef Siala). This much-anticipated event portrayed female energy experts who left their fingerprint in the energy domain. This conference both covered the most pressing and controversial issues in the energy sector and tackled the most interesting and updated topics such as Energy efficiency, Renewable energy in Tunisia, Oil exploration and production in Tunisia and also Environmental and social safeguards of energy projects.  The success of this event was enormous as both attendees and students were able to socialize and share expertise.'}/>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleControls" role="button"
                                data-slide="prev">
@@ -229,31 +224,56 @@ const Activities = () => {
                             <div className="row latest">
                                 <div className="col-12 col-md-6">
 
-                                    <div data-aos="fade-right" className="card p-lg-3">
+                                    <BigArticle title={"boost your career summer school 3.0" } picture={sc}
+                                                text={'This workshop was presented by AI developer advocate and teacher, Mr. Elyes\n' +
+                                                'Manai. The trainer dived into the secrets of the professional world to prepare\n' +
+                                                'the attendees for the future of their career.\n' +
+                                                '\n' +
+                                                'Through his own experience, the trainer went through the fundamental\n' +
+                                                'knowledge that each and every aspiring beginner professional should have, the\n' +
+                                                'way one should act when faced with all kinds of situations and the mindset one\n' +
+                                                'must have.\n' +
+                                                '\n' +
+                                                'In more details, the trainer went over hardships anyone can encounter when\n' +
+                                                'climbing up the stairs to success. He explained that being dishonorable and\n' +
+                                                'using underhanded ways will only lead to a downfall. He went over the stories\n' +
+                                                'of people who managed to achieve the greatest success when it was expected\n' +
+                                                'that they fail. The trainer then went to explain the ways of the business world\n' +
+                                                'to get the attenddes ready to face the professional world.\n' +
+                                                '\n' +
+                                                'The feedback we got from attendees was stupefying. There were no complains\n' +
+                                                'whatsoever. As a matter of fact, it seemed that they enjoyed his company for\n' +
+                                                'the questions kept coming even after the workshop ended and Mr. Elyes Manai\n' +
+                                                'didn’t fail to answer the questions to their satisfaction. This was probably due\n' +
+                                                'to the trainer’s amazing ability to integrate people and his humor. Following\n' +
+                                                'this positive feedback, the chapter is considering asking Mr. Elyes to present\n' +
+                                                'again, as the number was small because of the precautions taken.'}/>
+                                </div>
 
-                                        <img width="768px" height="517px"
-                                             src="https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-768x517.jpg"
-                                             className="card-img-top card-bigger-img " alt=""
-                                             srcSet="https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-768x517.jpg 768w, https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-300x202.jpg 300w, https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-1024x690.jpg 1024w, https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-600x404.jpg 600w"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Dapibus congue orci in blandit purus proin
-                                                sodales eros eu tortor</h5>
-                                            <p className="card-text card-text1">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit. Ut viverra nisl rutrum, pretium lectus nec,
-                                                sagittis
-                                                dolor. Phasellus eleifend efficitur gravida. Maecenas auctor...</p>
+                                <div className="col-12 col-md-6 latest-left-bigger ">
+                                    <div data-aos="fade-right" className="row">
+
+                                        <div className="col-12 col-md-6">
+                                            <img
+                                                src="https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-300x202.jpg"
+                                                alt="pic" className={'right-article-img w-100'}
+                                                style={{'margin-top': '14px'}}/>
+                                        </div>
+                                        <div className="col-12 col-md-6">
+                                            <h5 className="title">Ac mauris consectetur, et pharetra nisl aliquet
+                                                nam ac
+                                                quam vel felis</h5>
                                             <p className="card-meta">
 
                                                 <img alt=""
                                                      src="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=20&amp;d=mm&amp;r=g"
                                                      srcSet="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=40&amp;d=mm&amp;r=g 2x"
-                                                     className="useravatar avatar-20 photo rounded-circle"
+                                                     className="  rounded-circle"
                                                      height="20"
                                                      width="20"/> <span className="author"><a
                                                 href="https://litmotion.net/demo/neori/author/admin/"
                                                 title="Posts by Lora"
-                                                rel="author">Omar</a></span>
+                                                rel="author">omar</a></span>
                                                 <span className="date">January 28, 2018</span>
                                                 <span className="min-read"><span
                                                     className="span-reading-time rt-reading-time"><span
@@ -262,44 +282,6 @@ const Activities = () => {
                                                     className="rt-label rt-postfix"></span></span>min</span>
 
                                             </p>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-12 col-md-6 latest-left-bigger ">
-                                    <div data-aos="fade-right" className="row">
-
-                                            <div className="col-12 col-md-6">
-                                                <img
-                                                    src="https://litmotion.net/demo/neori/wp-content/uploads/2019/10/9477-300x202.jpg"
-                                                    alt="pic" className={'right-article-img w-100'}
-                                                    style={{'margin-top': '14px'}}/>
-                                            </div>
-                                            <div className="col-12 col-md-6">
-                                                <h5 className="title">Ac mauris consectetur, et pharetra nisl aliquet
-                                                    nam ac
-                                                    quam vel felis</h5>
-                                                <p className="card-meta">
-
-                                                    <img alt=""
-                                                         src="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=20&amp;d=mm&amp;r=g"
-                                                         srcSet="https://secure.gravatar.com/avatar/ee009ffd2d2d1827217bf8c3a968fd16?s=40&amp;d=mm&amp;r=g 2x"
-                                                         className="  rounded-circle"
-                                                         height="20"
-                                                         width="20"/> <span className="author"><a
-                                                    href="https://litmotion.net/demo/neori/author/admin/"
-                                                    title="Posts by Lora"
-                                                    rel="author">omar</a></span>
-                                                    <span className="date">January 28, 2018</span>
-                                                    <span className="min-read"><span
-                                                        className="span-reading-time rt-reading-time"><span
-                                                        className="rt-label"></span> <span
-                                                        className="rt-time"> 3</span> <span
-                                                        className="rt-label rt-postfix"></span></span>min</span>
-
-                                                </p>
 
                                         </div>
 

@@ -8,6 +8,7 @@ import banner from "../pictures/awards/awards-banner.webp";
 import omar from "../pictures/omar.jpg";
 import Carousel from "react-multi-carousel";
 import awarding from '../pictures/awards/award.jpg'
+
 import About from "../About";
 
 /** @jsx jsx */
@@ -26,7 +27,7 @@ const Awards = () => {
   }
   @media(max-width: 750px){
     &{
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
+        //clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 93%, 55% 100%, 0 92%) !important;
     }
   }
    
