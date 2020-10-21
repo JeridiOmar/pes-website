@@ -174,7 +174,7 @@ const Awards = () => {
             <div className="container">
                 <div className="row text-center">
                     <About title1={'Our'} title2={'Awards'}
-                           text={' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus alias architecto asperiores at blanditiis consectetur culpa, dolorem ea enim eum impedit itaque nihil officiis optio quisquam reiciendis saepe voluptate.'}/>
+                           text={' Our PES chapter has endured an enchanting journey since its establishment, encountering many bumpy roads and emotional rides on the way, but through our teamwork that we are so proud of, our persevering bared fruit And our chapter won many awards that we are well-deserved'}/>
                 </div>
             </div>
             <div css={backstyle}>

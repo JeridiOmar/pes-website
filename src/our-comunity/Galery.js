@@ -4,8 +4,18 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import omar from '../pictures/omar.jpg'
 import {Modal} from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 
+import Button from "react-bootstrap/Button";
+import GaleryImage from "./GaleryImage";
+// function importAll(r) {
+//     let images = {};
+//     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+//     return images;
+// }
+
+const images = require('../pictures/community/galleries/elyes-workshop/*.webp');
+const zhd2019=require('../pictures/community/galleries/zhd2019/*.webp');
+const teambuilding2019=require('../pictures/community/galleries/teambuilding2019/*.webp');
 /** @jsx jsx */
 const Galery = () => {
 
@@ -32,8 +42,8 @@ const Galery = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
-    const handleShow = (e) => {
-        e.preventDefault();
+    const handleShow = (event) => {
+        event.preventDefault();
         setShow(true);
     };
     const galeryStyle = css`
@@ -48,6 +58,7 @@ const Galery = () => {
       }
       & .card-img{
         border-radius: 10px;
+        object-fit: cover;
       }
       & .card:hover i{
         visibility: visible;
@@ -108,27 +119,15 @@ const Galery = () => {
                 <div  css={galeryStyle}>
                     <div className="container">
                         <div className="row ">
-                            <h2 className={'gallery-title'}>Team building 2020</h2>
+                            <h2 className={'gallery-title'}>Formation Elyes Manai</h2>
                         </div>
                     </div>
                     <Carousel partialVisible={true} swipeable={true}
                               draggable={true} responsive={responsive} infinite>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                        </div>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                        </div>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                        </div>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                        </div>
+
+                        {Object.values(images).map((image)=>(<GaleryImage title={'Formation Elyes Manai'} picture={image}/>))}
+
+
 
                     </Carousel>
                 </div>
@@ -136,40 +135,30 @@ const Galery = () => {
                 <div  css={galeryStyle}>
                     <div className="container">
                         <div className="row ">
-                            <h2 className={'gallery-title'}>PES executive board 2018</h2>
+                            <h2 className={'gallery-title'}>Zero HUNGER day 2019</h2>
                         </div>
                     </div>
                     <Carousel partialVisible={true} swipeable={true}
                               draggable={true} responsive={responsive} infinite>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
+                        {Object.values(zhd2019).map((image)=>(<GaleryImage title={'Zero HUNGER day 2019'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
+
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>Team Building 2019</h2>
                         </div>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                        </div>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                        </div>
-                        <div className="card">
-                            <img className="card-img" src={omar} alt="Card image cap" height={300} width={300}/>
-                            <a onClick={handleShow} href="#"><i className="fas fa-eye"></i></a>
-                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(teambuilding2019).map((image)=>(<GaleryImage title={'Team Building 2019'} picture={image}/>))}
 
                     </Carousel>
                 </div>
             </div>
-            <Modal show={show} onHide={handleClose} centered >
-                <Modal.Header closeButton>
-                    <Modal.Title>Team building 2020</Modal.Title>
-                </Modal.Header>
-                <Modal.Body className={"text-center"}>
-                    <img className={'w-100'} src={omar} alt=""/>
-                </Modal.Body>
 
-            </Modal>
         </div>
 
     )

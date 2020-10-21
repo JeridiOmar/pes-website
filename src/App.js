@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import {Main, Router} from "@reach/router";
 import Navbar from "./Navbar";
@@ -6,24 +6,43 @@ import Footer from "./Footer";
 import Home from "./Home"
 import AboutUs from "./about-us/AboutUs";
 import Activities from "./activities/Activities";
-import OurCommunity from "./our-comunity/OurCommunity";
+
+// const OurCommunity = React.lazy(() => import ("./our-comunity/OurCommunity"));
+import OurCommunity from "./our-comunity/OurCommunity"
 import Galery from "./our-comunity/Galery";
 import Mom from "./our-comunity/Mom";
 import Awards from "./awards/Awards";
-const App = () => {
+import Loading from "./Loading";
 
+const App = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 2000)
+
+    }, []);
     return (
-        <div>
-            <Navbar/>
-            <Router>
-                <Home path={"/"}/>
-                <AboutUs path={"/about"}/>
-                <Activities path={"/activities"}/>
-                <OurCommunity path={"/community/*"}/>
-                <Awards path={"/awards/"}/>
-            </Router>
-            <Footer />
-        </div>
+        // <>
+        //     {loading === false ? (
+                <div>
+                    <Navbar/>
+                    <Suspense fallback={Loading}>
+                        <Router>
+                            <Home path={"/"}/>
+                            <AboutUs path={"/about"}/>
+                            <Activities path={"/activities"}/>
+                            <OurCommunity path={"/community/*"}/>
+                            <Awards path={"/awards/"}/>
+                            <Loading path={"/loading"}/>
+
+                        </Router>
+                    </Suspense>
+                    <Footer/>
+                </div>
+        //     ) : (
+        //         <Loading/>
+        //     )}
+        // </>
 
 
     );

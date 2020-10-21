@@ -9,7 +9,7 @@ import {Modal} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 /** @jsx jsx */
-const TeamMember = ({memberPic, memberName, memberPoste, animation}) => {
+const TeamMember = ({memberPic, memberName, memberPoste, animation,text}) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -84,11 +84,8 @@ const TeamMember = ({memberPic, memberName, memberPoste, animation}) => {
 
                     <h1 className="text-center   " css={titleStyle}>{memberPoste} </h1>
                     <div className="modal-text">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ducimus eligendi facilis
-                            ipsam libero nobis odio quas. Consectetur consequuntur maxime minus ratione soluta.
-                            Accusamus
-                            cupiditate dolore eveniet provident reprehenderit velit.
-                        </div>
+                        <div>{text} </div>
+
                         {/*<div className="modal-icons text-left">*/}
                         {/*    <i className="fab fa-facebook"></i>*/}
                         {/*    <i className="fab fa-linkedin "></i>*/}

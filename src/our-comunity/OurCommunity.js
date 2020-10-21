@@ -118,7 +118,7 @@ const OurCommunity = () => {
                 <li className="nav-item">
                     <Link className="nav-link mom-button active" id="mom-tab" data-toggle="tab"
                           to={'memberofthemonth'}
-                          aria-selected="true">Member of the month</Link>
+                          aria-selected="true" on>Member of the month</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link " id="gallery-tab" data-toggle="tab" to={'gallery'}

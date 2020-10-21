@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./pictures/logo-white.png";
 
-import {css,jsx} from "@emotion/core";
+import {css, jsx} from "@emotion/core";
 
 /** @jsx jsx */
 const Footer = () => {
@@ -12,13 +12,16 @@ const Footer = () => {
                     <div className="row ">
                         <div className="col-md-6 col-sm-12  footer-left ">
                             <img className="logo-footer " src={logo} alt="logo-footer"
-                                 data-at2x="assets/img/logo.png" width={'140'} height={"80"} css={css`object-fit: contain;margin-left: -15px;`}/>
+                                 data-at2x="assets/img/logo.png" width={'140'} height={"80"}
+                                 css={css`object-fit: contain;margin-left: -25px;`}/>
                             <h3>
-                                IEEE PES SB
+                                IEEE PES INSAT SB
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda aut
-                                excepturi pariatur. Aut dolore eveniet, excepturi exercita voluptates.
+                                The Power & Energy Society provides the world's largest forum for sharing the latest in
+                                technological developments in the electric power industry, for developing standards that
+                                guide the development and construction of equipment and systems, and for educating
+                                members of the industry and the general public.
                             </p>
 
 
@@ -31,7 +34,7 @@ const Footer = () => {
                             <p><i className="fas fa-envelope"></i> Email: <a css={css`text-decoration: none; `}
                                                                              href="mailto:hello@domain.com">pes@pes.com</a>
                             </p>
-                            <div >
+                            <div>
                                 <a href="#"><i className="fab fa-facebook"></i></a>
                                 <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-google-plus-g"></i></a>

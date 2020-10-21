@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {css, jsx} from "@emotion/core";
 
-import Jump from "react-reveal/Jump";
-import banner from '../pictures/community/community-banner.jpg'
+
 import omar from '../pictures/omar.jpg'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Galery from "./Galery";
+
 
 /** @jsx jsx */
 const Mom = () => {

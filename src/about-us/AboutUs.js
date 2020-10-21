@@ -30,8 +30,12 @@ const AboutUs = () => {
                            "The IEEE INSAT PES chapter presents incredible opportunities for the members. The power and energy domain is an unlimited source of knowledge and our chapter is a place where all those interested could exchange the knowledge they have creating a space where ideas bloom into inventions."}/>
 
                     <div className="row">
-                        <InfoBox icon={plan} title={'Our plan'}/>
-                        <InfoBox icon={mission} title={'Our mission'}/>
+                        <InfoBox icon={plan} title={'Our plan'}
+                                 text={'Workshops, Conferences and industrial visits:\n' +
+                                 'PES INSAT chapter aim to enhance our members skills and knowledge. As such, each year PES INSAT chapter provide workshops, training sessions, conferences in the field of energy be it technical or soft skills. We also organize industrial visits to different industries operating in the field of power and knowledge.'}/>
+                        <InfoBox icon={mission} title={'Our mission'}
+                        text={'Workshops, Conferences and industrial visits:\n' +
+                        'PES INSAT chapter aim to enhance our members skills and knowledge. As such, each year PES INSAT chapter provide workshops, training sessions, conferences in the field of energy be it technical or soft skills. We also organize industrial visits to different industries operating in the field of power and knowledge.'}/>
                     </div>
                 </div>
             </div>
