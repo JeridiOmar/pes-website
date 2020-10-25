@@ -9,7 +9,7 @@ import {Modal} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 /** @jsx jsx */
-const TeamMember = ({memberPic, memberName, memberPoste, animation,text}) => {
+const TeamMember = ({memberPic, memberName, memberPoste, animation,text,fb,li}) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -64,9 +64,9 @@ const TeamMember = ({memberPic, memberName, memberPoste, animation,text}) => {
             <img onClick={handleShow} src={memberPic} alt=""
                  className="rounded-circle m-sm-4 team-img img-thumbnail team-image" width="300"
                  height="300"/>
-            <a className="fa fa-facebook-square team-link1" href="#"
+            <a className="fa fa-facebook-square team-link1" href={fb} target="_blank"
                css={css` font-size: 30px!important;`}></a>
-            <a className="fa fa-linkedin-square team-link2" href="#"
+            <a className="fa fa-linkedin-square team-link2" href={li} target="_blank"
                css={css` font-size: 30px!important;`}></a>
 
             <a className="fas fa-info-circle team-link3" onClick={handleShow} href="#"

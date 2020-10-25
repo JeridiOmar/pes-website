@@ -48,8 +48,8 @@ const SmallArticle = ({title, picture, text}) => {
                          width="20"/> <span className="author"><a
                     href="https://litmotion.net/demo/neori/author/admin/"
                     title="Posts by Lora"
-                    rel="author">omar</a></span>
-                    <span className="date">January 28, 2018</span>
+                    rel="author">Kmar</a></span>
+                    <span className="date">October 24, 2020</span>
                     <span className="min-read"><span
                         className="span-reading-time rt-reading-time"><span
                         className="rt-label"></span> <span

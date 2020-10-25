@@ -32,14 +32,16 @@ const Footer = () => {
                                 1080</p>
                             <p><i className="fas fa-phone"></i> Phone: +216 5579319</p>
                             <p><i className="fas fa-envelope"></i> Email: <a css={css`text-decoration: none; `}
-                                                                             href="mailto:hello@domain.com">pes@pes.com</a>
+                                                                             href="mailto:hello@domain.com">ieeepesinsat@gmail.com
+                            </a>
                             </p>
                             <div>
-                                <a href="#"><i className="fab fa-facebook"></i></a>
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-google-plus-g"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
-                                <a href="#"><i className="fab fa-pinterest"></i></a>
+                                <a href="https://www.facebook.com/PES.INSAT/"><i className="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/ieee-pes-chapter-insat-sb-92255a1b6/"><i
+                                    className="fab fa-linkedin-in"></i></a>
+
+                                <a href="https://www.instagram.com/ieee.pes.insat/"><i className="fab fa-instagram"></i></a>
+
                             </div>
 
                         </div>

@@ -80,6 +80,10 @@ const OurCommunity = () => {
     }
     & .active {
       background-color: #28a745 !important;
+      color: white;
+    }
+    & .nav-item a{
+    color:#28a745 ;
     }
     @media(min-width: 720px){
         &{
