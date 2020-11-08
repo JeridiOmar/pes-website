@@ -97,7 +97,7 @@ const Gm = () => {
                     <div className="row">
                         <div className="col-12 text-center">
                             <Jump forever duration={1500}>
-                                <h1>IEEE PES General meeting</h1>
+                                <h1>PES Tunisia General Meeting</h1>
                             </Jump>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto?</h3>
                             <CountDown timeTillDate="12 07 2020, 6:00 am" timeFormat="MM DD YYYY, h:mm a"/>
