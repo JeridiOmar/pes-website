@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import {Main, Router} from "@reach/router";
 import {css, jsx} from '@emotion/core'
 import banner from "../pictures/gm/banner.webp";
+import banner2 from "../pictures/gm/banner5.webp"
 import Jump from "react-reveal/Jump";
 import CountDown from "./CountDown"
 
@@ -10,7 +11,8 @@ import CountDown from "./CountDown"
 const Gm = () => {
     const bannerStyle = css`
     &{
-       background-image: url(${banner});
+       background-image: url(${banner2});
+      
         height: 100vh;
         background-attachment: fixed;
         background-size:cover;
@@ -76,8 +78,22 @@ const Gm = () => {
     }
     
     
-    
-    
+    & .icon {
+      font-size: 48px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    position: relative;
+    display: inline-block;
+    transition: all 0.25s;
+    color: #353535;
+    }
+    & h5{
+        color:#f2e8cf
+    }
     & button {
       -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
@@ -101,6 +117,8 @@ const Gm = () => {
                             </Jump>
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto?</h3>
                             <CountDown timeTillDate="12 07 2020, 6:00 am" timeFormat="MM DD YYYY, h:mm a"/>
+                            <div><span className={"icon"}><i className="fab fa-youtube"></i></span></div>
+                            {/*<h5>Event teaser</h5>*/}
                             <button  className="btn btn-default">Join us</button>
                         </div>
                     </div>
