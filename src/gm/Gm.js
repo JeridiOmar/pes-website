@@ -6,7 +6,13 @@ import banner from "../pictures/gm/banner.webp";
 import banner2 from "../pictures/gm/banner5.webp"
 import Jump from "react-reveal/Jump";
 import CountDown from "./CountDown"
-
+import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import WorkIcon from '@material-ui/icons/Work';
+import SchoolIcon from '@material-ui/icons/School';
+import StarIcon from '@material-ui/icons/Star';
+import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
+import MusicNoteIcon from '@material-ui/icons/MusicNote';
 /** @jsx jsx */
 const Gm = () => {
     const bannerStyle = css`
@@ -105,25 +111,180 @@ const Gm = () => {
         
     }
   `;
-    return (
-        <div css={bannerStyle}>
+    const titleStyle = css`
+    //text-decoration:  underline overline;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #212529;
+    &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 1px;
+    background: white;
+    bottom: 1%;
+    //bottom: 90px;
+    left: calc(50% - 125px);
+}
 
-            <div css={headerStyle}>
+&::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #2e911f;
+   bottom:0%;
+    left: calc(50% - 20px);
+}
+
+
+     `;
+    return (
+        <div>
+            <div css={bannerStyle}>
+
+                <div css={headerStyle}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 text-center">
+                                <Jump forever duration={1500}>
+                                    <h1>PES Tunisia General Meeting</h1>
+                                </Jump>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto?</h3>
+                                <CountDown timeTillDate="12 07 2020, 6:00 am" timeFormat="MM DD YYYY, h:mm a"/>
+                                <div><span className={"icon"}><i className="fab fa-youtube"></i></span></div>
+                                {/*<h5>Event teaser</h5>*/}
+                                <button className="btn btn-default">Join us</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div style={{'background-color': '#e3e3e3'}}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 text-center">
-                            <Jump forever duration={1500}>
-                                <h1>PES Tunisia General Meeting</h1>
-                            </Jump>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto?</h3>
-                            <CountDown timeTillDate="12 07 2020, 6:00 am" timeFormat="MM DD YYYY, h:mm a"/>
-                            <div><span className={"icon"}><i className="fab fa-youtube"></i></span></div>
-                            {/*<h5>Event teaser</h5>*/}
-                            <button  className="btn btn-default">Join us</button>
+                        <div className="col-12">
+                            <div className="text-center">
+                                {/*<img src={logo} alt="" width={"120px"} height={"60px"} className={"facts-logo text-center"}/>*/}
+                                <h3 className="text-center  section-title" css={titleStyle}><span
+                                    style={{color: "#2e911f"}}>Event</span> program</h3>
+                            </div>
+                            <VerticalTimeline>
+                                <VerticalTimelineElement
+                                    className="vertical-timeline-element--work"
+                                    // contentStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
+                                    // contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
+                                    date="14h - 14h30"
+                                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
+                                    icon={<FreeBreakfastIcon/>}
+                                >
+                                    <h3 className="vertical-timeline-element-title">Opening Ceremony </h3>
+                                    <h4 className="vertical-timeline-element-subtitle">(announcement of
+                                        competition)</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, fuga?
+                                    </p>
+                                </VerticalTimelineElement>
+                                <VerticalTimelineElement
+                                    className="vertical-timeline-element--work"
+                                    date="14h30 - 16h 00"
+                                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
+                                    icon={<WorkIcon/>}
+                                >
+                                    <h3 className="vertical-timeline-element-title">Conference 1</h3>
+                                    <h4 className="vertical-timeline-element-subtitle">Energy transition in Tunisia,
+                                        Social
+                                        Dimensions of energy transition and Contribution
+                                        of IEEE PES in promoting Energy Transition</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse et magnam
+                                        natus placeat? Ad aliquid amet asperiores assumenda consequuntur cupiditate
+                                        dolores esse eum, exercitationem hic id ipsum labore maiores modi officiis
+                                        perferendis perspiciatis qui quia quidem quo veritatis vero vitae voluptatem?
+                                        Accusamus aliquid earum error eveniet nihil ullam veniam?
+                                    </p>
+                                </VerticalTimelineElement>
+                                <VerticalTimelineElement
+                                    className="vertical-timeline-element--work"
+                                    date="16h 00 - 16h15 "
+                                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
+                                    icon={<MusicNoteIcon/>}
+                                >
+                                    <h3 className="vertical-timeline-element-title">Musical Break</h3>
+                                    <h4 className="vertical-timeline-element-subtitle">Lorem ipsum dolor.</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque eum
+                                        fugiat impedit sapiente tempore tenetur voluptatum! Dolore, ipsum, sed!
+                                    </p>
+                                </VerticalTimelineElement>
+                                <VerticalTimelineElement
+                                    className="vertical-timeline-element--work"
+                                    date="2008 - 2010"
+                                    iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
+                                    icon={<WorkIcon/>}
+                                >
+                                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
+                                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                                    <p>
+                                        User Experience, Visual Design
+                                    </p>
+                                </VerticalTimelineElement>
+
+                                <VerticalTimelineElement
+                                    className="vertical-timeline-element--education"
+                                    date="April 2013"
+                                    iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
+                                    icon={<SchoolIcon/>}
+                                >
+                                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile
+                                        and Social
+                                        Media</h3>
+                                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+                                    <p>
+                                        Strategy, Social Media
+                                    </p>
+                                </VerticalTimelineElement>
+                                <VerticalTimelineElement
+                                    className="vertical-timeline-element--education"
+                                    date="November 2012"
+                                    iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
+                                    icon={<SchoolIcon/>}
+                                >
+                                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
+                                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+                                    <p>
+                                        Creative Direction, User Experience, Visual Design
+                                    </p>
+                                </VerticalTimelineElement>
+                                <VerticalTimelineElement
+                                    className="vertical-timeline-element--education"
+                                    date="2002 - 2006"
+                                    iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
+                                    icon={<SchoolIcon/>}
+                                >
+                                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive
+                                        Digital Media
+                                        Visual Imaging</h3>
+                                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+                                    <p>
+                                        Creative Direction, Visual Design
+                                    </p>
+                                </VerticalTimelineElement>
+                                <VerticalTimelineElement
+                                    iconStyle={{background: 'rgb(16, 204, 82)', color: '#fff'}}
+                                    icon={<StarIcon/>}
+                                />
+                            </VerticalTimeline>
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
