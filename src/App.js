@@ -1,7 +1,7 @@
 import React, {Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import {Main, Router} from "@reach/router";
-import Navbar from "./Navbar";
+import NavbarPES from "./NavbarPES";
 import Footer from "./Footer";
 import Home from "./Home"
 import AboutUs from "./about-us/AboutUs";
@@ -13,6 +13,7 @@ import Galery from "./our-comunity/Galery";
 import Mom from "./our-comunity/Mom";
 import Awards from "./awards/Awards";
 import Loading from "./Loading";
+import Gm from "./gm/Gm";
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -25,7 +26,7 @@ const App = () => {
         // <>
         //     {loading === false ? (
                 <div>
-                    <Navbar/>
+                    <NavbarPES/>
                     <Suspense fallback={Loading}>
                         <Router>
                             <Home path={"/"}/>
@@ -33,6 +34,7 @@ const App = () => {
                             <Activities path={"/activities"}/>
                             <OurCommunity path={"/community/*"}/>
                             <Awards path={"/awards/"}/>
+                            <Gm path={"/gm"}/>
                             <Loading path={"/loading"}/>
 
                         </Router>

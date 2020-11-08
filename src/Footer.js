@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./pictures/logo-white.png";
-
+import './styles/bootstrap.min.css'
 import {css, jsx} from "@emotion/core";
 
 /** @jsx jsx */

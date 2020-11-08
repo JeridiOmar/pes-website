@@ -10,7 +10,7 @@ import Carousel from "react-multi-carousel";
 import awarding from '../pictures/awards/award.jpg'
 
 import About from "../About";
-
+import '../styles/bootstrap.min.css'
 /** @jsx jsx */
 const Awards = () => {
     const bannerStyle = css`

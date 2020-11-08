@@ -51,11 +51,11 @@ const Facts = () => {
                 </div>
                 <TrackVisibility className="row facts-content" partialVisibility>
 
-                    <FactElemnt title={'Members'} number={500} icon={students} left={true}/>
+                    <FactElemnt title={'Members'} number={150} icon={students} left={true}/>
 
-                    <FactElemnt title={'Award'} number={30} icon={medal} top={true}/>
-                    <FactElemnt title={'Event'} number={30} icon={training} bottom={true}/>
-                    <FactElemnt title={'Years old'} number={7} icon={counter} right={true}/>
+                    <FactElemnt title={'Award'} number={6} icon={medal} top={true}/>
+                    <FactElemnt title={'Event'} number={34} icon={training} bottom={true}/>
+                    <FactElemnt title={'Years old'} number={4} icon={counter} right={true}/>
                 </TrackVisibility>
             </div>
 

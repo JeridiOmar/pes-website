@@ -10,7 +10,7 @@ import Galery from "./Galery";
 import Mom from './Mom'
 import {Link, Router} from "@reach/router";
 import About from "../About";
-
+import '../styles/bootstrap.min.css'
 /** @jsx jsx */
 const OurCommunity = () => {
     const [momVisible, setmomVisible] = useState('initial');

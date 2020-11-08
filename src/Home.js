@@ -9,7 +9,7 @@ import renewable from './pictures/about-us/save-energy.png';
 import solar from './pictures/about-us/wind-energy.png';
 import creativity from './pictures/about-us/creativity.png'
 import {css, jsx} from '@emotion/core';
-
+import './styles/bootstrap.min.css'
 import {Router} from "@reach/router";
 
 /** @jsx jsx */

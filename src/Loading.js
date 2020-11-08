@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {css, jsx} from "@emotion/core";
 
-
+import './styles/bootstrap.min.css'
 /** @jsx jsx */
 const Loading = () => {
     const loadingStyle = css`

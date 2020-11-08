@@ -17,7 +17,7 @@ import Activity from "../Activity";
 import CarouselItem from "./CarouselItem";
 import BigArticle from "./BigArticle";
 import SmallArticle from "./SmallArticle";
-
+import '../styles/bootstrap.min.css'
 /** @jsx jsx */
 const Activities = () => {
     const bannerStyle = css`

@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 import plan from '../pictures/about-us/plan.png'
 import mission from '../pictures/about-us/mission.png'
 import InfoBox from "./InfoBox";
-
+import '../styles/bootstrap.min.css'
 /** @jsx jsx */
 const AboutUs = () => {
     return (
