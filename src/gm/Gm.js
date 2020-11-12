@@ -2,8 +2,8 @@ import React, {Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import {Main, Router} from "@reach/router";
 import {css, jsx} from '@emotion/core'
-import banner from "../pictures/gm/banner.webp";
-import banner2 from "../pictures/gm/banner5.webp"
+
+import banner2 from "../pictures/gm/banner1.webp"
 import Jump from "react-reveal/Jump";
 import CountDown from "./CountDown"
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
@@ -13,12 +13,14 @@ import SchoolIcon from '@material-ui/icons/School';
 import StarIcon from '@material-ui/icons/Star';
 import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
+import about from '../pictures/gm/about.webp'
+
 /** @jsx jsx */
 const Gm = () => {
     const bannerStyle = css`
     &{
        background-image: url(${banner2});
-      
+        position: relative;
         height: 100vh;
         background-attachment: fixed;
         background-size:cover;
@@ -27,6 +29,14 @@ const Gm = () => {
         align-items: center;
         justify-content: space-around; 
         //clip-path: polygon(0 0, 100% 0, 100% 88%, 57% 100%, 0 86%);
+  }
+  & .overlay{
+    background: rgba(4,9,30,0.85);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
   @media(max-width: 750px){
     &{
@@ -41,7 +51,8 @@ const Gm = () => {
      
      //font-size: 100px;
     font-family: 'Cabin', sans-serif;
-    margin: 10px 0;
+    // margin-top:90px;
+    margin-top: 90px;
     /*background:linear-gradient(94deg, rgba(83,141,34,1) 0%, rgba(94,142,86,0.0984768907563025) 88%, rgba(214,214,214,1) 99%);*/
     /*-webkit-background-clip: text;*/
     /*-webkit-text-fill-color: transparent;*/
@@ -61,7 +72,7 @@ const Gm = () => {
         letter-spacing: 1px;
         word-spacing: 2px;
     }
-    }
+    
     & button {
     margin-top: 50px;
       padding: 10px 35px;
@@ -108,7 +119,12 @@ const Gm = () => {
     @media(max-width: 750px){
        & h1{ 
         margin-top:60px;
+        font-size: 25px;
         
+    }
+    & h3{
+      font-size: 18px;
+    }
     }
   `;
     const titleStyle = css`
@@ -144,10 +160,78 @@ const Gm = () => {
 
 
      `;
+    const aboutStyle = css`
+    & h2{
+        display: inline-block;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase!important;
+        color: #000;
+        margin-top: 30px;
+        
+    }
+    & p{
+        color: #777;
+        font-family: "Poppins",sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    & img{
+      object-fit: cover;
+      height: 330px;
+    }
+    @media(max-width: 760px){
+    & h2{
+      font-size: 2.5rem
+    }
+    }
+    // @media(max-width: 700px){
+    //  & img{
+    //    width: 100%;
+    // }
+    //}
+  `;
+    const programStyle = css`
+  & {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 150px;
+        background-image: url("https://preview.colorlib.com/theme/confe/images/img_2.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        //margin-bottom: 10%;
+    
+    }
+    &{
+      position: relative;
+    }
+    & .overlay{
+    background: rgba(4,9,30,0.85);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+    & h3 {
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    animation-delay: .6s;
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Rubik', sans-serif;
+    z-index: 5;
+}
+  `;
     return (
         <div>
             <div css={bannerStyle}>
-
+                <div className="overlay"></div>
                 <div css={headerStyle}>
                     <div className="container">
                         <div className="row">
@@ -168,14 +252,56 @@ const Gm = () => {
 
             </div>
             <div style={{'background-color': '#e3e3e3'}}>
+                <div className="container " css={aboutStyle}>
+                    <div className="row  ">
+                        <div className="col-12 col-md-7 mx-auto text-left ">
+                            <h2 className="mb-5">
+                                About the conference
+                            </h2>
+                        </div>
+
+                        {/*<div className="col-12 col-md-4  ">*/}
+                        {/*    <img className={"w-100 "}*/}
+                        {/*         src={about} alt=""/>*/}
+                        {/*</div>*/}
+                    </div>
+                    <div className="row justify-content-center">
+                        <div className="col-md-7 col-8 ">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic nam sequi sit
+                                ut!
+                                Aut commodi distinctio facere ipsum molestiae mollitia repellendus sit velit
+                                voluptas.
+                                Cumque ipsa laborum porro! Alias commodi cum dolores eos facere facilis ipsam
+                                laboriosam
+                                laborum laudantium magni, molestias nemo odit pariatur sunt ut voluptates
+                                voluptatibus
+                                voluptatum?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit non optio
+                                repellat vitae. Commodi illo itaque nulla quasi quidem soluta sunt temporibus
+                                tenetur
+                                ullam veritatis! Aliquid commodi odio officiis quaerat quod totam vel voluptate!
+                                Deleniti eaque ipsa maiores, nam necessitatibus pariatur quae quaerat quibusdam?
+                                Eveniet
+                                exercitationem id maiores minima?
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div css={programStyle}>
+                    <div className="overlay"></div>
+                    <h3 className="text-center">Our program</h3>
+                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="text-center">
-                                {/*<img src={logo} alt="" width={"120px"} height={"60px"} className={"facts-logo text-center"}/>*/}
-                                <h3 className="text-center  section-title" css={titleStyle}><span
-                                    style={{color: "#2e911f"}}>Event</span> program</h3>
-                            </div>
+                            {/*<div className="text-center">*/}
+                            {/*    /!*<img src={logo} alt="" width={"120px"} height={"60px"} className={"facts-logo text-center"}/>*!/*/}
+                            {/*    <h3 className="text-center  section-title" css={titleStyle}><span*/}
+                            {/*        style={{color: "#2e911f"}}>Event</span> program</h3>*/}
+                            {/*</div>*/}
                             <VerticalTimeline>
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element--work"
