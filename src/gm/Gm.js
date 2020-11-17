@@ -2,7 +2,7 @@ import React, {Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import {Main, Router} from "@reach/router";
 import {css, jsx} from '@emotion/core'
-import { Fade } from "react-awesome-reveal";
+import Fade from 'react-reveal/Fade';
 import banner2 from "../pictures/gm/banner1.webp"
 import Jump from "react-reveal/Jump";
 import CountDown from "./CountDown"
@@ -250,8 +250,12 @@ const Gm = () => {
                                 <Jump forever duration={1500}>
                                     <h1>PES Tunisia General Meeting</h1>
                                 </Jump>
-                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto?</h3>
-                                <CountDown timeTillDate="12 07 2020, 6:00 am" timeFormat="MM DD YYYY, h:mm a"/>
+                                <Fade bottom>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iusto?</h3>
+                                </Fade>
+                                <Fade bottom>
+                                    <CountDown timeTillDate="12 07 2020, 6:00 am" timeFormat="MM DD YYYY, h:mm a"/>
+                                </Fade>
                                 <div><span className={"icon"}><i className="fab fa-youtube"></i></span></div>
                                 {/*<h5>Event teaser</h5>*/}
                                 <button className="btn btn-default">Join us</button>
@@ -266,11 +270,11 @@ const Gm = () => {
                 <div className="container " css={aboutStyle}>
                     <div className="row  ">
                         <div className="col-12 col-md-7 mx-auto text-left ">
-
+                            <Fade bottom>
                                 <h2 className="mb-5">
                                     About the conference
                                 </h2>
-
+                            </Fade>
                         </div>
 
                         {/*<div className="col-12 col-md-4  ">*/}
@@ -280,7 +284,7 @@ const Gm = () => {
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-md-7 col-8 ">
-
+                            <Fade bottom>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic nam sequi sit
                                     ut!
@@ -299,7 +303,7 @@ const Gm = () => {
                                     Eveniet
                                     exercitationem id maiores minima?
                                 </p>
-
+                            </Fade>
                         </div>
 
                     </div>
@@ -433,7 +437,7 @@ const Gm = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                           <ConferencesCarousel/>
+                            <ConferencesCarousel/>
                         </div>
                     </div>
                 </div>
