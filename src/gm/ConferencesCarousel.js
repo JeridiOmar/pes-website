@@ -46,6 +46,7 @@ const ConferencesCarousel=()=>{
                   draggable={true} responsive={responsive} infinite
                   itemClass="carousel-item-padding-40-px"
                   css={carouselStyle}
+                  removeArrowOnDeviceType={["tablet", "mobile"]}
         >
             <ConfCard/>
             <ConfCard/>
