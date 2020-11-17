@@ -2,7 +2,7 @@ import React, {Suspense, useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import {Main, Router} from "@reach/router";
 import {css, jsx} from '@emotion/core'
-
+import { Fade } from "react-awesome-reveal";
 import banner2 from "../pictures/gm/banner1.webp"
 import Jump from "react-reveal/Jump";
 import CountDown from "./CountDown"
@@ -14,6 +14,9 @@ import StarIcon from '@material-ui/icons/Star';
 import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import about from '../pictures/gm/about.webp'
+
+
+import ConferencesCarousel from "./ConferencesCarousel";
 
 /** @jsx jsx */
 const Gm = () => {
@@ -227,9 +230,17 @@ const Gm = () => {
     font-family: 'Rubik', sans-serif;
     z-index: 5;
 }
+@media(max-width: 760px){
+  & h3{
+    font-size: 40px;
+  }
+}
   `;
+
+
     return (
         <div>
+
             <div css={bannerStyle}>
                 <div className="overlay"></div>
                 <div css={headerStyle}>
@@ -255,9 +266,11 @@ const Gm = () => {
                 <div className="container " css={aboutStyle}>
                     <div className="row  ">
                         <div className="col-12 col-md-7 mx-auto text-left ">
-                            <h2 className="mb-5">
-                                About the conference
-                            </h2>
+
+                                <h2 className="mb-5">
+                                    About the conference
+                                </h2>
+
                         </div>
 
                         {/*<div className="col-12 col-md-4  ">*/}
@@ -267,24 +280,25 @@ const Gm = () => {
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-md-7 col-8 ">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic nam sequi sit
-                                ut!
-                                Aut commodi distinctio facere ipsum molestiae mollitia repellendus sit velit
-                                voluptas.
-                                Cumque ipsa laborum porro! Alias commodi cum dolores eos facere facilis ipsam
-                                laboriosam
-                                laborum laudantium magni, molestias nemo odit pariatur sunt ut voluptates
-                                voluptatibus
-                                voluptatum?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit non optio
-                                repellat vitae. Commodi illo itaque nulla quasi quidem soluta sunt temporibus
-                                tenetur
-                                ullam veritatis! Aliquid commodi odio officiis quaerat quod totam vel voluptate!
-                                Deleniti eaque ipsa maiores, nam necessitatibus pariatur quae quaerat quibusdam?
-                                Eveniet
-                                exercitationem id maiores minima?
-                            </p>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic nam sequi sit
+                                    ut!
+                                    Aut commodi distinctio facere ipsum molestiae mollitia repellendus sit velit
+                                    voluptas.
+                                    Cumque ipsa laborum porro! Alias commodi cum dolores eos facere facilis ipsam
+                                    laboriosam
+                                    laborum laudantium magni, molestias nemo odit pariatur sunt ut voluptates
+                                    voluptatibus
+                                    voluptatum?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit non optio
+                                    repellat vitae. Commodi illo itaque nulla quasi quidem soluta sunt temporibus
+                                    tenetur
+                                    ullam veritatis! Aliquid commodi odio officiis quaerat quod totam vel voluptate!
+                                    Deleniti eaque ipsa maiores, nam necessitatibus pariatur quae quaerat quibusdam?
+                                    Eveniet
+                                    exercitationem id maiores minima?
+                                </p>
 
                         </div>
 
@@ -408,6 +422,18 @@ const Gm = () => {
                                     icon={<StarIcon/>}
                                 />
                             </VerticalTimeline>
+
+                        </div>
+                    </div>
+                </div>
+                <div css={programStyle}>
+                    <div className="overlay"></div>
+                    <h3 className="text-center">Our conferences and trainers</h3>
+                </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                           <ConferencesCarousel/>
                         </div>
                     </div>
                 </div>

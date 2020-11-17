@@ -27,8 +27,9 @@ const App = () => {
         //     {loading === false ? (
                 <div>
                     <NavbarPES/>
-                    <Suspense fallback={Loading}>
+                    {/*<Suspense fallback={Loading}>*/}
                         <Router>
+
                             <Home path={"/"}/>
                             <AboutUs path={"/about"}/>
                             <Activities path={"/activities"}/>
@@ -38,7 +39,7 @@ const App = () => {
                             <Loading path={"/loading"}/>
 
                         </Router>
-                    </Suspense>
+                    {/*</Suspense>*/}
                     <Footer/>
                 </div>
         //     ) : (
