@@ -21,6 +21,9 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 420,
+        [theme.breakpoints.down('sm')]: {
+            maxWidth: 250,
+        }
     },
     media: {
         height: 0,
