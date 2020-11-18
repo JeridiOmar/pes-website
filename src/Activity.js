@@ -3,6 +3,7 @@ import {css, jsx} from "@emotion/core";
 
 import {Modal} from 'react-bootstrap';
 import Button from "react-bootstrap/Button";
+import logoWhite from "./pictures/logo-white.png";
 
 /** @jsx jsx */
 const Activity = ({title, description, picture}) => {
@@ -23,13 +24,16 @@ const Activity = ({title, description, picture}) => {
           
 }
   `;
+    const [time, setTime] = useState(0);
     useEffect(() => {
-            // const writed = new Date(2020,10,23);
-            // const today = new Date();
-            // var time = today.getTime() - writed.getTime();
+            const writed = new Date("10/23/2020");
+            const today = new Date();
+            var timeD = today.getTime() - writed.getTime();
             // console.log(today);
-            // time=time/( (1000 * 3600 * 24));
+            // console.log(writed);
+            timeD=timeD/( (1000 * 3600 * 24));
             // console.log(time);
+            setTime(Math.round(timeD));
         }
         , []);
     const [show, setShow] = useState(false);
@@ -56,8 +60,8 @@ const Activity = ({title, description, picture}) => {
                         rel="author">Kmar</a></span>
                         <span className="date">October 24, 2020</span>
                         <span className="min-read"><span className="span-reading-time rt-reading-time"><span
-                            className="rt-label"></span> <span className="rt-time"> 3</span> <span
-                            className="rt-label rt-postfix"></span></span>min</span>
+                            className="rt-label"></span> <span className="rt-time"> {time}</span> <span
+                            className="rt-label rt-postfix"></span></span>days</span>
 
                     </p>
                     <button className="btn btn-primary" onClick={handleShow}>Read more</button>
