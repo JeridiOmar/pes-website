@@ -15,6 +15,7 @@ const AboutUs = () => {
 
         <div>
             <div className="banner">
+                <div className="overlay"></div>
                 <div className="header-text">
                     <Jump forever duration={1500}>
                         <h1>About</h1>

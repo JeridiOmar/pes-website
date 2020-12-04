@@ -110,6 +110,7 @@ const OurCommunity = () => {
     return (
         <div>
             <div css={bannerStyle} className={'comm-banner'}>
+                <div className="overlay"></div>
                 <Jump forever duration={1500}>
                     <div css={headerStyle}>
                         <h1 style={{textAlign: "center"}}>Our</h1><h1> Community</h1>

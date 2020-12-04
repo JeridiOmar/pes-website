@@ -166,6 +166,7 @@ const Activities = () => {
     return (
         <div>
             <div css={bannerStyle}>
+                <div className="overlay"></div>
                 <Jump forever duration={1500}>
                     <div css={headerStyle}>
                         <h1>Activities</h1>
@@ -208,9 +209,9 @@ const Activities = () => {
                 <div className={'events'} css={upcommingStyle}>
                     <div className="container">
                         <div className="row ">
-                            <h2>upcomming events</h2>
+                            <h2>upcoming events</h2>
                             <div className="row upcomming">
-                                <Activity picture={pam} title={'PES anunual meeting'}
+                                <Activity picture={pam} title={'IEEE PES general  meeting'}
                                           description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +
                                           'experience, PES chapter presents to you the PES General Meeting Congress where you\'ll be introduced to this\n' +
                                           'new domain and how it is making a progressive impact on the world.\n' +
@@ -238,7 +239,7 @@ const Activities = () => {
                                           'believe that young people will make this world better.'}/>
 
                             </div>
-                            <h2>Latest ativities</h2>
+                            <h2>Latest activities</h2>
                             <div className="row latest">
                                 <div className="col-12 col-md-6">
 

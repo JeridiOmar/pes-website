@@ -10,7 +10,9 @@ html, body {
     transition: all 0.4s !important;
     -webkit-transition: all 0.4s !important;
 }
-
+.toggledClick{
+    background-color: rgba(4, 9, 30, 0.85);
+}
 .scrolled {
     padding: 0 !important;
     padding-left: 8px !important;
@@ -532,3 +534,11 @@ footer p {
     }
 }
 
+.overlay{
+    background: rgb(4 9 30 / 79%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

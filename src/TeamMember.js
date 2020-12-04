@@ -39,7 +39,7 @@ const TeamMember = ({memberPic, memberName, memberPoste, animation,text,fb,li}) 
     width: 160px;
     height: 1px;
     background: #ddd;
-    top: 94%;
+    top: 97%;
     //bottom: 90px;
     left: calc(50% - 77px);
 }
@@ -51,7 +51,7 @@ const TeamMember = ({memberPic, memberName, memberPoste, animation,text,fb,li}) 
     width: 40px;
     height: 3px;
     background: #2e911f;
-   
+    top: 97%;
     left: calc(50% - 20px);
 }
 

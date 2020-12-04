@@ -6,11 +6,27 @@ import {Link} from "@reach/router"
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 
 /** @jsx jsx */
 const NavbarPES = () => {
     const [navState, setNavState] = useState('notScrolled');
+    const [toglleState, setToglleState] = useState('notToggledClick');
+    const [clickCounter, setClickCounter] = useState(0);
+    const toggleClick = () => {
+        if (screen.width < 992) {
+            setClickCounter(clickCounter + 1);
+        }
+
+    };
+    useEffect(() => {
+        if (clickCounter % 2 === 1 && navState === "notScrolled") {
+            setToglleState("toggledClick");
+
+        } else if (clickCounter % 2 === 0) {
+            setToglleState("notToggledClick");
+        }
+    }, [clickCounter]);
     const [logo, setlogo] = useState(logoWhite);
     const menuIcon = css`margin-right: 4px`;
     const navStyle = css`
@@ -75,11 +91,11 @@ const NavbarPES = () => {
         //         </div>
         //     </div>
         // </nav>
-        <Navbar collapseOnSelect={true} expand="lg"  fixed="top" className={` pes-nav  ${navState}`}>
+        <Navbar collapseOnSelect={true} expand="lg" fixed="top" className={` pes-nav  ${navState}  ${toglleState}`}>
             <Container>
                 <Navbar.Brand href="#home"><img className={'p-0'} src={logo} alt="logo" width={'120'} height={'60'}
                                                 css={css`object-fit: cover;`}/></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <Navbar.Toggle onClick={toggleClick} aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" css={css`
                           & a{
@@ -88,16 +104,21 @@ const NavbarPES = () => {
                           color:black !important;
                           }
                           `}>
-                        <Nav.Link  eventKey="1"><Link className="nav-link pr-1"  to={"/"}><i className="fas fa-home"
-                                                                              css={menuIcon}></i>Home</Link></Nav.Link>
-                        <Nav.Link  eventKey="2"> <Link className="nav-link pr-1" to={'/about'}><i className="far fa-address-card"
-                                                                                    css={menuIcon}></i>About
+                        <Nav.Link onClick={toggleClick} eventKey="1"><Link className="nav-link pr-1" to={"/"}><i
+                            className="fas fa-home"
+                            css={menuIcon}></i>Home</Link></Nav.Link>
+                        <Nav.Link onClick={toggleClick} eventKey="2"> <Link className="nav-link pr-1" to={'/about'}><i
+                            className="far fa-address-card"
+                            css={menuIcon}></i>About
                             us</Link></Nav.Link>
-                        <Nav.Link  eventKey="3"> <Link className="nav-link pr-1" to={'/activities'}><i className="far fa-newspaper"
-                                                                                         css={menuIcon}></i>Activities</Link></Nav.Link>
-                        <Nav.Link  eventKey="4"><Link className="nav-link pr-1" to={'/awards'}><i className="fas fa-award"
-                                                                                    css={menuIcon}></i>Awards</Link></Nav.Link>
-                        <Nav.Link  eventKey="5"><Link className="nav-link pr-1 comm-link" to={'/community/memberofthemonth'}><i
+                        <Nav.Link onClick={toggleClick} eventKey="3"> <Link className="nav-link pr-1"
+                                                                            to={'/activities'}><i
+                            className="far fa-newspaper"
+                            css={menuIcon}></i>Activities</Link></Nav.Link>
+                        {/*<Nav.Link  eventKey="4"><Link className="nav-link pr-1" to={'/awards'}><i className="fas fa-award"*/}
+                        {/*                                                            css={menuIcon}></i>Awards</Link></Nav.Link>*/}
+                        <Nav.Link onClick={toggleClick} eventKey="5"><Link className="nav-link pr-1 comm-link"
+                                                                           to={'/community/memberofthemonth'}><i
                             className=" fas fa-user-friends" css={menuIcon}></i>Our community</Link></Nav.Link>
 
                     </Nav>
