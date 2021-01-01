@@ -58,7 +58,7 @@ const BigArticle = ({title, picture, text}) => {
                          className="useravatar avatar-20 photo rounded-circle"
                          height="20"
                          width="20"/> <span className="author"><a
-                    href="https://litmotion.net/demo/neori/author/admin/"
+                    href="#"
                     title="Posts by Lora"
                     rel="author">Kmar</a></span>
                     <span className="date">October 24, 2020</span>

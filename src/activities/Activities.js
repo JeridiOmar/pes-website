@@ -13,11 +13,16 @@ import rflc from '../pictures/activities/rftlc.webp'
 import sc2 from '../pictures/activities/sc2.webp'
 import sc3 from '../pictures/activities/sc3.webp'
 import wip from '../pictures/activities/wip.webp'
+import gm from "../pictures/activities/gm.webp"
+import recycle from "../pictures/activities/recycle.webp"
+import qhse from "../pictures/activities/qhse.webp"
 import Activity from "../Activity";
 import CarouselItem from "./CarouselItem";
 import BigArticle from "./BigArticle";
 import SmallArticle from "./SmallArticle";
 import '../styles/bootstrap.min.css'
+import ActivityLatest from "./ActivityLatest";
+
 /** @jsx jsx */
 const Activities = () => {
     const bannerStyle = css`
@@ -163,6 +168,167 @@ const Activities = () => {
     }
    }
 `;
+    const latest = [
+        {
+            title: "IEEE PES Tunisia General Meeting",
+            picture: gm,
+            description: "IEEE PES Tunisia General Meeting is an annual national scale congress where IEEE members and volunteers get to meet up and further nurture their knowledge in the power and energy field. In it’s second edition, IEEE PES INSAT Student Branch Chapter got the honor to organize it. Following the chosen theme: “Energy Transition”, multiple conferences and diverse workshops, ranging from soft skills to technical skills, took place. Towards the end of the event, a 24h challenge took place following the theme of the event."
+        },
+        {
+            title:"Workshop: Introduction to QHSE",
+            picture:qhse,
+            description:"This workshop was presented by Ms. Rihab\n" +
+                "a university teacher and a trainer and expert in QHSE. As one of the most\n" +
+                "prominent management systems, QHSE or quality, health, security and\n" +
+                "environmental management is a mandatory tool that most engineers must\n" +
+                "possess.\n" +
+                "ACTIVITY REPORT:\n" +
+                "“Introduction to QHSE” workshop\n" +
+                "\n" +
+                "November the 24\n" +
+                "th, 2020\n" +
+                "\n" +
+                "participants\n" +
+                "\n" +
+                "This workshop was presented by Ms. Rihab Righi, a lead auditor IRCA ISO 9001,\n" +
+                "a university teacher and a trainer and expert in QHSE. As one of the most\n" +
+                "prominent management systems, QHSE or quality, health, security and\n" +
+                "environmental management is a mandatory tool that most engineers must\n" +
+                "\n" +
+                "QHSE stands for Quality, Health, Security and Environment. As the name\n" +
+                "indicates, a QHSE Management System aims to achieve optimal results in these\n" +
+                "criteria. It is a tool to direct, manage and develop an organization. The goal of a\n" +
+                "QHSE Management System is to make sure that an organization complies with\n" +
+                "regulations and legislation in the aforementioned fields.\n" +
+                "\n" +
+                "The trainer delved deep into QHSE by explaining all four of Quality, Health,\n" +
+                "Security and Environment norms. She then proceeded to enumerate the\n" +
+                "different benefits it has and their impact on the different impact on the\n" +
+                "organization following this tool’s guidelines. She also mentioned the different\n" +
+                "standards making an organization more trustworthy and less prone to legal\n" +
+                "issues.\n" +
+                "\n" +
+                "The trainees appreciated the work of Ms. Rihab Righi, which made them more\n" +
+                "interested in pursuing more knowledge in this subject."
+        },
+        {
+            title: "Workshop: how recycling saves energy",
+            picture: recycle,
+            description: "This workshop was presented by Mr. Anis Guerfi, an engineer and an expert in\n" +
+                "plastics. The trainer guided the participants through the basics of recycling and\n" +
+                "explained why it is important to do.\n" +
+                "\n" +
+                "Wasted material and energy sources are some of our world’s biggest problems.\n" +
+                "To begin with, the waste’s amount is increasing in a way that wastelands are\n" +
+                "unable to contain and in a way that is intoxicating Earth. Then, we can’t deny\n" +
+                "the problem presented in the scarcity of energy and inability to produce more\n" +
+                "through fuel. That’s why recycling is important as it solves a percentage of\n" +
+                "these problems.\n" +
+                "\n" +
+                "First, Mr. Anis Guerfi explained the types of plastics, how to identu=ify them\n" +
+                "and their characteristics. He explained how some plastics can get recycled upto\n" +
+                "9 times while some can’t be recycled according to their type and how many\n" +
+                "times they’ve been recycled already. He also explained how recycling can be a\n" +
+                "source of energy as the materials you use are reused rather than consuming\n" +
+                "more polymeric material. Later on, our trainer emphasized the importance of\n" +
+                "our behavior in regards to our excessive use of plastics. He presented\n" +
+                "alternatives to using plastics such as using a fabric bag that you can use over\n" +
+                "and over again.\n" +
+                "\n" +
+                "The attendees were very pleased with this workshop as they showed great\n" +
+                "interest in the subject and had many questions to ask. Mr. Anis was very\n" +
+                "accommodating as he answered the questions in details and made sure\n" +
+                "everyone understood it clearly. The participants were very active, but two of\n" +
+                "them were very outstanding. That’s why they won a free pass to our next\n" +
+                "workshop."
+        },
+        {
+            title: "boost your career summer school 3.0",
+            picture: sc,
+            description: 'This workshop was presented by AI developer advocate and teacher, Mr. Elyes\n' +
+                'Manai. The trainer dived into the secrets of the professional world to prepare\n' +
+                'the attendees for the future of their career.\n' +
+                '\n' +
+                'Through his own experience, the trainer went through the fundamental\n' +
+                'knowledge that each and every aspiring beginner professional should have, the\n' +
+                'way one should act when faced with all kinds of situations and the mindset one\n' +
+                'must have.\n' +
+                '\n' +
+                'In more details, the trainer went over hardships anyone can encounter when\n' +
+                'climbing up the stairs to success. He explained that being dishonorable and\n' +
+                'using underhanded ways will only lead to a downfall. He went over the stories\n' +
+                'of people who managed to achieve the greatest success when it was expected\n' +
+                'that they fail. The trainer then went to explain the ways of the business world\n' +
+                'to get the attenddes ready to face the professional world.\n' +
+                '\n' +
+                'The feedback we got from attendees was stupefying. There were no complains\n' +
+                'whatsoever. As a matter of fact, it seemed that they enjoyed his company for\n' +
+                'the questions kept coming even after the workshop ended and Mr. Elyes Manai\n' +
+                'didn’t fail to answer the questions to their satisfaction. This was probably due\n' +
+                'to the trainer’s amazing ability to integrate people and his humor. Following\n' +
+                'this positive feedback, the chapter is considering asking Mr. Elyes to present\n' +
+                'again, as the number was small because of the precautions taken.'
+        },
+        {
+            title: "IEEE Summer school 3.0: Energy transition workshop",
+            picture: sc2,
+            description: 'This workshop was presented by Mr.\n' +
+                'Samer Zwaydeh, an independent\n' +
+                'internationally recognized energy expert\n' +
+                'and lecturer at Al Hussein Technical\n' +
+                'University with twenty-six years of\n' +
+                'management experience around the\n' +
+                'world. This certified carbon reduction\n' +
+                'manager introduced energy transition\n' +
+                'from its concept to its real life application.\n' +
+                '\n' +
+                'Energy transition is oriented towards the use of renewable energy in place of\n' +
+                'fossil energy to minimize the emission of dioxide carbon and hopefully\n' +
+                'eliminating it completely towards the end of the century. Energy transition\n' +
+                'aims to limit climate change through the disposal of carbon emitters.\n' +
+                '\n' +
+                'In more details, Mr. Samer Zwaydeh explained the methods used in providing\n' +
+                'renewable energy such as solar energy. The trainer went as far as to provide\n' +
+                'examples different examples of the application of energy transition in real life\n' +
+                'and in the current crisis the world is suffering from: corona.\n' +
+                '\n' +
+                'The workshop picked the attention of most of the attendees as the trainer\n' +
+                'introduced energy transition through the current situation by explaining this\n' +
+                'concept use. This workshop proved that energy transition is an important\n' +
+                'carbon-neutral strategy that we should aim to use in life.'
+        },
+        {
+            title: "Zero Hunger Day 2019",
+            picture: zhd,
+            description: 'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day\n' +
+                '(Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES\n' +
+                'WiP, IEEE and PES volunteers made food donation based on food donations\n' +
+                'campaigns with main focus on 17 UN Sustainable Development goals(2030).. For\n' +
+                'our chapter , we made a food donation campaign in our unit and we were glad to host\n' +
+                'our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the\n' +
+                'IEEE day and PES zero hunger day at the same Time . The meeting was not only about\n' +
+                'delivering the food donations that we collected but also it was a chance to exchange goals and\n' +
+                'values of both organizations. Everyone was really satisfied with this ZHD first edition so we\n' +
+                'promised more impactful editions in the future'
+        },
+        // {
+        //     title: "Summer School 2.0",
+        //     picture: sc3,
+        //     description: 'The IEEE NSAT SB found it a great idea to start this academic year with the\n' +
+        //         '2nd edition of Summer school .This very first event took place 6–8 September 2019\n' +
+        //         'in INSAT . It gathered more than one hundred students from different backgrounds\n' +
+        //         'and levels of studies , making it so far the largest summer school since its\n' +
+        //         'establishment in 2017. The purpose of the summer school was to provide the\n' +
+        //         'participating students with a large variety of workshops , conferences , and many\n' +
+        //         'other activities .It was also a great opportunity for the freshmen to discover the IEEE\n' +
+        //         'family and its activities and to get more familiar with INSAT’s corners and walls in an\n' +
+        //         'academic context .\n' +
+        //         'For the PES chapter , the summer school consisted of a workshop and a conference\n' +
+        //         'that were provided by 2 experts covering topics from Solar energy and electricity\n' +
+        //         'consumption and plastic and circular economy'
+        // },
+
+    ];
     return (
         <div>
             <div css={bannerStyle}>
@@ -211,16 +377,16 @@ const Activities = () => {
                         <div className="row ">
                             <h2>upcoming events</h2>
                             <div className="row upcomming">
-                                <Activity picture={pam} title={'IEEE PES general  meeting'}
-                                          description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +
-                                          'experience, PES chapter presents to you the PES General Meeting Congress where you\'ll be introduced to this\n' +
-                                          'new domain and how it is making a progressive impact on the world.\n' +
-                                          '\n' +
-                                          'Organized for its first time by the IEEE PES INSAT Student Branch Chapter, the meeting will take place in\n' +
-                                          'November themed ENERGY TRANSITION!\n' +
-                                          '\n' +
-                                          'The seminar will include workshops and a conference bringing together professionals, inspiring speakers and\n' +
-                                          'motivational trainers.'}/>
+                                {/*<Activity picture={pam} title={'IEEE PES tunisia general  meeting'}*/}
+                                {/*          description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +*/}
+                                {/*          'experience, PES chapter presents to you the PES General Meeting Congress where you\'ll be introduced to this\n' +*/}
+                                {/*          'new domain and how it is making a progressive impact on the world.\n' +*/}
+                                {/*          '\n' +*/}
+                                {/*          'Organized for its first time by the IEEE PES INSAT Student Branch Chapter, the meeting will take place in\n' +*/}
+                                {/*          'November themed ENERGY TRANSITION!\n' +*/}
+                                {/*          '\n' +*/}
+                                {/*          'The seminar will include workshops and a conference bringing together professionals, inspiring speakers and\n' +*/}
+                                {/*          'motivational trainers.'}/>*/}
                                 <Activity title={'Recycle for the life CYCLE'} picture={rflc}
                                           description={'In collaboration with “Emel Tounes“ association, we will be collecting plastic caps in a box that will be prepared by the PES chapter and\n' +
                                           'located in the club room to be accessible to anyone willing to help.\n' +
@@ -237,93 +403,147 @@ const Activities = () => {
                                           'From every school, we will have a winning team, we will give them an idea about a project that they should realize.\n' +
                                           'The final will be in INSAT, all the teams will pitch their fresh ideas and there will be awards to encourage and to show them that we do\n' +
                                           'believe that young people will make this world better.'}/>
+                                          <Activity title={"REC\'IT UP 3.0 "} picture={rip}
+                                                    description={"If you are an IEEE member and you want to prove your skills\n" +
+                                                    "THIS IS YOUR CHANCE TO SHINE!!   \n" +
+                                                    "Rec’it up ,a 24-hours challenge, will be organized by IEEE PES INSAT chapter in its third edition.  \n" +
+                                                    "The renewable energies challenge is an entrepreneurship challenge which will be open to all the IEEE members  from all student branches and non-members  in Tunisia.\n" +
+                                                    "Don't hesitate to be part of the organizing committee ! \n" +
+                                                    "Fill the form !"}/>
 
                             </div>
                             <h2>Latest activities</h2>
                             <div className="row latest">
                                 <div className="col-12 col-md-6">
-
-                                    <BigArticle title={"boost your career summer school 3.0"} picture={sc}
-                                                text={'This workshop was presented by AI developer advocate and teacher, Mr. Elyes\n' +
-                                                'Manai. The trainer dived into the secrets of the professional world to prepare\n' +
-                                                'the attendees for the future of their career.\n' +
-                                                '\n' +
-                                                'Through his own experience, the trainer went through the fundamental\n' +
-                                                'knowledge that each and every aspiring beginner professional should have, the\n' +
-                                                'way one should act when faced with all kinds of situations and the mindset one\n' +
-                                                'must have.\n' +
-                                                '\n' +
-                                                'In more details, the trainer went over hardships anyone can encounter when\n' +
-                                                'climbing up the stairs to success. He explained that being dishonorable and\n' +
-                                                'using underhanded ways will only lead to a downfall. He went over the stories\n' +
-                                                'of people who managed to achieve the greatest success when it was expected\n' +
-                                                'that they fail. The trainer then went to explain the ways of the business world\n' +
-                                                'to get the attenddes ready to face the professional world.\n' +
-                                                '\n' +
-                                                'The feedback we got from attendees was stupefying. There were no complains\n' +
-                                                'whatsoever. As a matter of fact, it seemed that they enjoyed his company for\n' +
-                                                'the questions kept coming even after the workshop ended and Mr. Elyes Manai\n' +
-                                                'didn’t fail to answer the questions to their satisfaction. This was probably due\n' +
-                                                'to the trainer’s amazing ability to integrate people and his humor. Following\n' +
-                                                'this positive feedback, the chapter is considering asking Mr. Elyes to present\n' +
-                                                'again, as the number was small because of the precautions taken.'}/>
+                                    <BigArticle title={latest[0].title} text={latest[0].description}
+                                                picture={latest[0].picture}/>
+                                    {/*<BigArticle title={"boost your career summer school 3.0"} picture={sc}*/}
+                                    {/*            text={'This workshop was presented by AI developer advocate and teacher, Mr. Elyes\n' +*/}
+                                    {/*            'Manai. The trainer dived into the secrets of the professional world to prepare\n' +*/}
+                                    {/*            'the attendees for the future of their career.\n' +*/}
+                                    {/*            '\n' +*/}
+                                    {/*            'Through his own experience, the trainer went through the fundamental\n' +*/}
+                                    {/*            'knowledge that each and every aspiring beginner professional should have, the\n' +*/}
+                                    {/*            'way one should act when faced with all kinds of situations and the mindset one\n' +*/}
+                                    {/*            'must have.\n' +*/}
+                                    {/*            '\n' +*/}
+                                    {/*            'In more details, the trainer went over hardships anyone can encounter when\n' +*/}
+                                    {/*            'climbing up the stairs to success. He explained that being dishonorable and\n' +*/}
+                                    {/*            'using underhanded ways will only lead to a downfall. He went over the stories\n' +*/}
+                                    {/*            'of people who managed to achieve the greatest success when it was expected\n' +*/}
+                                    {/*            'that they fail. The trainer then went to explain the ways of the business world\n' +*/}
+                                    {/*            'to get the attenddes ready to face the professional world.\n' +*/}
+                                    {/*            '\n' +*/}
+                                    {/*            'The feedback we got from attendees was stupefying. There were no complains\n' +*/}
+                                    {/*            'whatsoever. As a matter of fact, it seemed that they enjoyed his company for\n' +*/}
+                                    {/*            'the questions kept coming even after the workshop ended and Mr. Elyes Manai\n' +*/}
+                                    {/*            'didn’t fail to answer the questions to their satisfaction. This was probably due\n' +*/}
+                                    {/*            'to the trainer’s amazing ability to integrate people and his humor. Following\n' +*/}
+                                    {/*            'this positive feedback, the chapter is considering asking Mr. Elyes to present\n' +*/}
+                                    {/*            'again, as the number was small because of the precautions taken.'}/>*/}
                                 </div>
 
                                 <div className="col-12 col-md-6 latest-left-bigger ">
-                                    <SmallArticle title={'IEEE Summer school 3.0: Energy transition workshop'}
-                                                  picture={sc2}
-                                                  text={'This workshop was presented by Mr.\n' +
-                                                  'Samer Zwaydeh, an independent\n' +
-                                                  'internationally recognized energy expert\n' +
-                                                  'and lecturer at Al Hussein Technical\n' +
-                                                  'University with twenty-six years of\n' +
-                                                  'management experience around the\n' +
-                                                  'world. This certified carbon reduction\n' +
-                                                  'manager introduced energy transition\n' +
-                                                  'from its concept to its real life application.\n' +
-                                                  '\n' +
-                                                  'Energy transition is oriented towards the use of renewable energy in place of\n' +
-                                                  'fossil energy to minimize the emission of dioxide carbon and hopefully\n' +
-                                                  'eliminating it completely towards the end of the century. Energy transition\n' +
-                                                  'aims to limit climate change through the disposal of carbon emitters.\n' +
-                                                  '\n' +
-                                                  'In more details, Mr. Samer Zwaydeh explained the methods used in providing\n' +
-                                                  'renewable energy such as solar energy. The trainer went as far as to provide\n' +
-                                                  'examples different examples of the application of energy transition in real life\n' +
-                                                  'and in the current crisis the world is suffering from: corona.\n' +
-                                                  '\n' +
-                                                  'The workshop picked the attention of most of the attendees as the trainer\n' +
-                                                  'introduced energy transition through the current situation by explaining this\n' +
-                                                  'concept use. This workshop proved that energy transition is an important\n' +
-                                                  'carbon-neutral strategy that we should aim to use in life.'}/>
-                                    <SmallArticle title={'Zero HUNGER DAY 2019'} picture={zhd}
-                                                  text={'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day\n' +
-                                                  '(Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES\n' +
-                                                  'WiP, IEEE and PES volunteers made food donation based on food donations\n' +
-                                                  'campaigns with main focus on 17 UN Sustainable Development goals(2030).. For\n' +
-                                                  'our chapter , we made a food donation campaign in our unit and we were glad to host\n' +
-                                                  'our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the\n' +
-                                                  'IEEE day and PES zero hunger day at the same Time . The meeting was not only about\n' +
-                                                  'delivering the food donations that we collected but also it was a chance to exchange goals and\n' +
-                                                  'values of both organizations. Everyone was really satisfied with this ZHD first edition so we\n' +
-                                                  'promised more impactful editions in the future'}/>
-                                    <SmallArticle title={'Summer SCHOOL 2.0'} picture={sc3}
-                                                  text={'The IEEE NSAT SB found it a great idea to start this academic year with the\n' +
-                                                  '2nd edition of Summer school .This very first event took place 6–8 September 2019\n' +
-                                                  'in INSAT . It gathered more than one hundred students from different backgrounds\n' +
-                                                  'and levels of studies , making it so far the largest summer school since its\n' +
-                                                  'establishment in 2017. The purpose of the summer school was to provide the\n' +
-                                                  'participating students with a large variety of workshops , conferences , and many\n' +
-                                                  'other activities .It was also a great opportunity for the freshmen to discover the IEEE\n' +
-                                                  'family and its activities and to get more familiar with INSAT’s corners and walls in an\n' +
-                                                  'academic context .\n' +
-                                                  'For the PES chapter , the summer school consisted of a workshop and a conference\n' +
-                                                  'that were provided by 2 experts covering topics from Solar energy and electricity\n' +
-                                                  'consumption and plastic and circular economy'}/>
-
+                                    {latest.slice(1, 4).map(
+                                        ({title, picture, description}, index) => <SmallArticle title={title}
+                                                                                                text={description}
+                                                                                                picture={picture}
+                                                                                                key={index}/>
+                                    )}
+                                    {/*<SmallArticle title={'IEEE Summer school 3.0: Energy transition workshop'}*/}
+                                    {/*              picture={sc2}*/}
+                                    {/*              text={'This workshop was presented by Mr.\n' +*/}
+                                    {/*              'Samer Zwaydeh, an independent\n' +*/}
+                                    {/*              'internationally recognized energy expert\n' +*/}
+                                    {/*              'and lecturer at Al Hussein Technical\n' +*/}
+                                    {/*              'University with twenty-six years of\n' +*/}
+                                    {/*              'management experience around the\n' +*/}
+                                    {/*              'world. This certified carbon reduction\n' +*/}
+                                    {/*              'manager introduced energy transition\n' +*/}
+                                    {/*              'from its concept to its real life application.\n' +*/}
+                                    {/*              '\n' +*/}
+                                    {/*              'Energy transition is oriented towards the use of renewable energy in place of\n' +*/}
+                                    {/*              'fossil energy to minimize the emission of dioxide carbon and hopefully\n' +*/}
+                                    {/*              'eliminating it completely towards the end of the century. Energy transition\n' +*/}
+                                    {/*              'aims to limit climate change through the disposal of carbon emitters.\n' +*/}
+                                    {/*              '\n' +*/}
+                                    {/*              'In more details, Mr. Samer Zwaydeh explained the methods used in providing\n' +*/}
+                                    {/*              'renewable energy such as solar energy. The trainer went as far as to provide\n' +*/}
+                                    {/*              'examples different examples of the application of energy transition in real life\n' +*/}
+                                    {/*              'and in the current crisis the world is suffering from: corona.\n' +*/}
+                                    {/*              '\n' +*/}
+                                    {/*              'The workshop picked the attention of most of the attendees as the trainer\n' +*/}
+                                    {/*              'introduced energy transition through the current situation by explaining this\n' +*/}
+                                    {/*              'concept use. This workshop proved that energy transition is an important\n' +*/}
+                                    {/*              'carbon-neutral strategy that we should aim to use in life.'}/>*/}
+                                    {/*<SmallArticle title={'Zero HUNGER DAY 2019'} picture={zhd}*/}
+                                    {/*              text={'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day\n' +*/}
+                                    {/*              '(Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES\n' +*/}
+                                    {/*              'WiP, IEEE and PES volunteers made food donation based on food donations\n' +*/}
+                                    {/*              'campaigns with main focus on 17 UN Sustainable Development goals(2030).. For\n' +*/}
+                                    {/*              'our chapter , we made a food donation campaign in our unit and we were glad to host\n' +*/}
+                                    {/*              'our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the\n' +*/}
+                                    {/*              'IEEE day and PES zero hunger day at the same Time . The meeting was not only about\n' +*/}
+                                    {/*              'delivering the food donations that we collected but also it was a chance to exchange goals and\n' +*/}
+                                    {/*              'values of both organizations. Everyone was really satisfied with this ZHD first edition so we\n' +*/}
+                                    {/*              'promised more impactful editions in the future'}/>*/}
+                                    {/*<SmallArticle title={'Summer SCHOOL 2.0'} picture={sc3}*/}
+                                    {/*              text={'The IEEE NSAT SB found it a great idea to start this academic year with the\n' +*/}
+                                    {/*              '2nd edition of Summer school .This very first event took place 6–8 September 2019\n' +*/}
+                                    {/*              'in INSAT . It gathered more than one hundred students from different backgrounds\n' +*/}
+                                    {/*              'and levels of studies , making it so far the largest summer school since its\n' +*/}
+                                    {/*              'establishment in 2017. The purpose of the summer school was to provide the\n' +*/}
+                                    {/*              'participating students with a large variety of workshops , conferences , and many\n' +*/}
+                                    {/*              'other activities .It was also a great opportunity for the freshmen to discover the IEEE\n' +*/}
+                                    {/*              'family and its activities and to get more familiar with INSAT’s corners and walls in an\n' +*/}
+                                    {/*              'academic context .\n' +*/}
+                                    {/*              'For the PES chapter , the summer school consisted of a workshop and a conference\n' +*/}
+                                    {/*              'that were provided by 2 experts covering topics from Solar energy and electricity\n' +*/}
+                                    {/*              'consumption and plastic and circular economy'}/>*/}
 
 
                                 </div>
+                            </div>
+                            <div className="row">
+                                {latest.slice(4, latest.length).map(
+                                    ({title, description, picture}, index) => {
+                                        // if (index > 3) {
+                                        return (
+                                            <ActivityLatest title={title}
+                                                            description={description}
+                                                            picture={picture}
+                                                            key={index}/>
+                                        )
+                                        // } else {
+                                        //     return null
+                                        // }
+
+                                    }
+                                )}
+                                {/*<ActivityLatest picture={pam} title={'IEEE PES tunisia general  meeting'}*/}
+                                {/*                description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +*/}
+                                {/*                'experience, PES chapter presents to you the PES General Meeting Congress where you\'ll be introduced to this\n' +*/}
+                                {/*                'new domain and how it is making a progressive impact on the world.\n' +*/}
+                                {/*                '\n' +*/}
+                                {/*                'Organized for its first time by the IEEE PES INSAT Student Branch Chapter, the meeting will take place in\n' +*/}
+                                {/*                'November themed ENERGY TRANSITION!\n' +*/}
+                                {/*                '\n' +*/}
+                                {/*                'The seminar will include workshops and a conference bringing together professionals, inspiring speakers and\n' +*/}
+                                {/*                'motivational trainers.'}/>*/}
+
+
+                                {/*<ActivityLatest picture={pam} title={'IEEE PES tunisia general  meeting'}*/}
+                                {/*                description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +*/}
+                                {/*                'experience, PES chapter presents to you the PES General Meeting Congress where you\'ll be introduced to this\n' +*/}
+                                {/*                'new domain and how it is making a progressive impact on the world.\n' +*/}
+                                {/*                '\n' +*/}
+                                {/*                'Organized for its first time by the IEEE PES INSAT Student Branch Chapter, the meeting will take place in\n' +*/}
+                                {/*                'November themed ENERGY TRANSITION!\n' +*/}
+                                {/*                '\n' +*/}
+                                {/*                'The seminar will include workshops and a conference bringing together professionals, inspiring speakers and\n' +*/}
+                                {/*                'motivational trainers.'}/>*/}
+
+
                             </div>
                         </div>
                     </div>

@@ -16,6 +16,9 @@ import GaleryImage from "./GaleryImage";
 const images = require('../pictures/community/galleries/elyes-workshop/*.webp');
 const zhd2019=require('../pictures/community/galleries/zhd2019/*.webp');
 const teambuilding2019=require('../pictures/community/galleries/teambuilding2019/*.webp');
+const publicSpeaking=require('../pictures/community/galleries/publicspeaking/*.webp');
+const yfc1=require('../pictures/community/galleries/yfc1/*.webp');
+const gm=require('../pictures/community/galleries/gm/*.webp');
 /** @jsx jsx */
 const Galery = () => {
 
@@ -116,6 +119,45 @@ const Galery = () => {
     return (
         <div className={'container'}>
             <div >
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>YFC first school</h2>
+                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(yfc1).map((image)=>(<GaleryImage title={'Zero HUNGER day 2019'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
+
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>IEEE PES tunisia general meeting</h2>
+                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(gm).map((image)=>(<GaleryImage title={'Zero HUNGER day 2019'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
+
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>Formation public speaking</h2>
+                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(publicSpeaking).map((image)=>(<GaleryImage title={'Zero HUNGER day 2019'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
+
                 <div  css={galeryStyle}>
                     <div className="container">
                         <div className="row ">

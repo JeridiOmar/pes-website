@@ -3,10 +3,9 @@ import {css, jsx} from "@emotion/core";
 
 import {Modal} from 'react-bootstrap';
 import Button from "react-bootstrap/Button";
-import logoWhite from "./pictures/logo-white.png";
 
 /** @jsx jsx */
-const Activity = ({title, description, picture}) => {
+const ActivityLatest = ({title, description, picture}) => {
     const modalStyle = css`
       & img{
         width: 100%;
@@ -41,13 +40,14 @@ const Activity = ({title, description, picture}) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <div data-aos="zoom-in" data-aos-duration="1500" className="col-md-4  col-sm-12 card-wrapper  "
+        <div data-aos="zoom-in" data-aos-duration="1500" className="col-md-6  col-sm-12 card-wrapper  "
              css={css`padding-bottom: 1px!important;;`}>
             <div className="card p-lg-3" css={css` `}>
-                <img className="card-img-top" src={picture} alt="Card image cap"/>
+                <img className="card-img-top" style={{"height":" 250px",
+                    "object-fit": "cover"}} src={picture} alt="Card image cap"/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
-                    <p className="card-text card-text1">{description.split(' ').slice(0, 16).join(' ')}
+                    <p className="card-text card-text1">{description.substring(0,125)}
                         ...</p>
                     <p className="card-meta">
 
@@ -90,4 +90,4 @@ const Activity = ({title, description, picture}) => {
         </div>
     )
 };
-export default Activity;
+export default ActivityLatest;

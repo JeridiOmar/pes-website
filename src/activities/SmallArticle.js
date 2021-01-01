@@ -58,7 +58,7 @@ const SmallArticle = ({title, picture, text}) => {
                          className="  rounded-circle"
                          height="20"
                          width="20"/> <span className="author"><a
-                    href="https://litmotion.net/demo/neori/author/admin/"
+                    href="#"
                     title="Posts by Lora"
                     rel="author">Kmar</a></span>
                     <span className="date">October 24, 2020</span>
