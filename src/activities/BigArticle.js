@@ -43,7 +43,7 @@ const BigArticle = ({title, picture, text}) => {
         <div data-aos="fade-right" className="card p-lg-3">
 
             <img width="768px" height="517px"
-                 src={picture} onClick={handleShow} style={{ cursor: 'pointer' }}
+                 src={picture} onClick={handleShow} style={{ cursor: 'pointer','objectFit':'cover' }}
                  className="card-img-top card-bigger-img " alt=""
                 />
             <div className="card-body">

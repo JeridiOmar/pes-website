@@ -46,10 +46,10 @@ const SmallArticle = ({title, picture, text}) => {
                 <img
                     src={picture}
                     alt="pic" className={'right-article-img w-100'}
-                    style={{'margin-top': '14px', cursor: 'pointer',height:'172px'}} onClick={handleShow} />
+                    style={{'marginTop': '14px', cursor: 'pointer',height:'172px','object-fit':'cover'}} onClick={handleShow} />
             </div>
             <div className="col-12 col-md-6">
-                <h5 className="title" onClick={handleShow} style={{ cursor: 'pointer','margin-top': '15px' }}>{title}</h5>
+                <h5 className="title" onClick={handleShow} style={{ cursor: 'pointer','marginTop': '15px' }}>{title}</h5>
                 <p className="card-meta">
 
                     <img alt=""

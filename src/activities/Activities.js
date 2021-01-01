@@ -16,6 +16,7 @@ import wip from '../pictures/activities/wip.webp'
 import gm from "../pictures/activities/gm.webp"
 import recycle from "../pictures/activities/recycle.webp"
 import qhse from "../pictures/activities/qhse.webp"
+import publicSpeaking from "../pictures/activities/public.webp"
 import Activity from "../Activity";
 import CarouselItem from "./CarouselItem";
 import BigArticle from "./BigArticle";
@@ -243,6 +244,33 @@ const Activities = () => {
                 "workshop."
         },
         {
+            title:"Workshop: public speaking",
+            picture:publicSpeaking,
+            description:"This workshop was presented by Asma Selmi, a professional soft skills coach.\n" +
+                "The trainer helped the attendees through the basis of public speaking to\n" +
+                "overcome their stage fright and give their best performance.\n" +
+                "\n" +
+                "One of the most important stages of a project or an event is its introduction\n" +
+                "and the first impression it makes. As such, the announcer’s duty is to nail the\n" +
+                "presentation. This process is not easy as it is necessary to monitor every word\n" +
+                "and every move down to the slightest details.\n" +
+                "\n" +
+                "The first thing the trainer did was take in the demeanor of the attendees, in\n" +
+                "order to better understand them and point out the changes they must make.\n" +
+                "Then she went through the whole process of communication and the\n" +
+                "techniques of public speaking. Afterwards, she gave examples to better\n" +
+                "understand prior information. Finally, a simulation of different situations took\n" +
+                "place, to practice what’s been learned.\n" +
+                "\n" +
+                "The attendees were very pleased with this workshop as they have gained a new\n" +
+                "perspective. As the feedback was positive and the interest picked in the first\n" +
+                "place, there may be a second workshop with Ms. Asma Selmi.\n" +
+                "\n" +
+                "Remark:\n" +
+                "The sanitary precautions were taken onto account by limiting the number of\n" +
+                "attendees and making sure they kept their distance from each other."
+        },
+        {
             title: "boost your career summer school 3.0",
             picture: sc,
             description: 'This workshop was presented by AI developer advocate and teacher, Mr. Elyes\n' +
@@ -339,7 +367,7 @@ const Activities = () => {
                     </div>
                 </Jump>
             </div>
-            <div className="container" style={{'margin-bottom': ' 50px'}}>
+            <div className="container" style={{'marginBottom': ' 50px'}}>
                 <div className="row">
                     <div className="col-12">
                         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel"

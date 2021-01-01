@@ -40,11 +40,11 @@ const ActivityLatest = ({title, description, picture}) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <div data-aos="zoom-in" data-aos-duration="1500" className="col-md-6  col-sm-12 card-wrapper  "
+        <div data-aos="fade-right" data-aos-duration="1500" className="col-md-6  col-sm-12 card-wrapper  "
              css={css`padding-bottom: 1px!important;;`}>
             <div className="card p-lg-3" css={css` `}>
                 <img className="card-img-top" style={{"height":" 250px",
-                    "object-fit": "cover"}} src={picture} alt="Card image cap"/>
+                    "objectFit": "cover"}} src={picture} alt="Card image cap"/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text card-text1">{description.substring(0,125)}
