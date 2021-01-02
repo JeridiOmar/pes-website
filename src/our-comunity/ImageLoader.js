@@ -31,12 +31,15 @@ class ImageLoader extends React.Component {
             ? loadedClassName
             : loadingClassName}`;
 
-        return <img
+        return(
+
+            <img
             src={this.props.src}
 
             height={300} width={300}
             className={className +" card-img"}
-            onLoad={this.onLoad} />;
+            onLoad={this.onLoad} />
+    )
     }
 }
 

@@ -4,6 +4,7 @@ import {css, jsx} from "@emotion/core";
 import {Modal} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import LazyLoad from 'react-lazy-load';
+import ImageLoader from "./ImageLoader";
 
 /** @jsx jsx */
 const GaleryImage = ({title, picture}) => {
@@ -31,8 +32,8 @@ const GaleryImage = ({title, picture}) => {
     const handleShow = () => setShow(true);
     return(
         <div className="card">
-            <LazyLoad><img className="card-img" src={picture} alt="Card image cap" height={300} width={300}/></LazyLoad>
-            {/*<LazyLoad><ImageLoader src={picture}/></LazyLoad>*/}
+            {/*<LazyLoad><img className="card-img" src={picture} alt="Card image cap" height={300} width={300}/></LazyLoad>*/}
+            <LazyLoad debounce={false}   offsetVertical={500}><ImageLoader src={picture}/></LazyLoad>
             <div onClick={handleShow} style={{ cursor: 'pointer' }}><i className="fas fa-eye"></i></div>
             <Modal show={show} onHide={handleClose} size="lg" css={modalStyle}>
                 <Modal.Header closeButton>

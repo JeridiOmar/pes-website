@@ -14,6 +14,9 @@ import Mom from "./our-comunity/Mom";
 import Awards from "./awards/Awards";
 import Loading from "./Loading";
 import Gm from "./gm/Gm";
+import "./styles/style.css"
+import "./styles/mom.css"
+import "./styles/bootstrap.min.css"
 
 const App = () => {
     const [loading, setLoading] = useState(true);

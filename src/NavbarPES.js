@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {css, jsx} from "@emotion/core";
-import logoPes from './pictures/logo.png'
-import logoWhite from './pictures/logo-white.png'
+import logoPes from './pictures/logo.webp'
+import logoWhite from './pictures/logo-white.webp'
 import {Link} from "@reach/router"
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from "react-bootstrap/Nav";
@@ -93,8 +93,8 @@ const NavbarPES = () => {
         // </nav>
         <Navbar collapseOnSelect={true} expand="lg" fixed="top" className={` pes-nav  ${navState}  ${toglleState}`}>
             <Container>
-                <Navbar.Brand href="#home"><img className={'p-0'} src={logo} alt="logo" width={'120'} height={'60'}
-                                                css={css`object-fit: cover;`}/></Navbar.Brand>
+                <Navbar.Brand href="#home"><Link  to={"/"}><img className={'p-0'} src={logo} alt="logo" width={'120'} height={'60'}
+                                                                css={css`object-fit: cover;`}/></Link></Navbar.Brand>
                 <Navbar.Toggle onClick={toggleClick} aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" css={css`
