@@ -122,12 +122,12 @@ const Galery = () => {
                 <div  css={galeryStyle}>
                     <div className="container">
                         <div className="row ">
-                            <h2 className={'gallery-title'}>YFC first school</h2>
+                            <h2 className={'gallery-title'}>YFC 4.0 first school</h2>
                         </div>
                     </div>
                     <Carousel partialVisible={true} swipeable={true}
                               draggable={true} responsive={responsive} infinite>
-                        {Object.values(yfc1).map((image)=>(<GaleryImage title={'Zero HUNGER day 2019'} picture={image}/>))}
+                        {Object.values(yfc1).map((image)=>(<GaleryImage title={'YFC 4.0 first school'} picture={image}/>))}
 
                     </Carousel>
                 </div>
@@ -140,7 +140,7 @@ const Galery = () => {
                     </div>
                     <Carousel partialVisible={true} swipeable={true}
                               draggable={true} responsive={responsive} infinite>
-                        {Object.values(gm).map((image)=>(<GaleryImage title={'Zero HUNGER day 2019'} picture={image}/>))}
+                        {Object.values(gm).map((image)=>(<GaleryImage title={'IEEE PES tunisia general meeting'} picture={image}/>))}
 
                     </Carousel>
                 </div>

@@ -552,6 +552,8 @@ footer p {
     animation-duration: 0.7s;
     animation-delay: 0.1s;
 }
+
+
 .overlay{
     background: rgb(4 9 30 / 55%);
     position: absolute;

@@ -182,35 +182,7 @@ const Activities = () => {
                 "a university teacher and a trainer and expert in QHSE. As one of the most\n" +
                 "prominent management systems, QHSE or quality, health, security and\n" +
                 "environmental management is a mandatory tool that most engineers must\n" +
-                "possess.\n" +
-                "ACTIVITY REPORT:\n" +
-                "“Introduction to QHSE” workshop\n" +
-                "\n" +
-                "November the 24\n" +
-                "th, 2020\n" +
-                "\n" +
-                "participants\n" +
-                "\n" +
-                "This workshop was presented by Ms. Rihab Righi, a lead auditor IRCA ISO 9001,\n" +
-                "a university teacher and a trainer and expert in QHSE. As one of the most\n" +
-                "prominent management systems, QHSE or quality, health, security and\n" +
-                "environmental management is a mandatory tool that most engineers must\n" +
-                "\n" +
-                "QHSE stands for Quality, Health, Security and Environment. As the name\n" +
-                "indicates, a QHSE Management System aims to achieve optimal results in these\n" +
-                "criteria. It is a tool to direct, manage and develop an organization. The goal of a\n" +
-                "QHSE Management System is to make sure that an organization complies with\n" +
-                "regulations and legislation in the aforementioned fields.\n" +
-                "\n" +
-                "The trainer delved deep into QHSE by explaining all four of Quality, Health,\n" +
-                "Security and Environment norms. She then proceeded to enumerate the\n" +
-                "different benefits it has and their impact on the different impact on the\n" +
-                "organization following this tool’s guidelines. She also mentioned the different\n" +
-                "standards making an organization more trustworthy and less prone to legal\n" +
-                "issues.\n" +
-                "\n" +
-                "The trainees appreciated the work of Ms. Rihab Righi, which made them more\n" +
-                "interested in pursuing more knowledge in this subject."
+                "possess."
         },
         {
             title: "Workshop: how recycling saves energy",
@@ -226,7 +198,7 @@ const Activities = () => {
                 "through fuel. That’s why recycling is important as it solves a percentage of\n" +
                 "these problems.\n" +
                 "\n" +
-                "First, Mr. Anis Guerfi explained the types of plastics, how to identu=ify them\n" +
+                "First, Mr. Anis Guerfi explained the types of plastics, how to identify them\n" +
                 "and their characteristics. He explained how some plastics can get recycled upto\n" +
                 "9 times while some can’t be recycled according to their type and how many\n" +
                 "times they’ve been recycled already. He also explained how recycling can be a\n" +
@@ -265,10 +237,8 @@ const Activities = () => {
                 "The attendees were very pleased with this workshop as they have gained a new\n" +
                 "perspective. As the feedback was positive and the interest picked in the first\n" +
                 "place, there may be a second workshop with Ms. Asma Selmi.\n" +
-                "\n" +
-                "Remark:\n" +
-                "The sanitary precautions were taken onto account by limiting the number of\n" +
-                "attendees and making sure they kept their distance from each other."
+                "\n" 
+
         },
         {
             title: "boost your career summer school 3.0",
@@ -377,7 +347,7 @@ const Activities = () => {
                                 <CarouselItem title={'Zero Hunger Day'} picture={zhd} classAct={'carousel-item active'}
                                               text={'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day (Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES WiP, IEEE and PES volunteers  made food donation based on food donations campaigns with main focus on 17 UN Sustainable Development goals(2030).. For our chapter , we made a food donation campaign in our unit and we were glad to host our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the IEEE day and PES zero hunger day at the same Time . The meeting was not only about delivering the food donations that we collected but also it was a chance to exchange goals and values of both organizations. Everyone was really satisfied with this ZHD first edition so we  promised more impactful editions in the future.'}/>
                                 <CarouselItem title={'Youth For Change'} picture={yfc} classAct={'carousel-item'}
-                                              text={'Youth for change is an initiative that was first held in 2017 by PES volunteer members. This event’s goal is educating the younger generations about renewable energies in Tunisia as an investment for the future of our country and our planet as a whole. To achieve our goal, PES INSAT volunteers visit preparatory schools in many regions of TUNISIA and provide training sessions in the field of energy, for example how we produce electricity by using the solar energy, wind power, piezoelectric materials and hydro power. After this process, students are divided into teams in order to complete a challenge and the finals is held annually at our institute . Applying what they learnt and working in teams ,young students attempt to solve real-world challenges by conceiving projects related to renewable energies then their projects is put to the test as each team pitches their project idea in front of a global audience of their peers and a panel of judges.. It is fascinating to see this idea come to life as the influence of this experience left an impact on both the volunteers and the students. It was an honour to see their passion filled eyes as they emerge themselves in the process of learning. We are pleased to see the results of our work and are certain that this project will bear fruits in the future as such we hold it annually.'}/>
+                                              text={'Youth for change is an initiative that was first held in 2017 by PES volunteer members. This event’s goal is educating the younger generations about renewable energies in Tunisia as an investment for the future of our country and our planet as a whole. To achieve our goal, PES INSAT volunteers visit preparatory schools in many regions of TUNISIA and provide training sessions in the field of energy, for example how we produce electricity by using the solar energy, wind power, piezoelectric materials and hydro power. After this process, students are divided into teams in order to complete a challenge and the finals is held annually at our institute . Applying what they learnt and working in teams ,young students attempt to solve real-world challenges by conceiving projects related to renewable energies then their projects is put to the test as each team pitches their project idea in front of a global audience of their peers and a panel of judges.'}/>
                                 <CarouselItem title={'Rec it UP'} picture={rip} classAct={'carousel-item'}
                                               text={"The first ever ‘REC iT Up’ 24-hours challenge was organized by IEEE Power & Energy Society Chapter INSAT Student Branch.\n" +
                                               "Renewable Energies Challenge “REC iT Up” is an entrepreneurship challenge in which IEEE members participated. In the beginning, the participants attended technical and soft skills training. The participants were divided into teams. They were then required to follow the instructions of the jury to represent their renewable energy related projects.  At the end of the challenge, the jury nominated the winning team based on its project’s innovation, feasibility and business plan. This challenge was open to all the IEEE members from all Student Branches in Tunisia which gave them an opportunity to network with fellow IEEE members from other student branches in Tunisia."}/>

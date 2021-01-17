@@ -12,7 +12,7 @@ import {Link, Router} from "@reach/router";
 import About from "../About";
 import '../styles/bootstrap.min.css'
 /** @jsx jsx */
-const OurCommunity = () => {
+const OurCommunity = ({location}) => {
     const [momVisible, setmomVisible] = useState('initial');
     const [galleryVisible, setgalleryVisible] = useState('none');
     const handlemom = () => {
@@ -107,6 +107,21 @@ const OurCommunity = () => {
     //
     //     },[]
     // );
+    useEffect(()=>{
+        const momButton=document.querySelector("#mom-tab");
+        const galleryButton=document.querySelector("#gallery-tab");
+        const elements=[momButton,galleryButton];
+        elements.forEach((element)=>{
+            element.classList.remove("active");
+        });
+        if(location.pathname==="/community/gallery"){
+            galleryButton.classList.add("active");
+        }else{
+            momButton.classList.add("active");
+        }
+
+        console.log(location);
+    },[location.pathname]);
     return (
         <div>
             <div css={bannerStyle} className={'comm-banner'}>

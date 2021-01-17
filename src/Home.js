@@ -12,6 +12,7 @@ import {css, jsx} from '@emotion/core';
 import './styles/bootstrap.min.css'
 import {Router} from "@reach/router";
 
+import OurSponsors from "./OurSponsors";
 /** @jsx jsx */
 const Home = () => {
     const iconStyle = css`
@@ -96,6 +97,7 @@ const Home = () => {
             </div>
             <Team/>
             <LatestActivities/>
+            <OurSponsors/>
         </div>
 
 

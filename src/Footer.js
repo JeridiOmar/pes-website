@@ -31,9 +31,7 @@ const Footer = () => {
                             <p><i className="fas fa-map-marker-alt"></i> 676 INSAT Centre Urbain Nord BP، Tunis Cedex
                                 1080</p>
                             <p><i className="fas fa-phone"></i> Phone: +216 5579319</p>
-                            <p><i className="fas fa-envelope"></i> Email: <a css={css`text-decoration: none; `}
-                                                                             href="mailto:hello@domain.com">ieeepesinsat@gmail.com
-                            </a>
+                            <p><i className="fas fa-envelope"></i> Email: ieeepesinsat@gmail.com
                             </p>
                             <div>
                                 <a href="https://www.facebook.com/PES.INSAT/"><i className="fab fa-facebook"></i></a>

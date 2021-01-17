@@ -53,8 +53,8 @@ const Facts = () => {
 
                     <FactElemnt title={'Members'} number={150} icon={students} left={true}/>
 
-                    <FactElemnt title={'Award'} number={8} icon={medal} top={true}/>
-                    <FactElemnt title={'Event'} number={34} icon={training} bottom={true}/>
+                    <FactElemnt title={'Awards'} number={8} icon={medal} top={true}/>
+                    <FactElemnt title={'Events'} number={34} icon={training} bottom={true}/>
                     <FactElemnt title={'Years old'} number={4} icon={counter} right={true}/>
                 </TrackVisibility>
             </div>
