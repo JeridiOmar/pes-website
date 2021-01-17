@@ -85,7 +85,7 @@ const Home = () => {
 
                         <div className="col-4">
                             <div className="box-home">
-                                <div className="box-inner-home" style={{'text-align':'center','border-right':'0px'}}>
+                                <div className="box-inner-home" style={{'textAlign':'center','borderRight':'0px'}}>
                                     <img src={creativity} alt="renewable" css={iconStyle} style={{padding: "0px"}}/>
                                     <div className="box-text-home">Innovation for the future</div>
 

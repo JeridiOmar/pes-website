@@ -59,7 +59,7 @@ const Team = () => {
                                 'She likes to make people feel comfortable in her presence, she always makes sure people have the right informations and she is certainly a people-person.'}/>
                     <TeamMember memberName={'Abir slimene'} memberPic={abir} memberPoste={'Treasurer'} animation={"flip-right"}
                                 fb={'https://www.facebook.com/slimene.abir0'}
-                                li={'#'}
+                                li={'https://www.linkedin.com/in/slimene-abir-2312641b4'}
                                 text={'Abir is an industrial biology engineering student.\n' +
                                 'She is passionate about challenges and she is a resourceful person.\n' +
                                 'She is a great negociator who knows how to handle money and finances and she likes to collaborate with others.'}/>

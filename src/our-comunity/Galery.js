@@ -33,7 +33,7 @@ const Galery = () => {
             breakpoint: {max: 1024, min: 464},
             items: 2,
             slidesToSlide: 2,// optional, default to 1.
-            partialVisibilityGutter: 500
+            partialVisibilityGutter: 60
         },
         mobile: {
             breakpoint: {max: 464, min: 0},

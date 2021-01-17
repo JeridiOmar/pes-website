@@ -56,10 +56,10 @@ margin-bottom: 70px;
             </div>
             <div className="container">
                 <div className="row sponsor-logos">
-                    <div className="col-lg-3 col-6"><img src={sponsor1} alt=""/></div>
-                    <div className="col-lg-3 col-6"><img src={sponsor2} alt=""/></div>
-                    <div className="col-lg-3 col-6"><img src={sponsor3} alt=""/></div>
-                    <div className="col-lg-3 col-6"><img src={sponsor4} alt=""/></div>
+                    <div data-aos="fade-up" className="col-lg-3 col-6"><img  src={sponsor1} alt=""/></div>
+                    <div data-aos="fade-up" className="col-lg-3 col-6"><img  src={sponsor2} alt=""/></div>
+                    <div data-aos="fade-up" className="col-lg-3 col-6"><img  src={sponsor3} alt=""/></div>
+                    <div data-aos="fade-up" className="col-lg-3 col-6"><img  src={sponsor4} alt=""/></div>
                 </div>
             </div>
         </div>

@@ -118,7 +118,7 @@ const NavbarPES = () => {
                         {/*<Nav.Link  eventKey="4"><Link className="nav-link pr-1" to={'/awards'}><i className="fas fa-award"*/}
                         {/*                                                            css={menuIcon}></i>Awards</Link></Nav.Link>*/}
                         <Nav.Link onClick={toggleClick} eventKey="5"><Link className="nav-link pr-1 comm-link"
-                                                                           to={'/community/memberofthemonth'}><i
+                                                                           to={'/community/gallery'}><i
                             className=" fas fa-user-friends" css={menuIcon}></i>Our community</Link></Nav.Link>
 
                     </Nav>

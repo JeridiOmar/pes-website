@@ -25,7 +25,7 @@ const SmallArticle = ({title, picture, text}) => {
   `;
     const [time, setTime] = useState(0);
     useEffect(() => {
-            const writed = new Date("10/23/2020");
+            const writed = new Date("01/15/2021");
             const today = new Date();
             var timeD = today.getTime() - writed.getTime();
             // console.log(today);
@@ -61,7 +61,7 @@ const SmallArticle = ({title, picture, text}) => {
                     href="#"
                     title="Posts by Lora"
                     rel="author">Kmar</a></span>
-                    <span className="date">October 24, 2020</span>
+                    <span className="date">January 15, 2021</span>
                     <span className="min-read"><span
                         className="span-reading-time rt-reading-time"><span
                         className="rt-label"></span> <span
@@ -78,7 +78,8 @@ const SmallArticle = ({title, picture, text}) => {
                 <Modal.Body>
                     <img src={picture} alt="" height={'500'}/>
                     <div className="modal-text">
-                        <div>{text}</div>
+                        {text.map(({text})=><div><p>{text}</p></div>)}
+                        {/*<div>{text}</div>*/}
 
 
                     </div>

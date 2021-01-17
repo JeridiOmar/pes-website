@@ -51,7 +51,7 @@ const Mom = () => {
             date:"November 2020",
             text:
                 "During the past month, Sinda ElHedi and  Ayedi Imen amazed us with their incredible potential and their hard work. \n" +
-                "They both are part of the IEEE PES Tunisia General Meeting committee and they always made sure to de their best in order to make the congress shine and succeed. \n" +
+                "They both are part of the IEEE PES Tunisia General Meeting committee and they always made sure to do their best in order to make the congress shine and succeed. \n" +
                 "We would like to thank them for their devotion to PES chapter 💚💚 and congratulate them on deserving the \"Member of the month\" award.\n" +
                 "Keep shining girls 🔥🔥🔥"
         },
@@ -59,7 +59,7 @@ const Mom = () => {
             picture:imen,
             date:"November 2020",
             text:"During the past month, Sinda ElHedi and  Ayedi Imen amazed us with their incredible potential and their hard work. \n" +
-                "They both are part of the IEEE PES Tunisia General Meeting committee and they always made sure to de their best in order to make the congress shine and succeed. \n" +
+                "They both are part of the IEEE PES Tunisia General Meeting committee and they always made sure to do their best in order to make the congress shine and succeed. \n" +
                 "We would like to thank them for their devotion to PES chapter 💚💚 and congratulate them on deserving the \"Member of the month\" award.\n" +
                 "Keep shining girls 🔥🔥🔥"
         },

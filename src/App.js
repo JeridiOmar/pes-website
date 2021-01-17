@@ -40,7 +40,7 @@ const App = () => {
                             <Awards path={"/awards/"}/>
                             <Gm path={"/gm"}/>
                             <Loading path={"/loading"}/>
-
+                            <Home default/>
                         </Router>
                     {/*</Suspense>*/}
                     <Footer/>

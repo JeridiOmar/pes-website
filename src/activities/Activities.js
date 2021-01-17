@@ -173,141 +173,140 @@ const Activities = () => {
         {
             title: "IEEE PES Tunisia General Meeting",
             picture: gm,
-            description: "IEEE PES Tunisia General Meeting is an annual national scale congress where IEEE members and volunteers get to meet up and further nurture their knowledge in the power and energy field. In it’s second edition, IEEE PES INSAT Student Branch Chapter got the honor to organize it. Following the chosen theme: “Energy Transition”, multiple conferences and diverse workshops, ranging from soft skills to technical skills, took place. Towards the end of the event, a 24h challenge took place following the theme of the event."
+            description: [
+                {
+                    text: "IEEE PES Tunisia General Meeting is an annual national scale congress where IEEE members " +
+                        "and volunteers get to meet up and further nurture their knowledge in the power and energy field. In it’s second edition, IEEE PES INSAT Student Branch Chapter got the honor to organize it. Following the chosen theme: “Energy Transition”," +
+                        " multiple conferences and diverse workshops, ranging from soft skills to technical skills, took place. " +
+                        "Towards the end of the event, a 24h challenge took place following the theme of the event."
+                }
+            ]
         },
         {
-            title:"Workshop: Introduction to QHSE",
-            picture:qhse,
-            description:"This workshop was presented by Ms. Rihab\n" +
-                "a university teacher and a trainer and expert in QHSE. As one of the most\n" +
-                "prominent management systems, QHSE or quality, health, security and\n" +
-                "environmental management is a mandatory tool that most engineers must\n" +
-                "possess."
+            title: "Workshop: Introduction to QHSE",
+            picture: qhse,
+            description:
+                [
+                    {
+
+                        text: "This workshop was presented by Ms. Rihab a university teacher and a trainer and expert in QHSE. As one of the most \n" +
+                            "prominent management systems, QHSE or quality, health, security and \n" +
+                            "environmental management is a mandatory tool that most engineers must \n" +
+                            "possess.."
+                    },
+                    {
+                        text: "QHSE stands for Quality, Health, Security and Environment. As the name indicates, a QHSE Management System aims to achieve optimal results in these criteria. It is a tool to direct, manage and develop an organization. The goal of a \n" +
+                            "QHSE Management System is to make sure that an organization complies with \n" +
+                            "regulations and legislation in the aforementioned fields."
+                    },
+                    {
+                        text: "The trainer delved deep into QHSE by explaining all four of Quality, Health, Security and Environment norms. She then proceeded to enumerate the \n" +
+                            "different benefits it has and their impact on the different impact on the organization following this tool’s guidelines. She also mentioned the different standards making an organization more trustworthy and less prone to legal \n" +
+                            "issues."
+                    },
+                    {
+                        text: "The trainees appreciated the work of Ms. Rihab Righi, which made them more interested in pursuing more knowledge in this subject"
+                    }
+
+                ]
         },
         {
             title: "Workshop: how recycling saves energy",
             picture: recycle,
-            description: "This workshop was presented by Mr. Anis Guerfi, an engineer and an expert in\n" +
-                "plastics. The trainer guided the participants through the basics of recycling and\n" +
-                "explained why it is important to do.\n" +
-                "\n" +
-                "Wasted material and energy sources are some of our world’s biggest problems.\n" +
-                "To begin with, the waste’s amount is increasing in a way that wastelands are\n" +
-                "unable to contain and in a way that is intoxicating Earth. Then, we can’t deny\n" +
-                "the problem presented in the scarcity of energy and inability to produce more\n" +
-                "through fuel. That’s why recycling is important as it solves a percentage of\n" +
-                "these problems.\n" +
-                "\n" +
-                "First, Mr. Anis Guerfi explained the types of plastics, how to identify them\n" +
-                "and their characteristics. He explained how some plastics can get recycled upto\n" +
-                "9 times while some can’t be recycled according to their type and how many\n" +
-                "times they’ve been recycled already. He also explained how recycling can be a\n" +
-                "source of energy as the materials you use are reused rather than consuming\n" +
-                "more polymeric material. Later on, our trainer emphasized the importance of\n" +
-                "our behavior in regards to our excessive use of plastics. He presented\n" +
-                "alternatives to using plastics such as using a fabric bag that you can use over\n" +
-                "and over again.\n" +
-                "\n" +
-                "The attendees were very pleased with this workshop as they showed great\n" +
-                "interest in the subject and had many questions to ask. Mr. Anis was very\n" +
-                "accommodating as he answered the questions in details and made sure\n" +
-                "everyone understood it clearly. The participants were very active, but two of\n" +
-                "them were very outstanding. That’s why they won a free pass to our next\n" +
-                "workshop."
+            description: [
+                {
+                    text: "This workshop was presented by Mr. Anis Guerfi, an engineer and an expert in plastics. The trainer guided the participants through the basics of recycling and explained why it is important to do."
+                },
+                {
+                    text: "Wasted material and energy sources are some of our world’s biggest problems. To begin with, the waste’s amount is increasing in a way that wastelands are unable to contain and in a way that is intoxicating Earth. Then, we can’t deny the problem presented in the scarcity of energy and inability to produce more through fuel. That’s why recycling is important as it solves a percentage of \n" +
+                        "these problems."
+                },
+                {
+                    text: "First, Mr. Anis Guerfi explained the types of plastics, how to identify them and their characteristics. He explained how some plastics can get recycled upto 9 times while some can’t be recycled according to their type and how many times they’ve been recycled already. He also explained how recycling can be a source of energy as the materials you use are reused rather than consuming more polymeric material. Later on, our trainer emphasized the importance of our behavior in regards to our excessive use of plastics. He presented alternatives to using plastics such as using a fabric bag that you can use over \n" +
+                        "and over again."
+                },
+                {
+                    text: "The attendees were very pleased with this workshop as they showed great interest in the subject and had many questions to ask. Mr. Anis was very accommodating as he answered the questions in details and made sure everyone understood it clearly. The participants were very active, but two of them were very outstanding. That’s why they won a free pass to our next workshop."
+                }
+            ]
+
+
         },
         {
-            title:"Workshop: public speaking",
-            picture:publicSpeaking,
-            description:"This workshop was presented by Asma Selmi, a professional soft skills coach.\n" +
-                "The trainer helped the attendees through the basis of public speaking to\n" +
-                "overcome their stage fright and give their best performance.\n" +
-                "\n" +
-                "One of the most important stages of a project or an event is its introduction\n" +
-                "and the first impression it makes. As such, the announcer’s duty is to nail the\n" +
-                "presentation. This process is not easy as it is necessary to monitor every word\n" +
-                "and every move down to the slightest details.\n" +
-                "\n" +
-                "The first thing the trainer did was take in the demeanor of the attendees, in\n" +
-                "order to better understand them and point out the changes they must make.\n" +
-                "Then she went through the whole process of communication and the\n" +
-                "techniques of public speaking. Afterwards, she gave examples to better\n" +
-                "understand prior information. Finally, a simulation of different situations took\n" +
-                "place, to practice what’s been learned.\n" +
-                "\n" +
-                "The attendees were very pleased with this workshop as they have gained a new\n" +
-                "perspective. As the feedback was positive and the interest picked in the first\n" +
-                "place, there may be a second workshop with Ms. Asma Selmi.\n" +
-                "\n" 
+            title: "Workshop: public speaking",
+            picture: publicSpeaking,
+            description: [
+                {
+                    text: "This workshop was presented by Asma Selmi, a professional soft skills coach. The trainer helped the attendees through the basis of public speaking to \n" +
+                        "overcome their stage fright and give their best performance."
+                },
+                {
+                    text: "One of the most important stages of a project or an event is its introduction and the first impression it makes. As such, the announcer’s duty is to nail the presentation. This process is not easy as it is necessary to monitor every word and every move down to the slightest details."
+                },
+                {
+                    text: "The first thing the trainer did was take in the demeanor of the attendees, in order to better understand them and point out the changes they must make. Then, she went through the whole process of communication and the \n" +
+                        "techniques of public speaking. Afterwards, she gave examples to better\n" +
+                        "understand prior information. Finally, a simulation of different situations took place, to practice what’s been learned."
+                },
+                {
+                    text: "The attendees were very pleased with this workshop as they have gained a new perspective. As the feedback was positive and the interest picked in the first place, there may be a second workshop with Ms. Asma Selmi."
+                }
+
+            ]
 
         },
         {
             title: "boost your career summer school 3.0",
             picture: sc,
-            description: 'This workshop was presented by AI developer advocate and teacher, Mr. Elyes\n' +
-                'Manai. The trainer dived into the secrets of the professional world to prepare\n' +
-                'the attendees for the future of their career.\n' +
-                '\n' +
-                'Through his own experience, the trainer went through the fundamental\n' +
-                'knowledge that each and every aspiring beginner professional should have, the\n' +
-                'way one should act when faced with all kinds of situations and the mindset one\n' +
-                'must have.\n' +
-                '\n' +
-                'In more details, the trainer went over hardships anyone can encounter when\n' +
-                'climbing up the stairs to success. He explained that being dishonorable and\n' +
-                'using underhanded ways will only lead to a downfall. He went over the stories\n' +
-                'of people who managed to achieve the greatest success when it was expected\n' +
-                'that they fail. The trainer then went to explain the ways of the business world\n' +
-                'to get the attenddes ready to face the professional world.\n' +
-                '\n' +
-                'The feedback we got from attendees was stupefying. There were no complains\n' +
-                'whatsoever. As a matter of fact, it seemed that they enjoyed his company for\n' +
-                'the questions kept coming even after the workshop ended and Mr. Elyes Manai\n' +
-                'didn’t fail to answer the questions to their satisfaction. This was probably due\n' +
-                'to the trainer’s amazing ability to integrate people and his humor. Following\n' +
-                'this positive feedback, the chapter is considering asking Mr. Elyes to present\n' +
-                'again, as the number was small because of the precautions taken.'
+            description: [
+                {
+                    text: "This workshop was presented by AI developer advocate and teacher, Mr. Elyes Manai. The trainer dived into the secrets of the professional world to prepare the attendees for the future of their career."
+                },
+                {
+                    text: "Through his own experience, the trainer went through the fundamental knowledge that each and every aspiring beginner professional should have, the way one should act when faced with all kinds of situations and the mindset one \n" +
+                        "must have."
+                },
+                {
+                    text: "In more details, the trainer went over hardships anyone can encounter when climbing up the stairs to success. He explained that being dishonorable and \n" +
+                        "using underhanded ways will only lead to a downfall. He went over the stories of people who managed to achieve the greatest success when it was expected that they fail. The trainer then went to explain the ways of the business world to get the attenddes ready to face the professional world."
+                },
+                {
+                    text: "The feedback we got from attendees was stupefying. There were no complains whatsoever. As a matter of fact, it seemed that they enjoyed his company for the questions kept coming even after the workshop ended and Mr. Elyes Manai didn’t fail to answer the questions to their satisfaction. This was probably due to the trainer’s amazing ability to integrate people and his humor. Following this positive feedback, the chapter is considering asking Mr. Elyes to present again, as the number was small because of the precautions taken."
+                }
+            ]
         },
         {
             title: "IEEE Summer school 3.0: Energy transition workshop",
             picture: sc2,
-            description: 'This workshop was presented by Mr.\n' +
-                'Samer Zwaydeh, an independent\n' +
-                'internationally recognized energy expert\n' +
-                'and lecturer at Al Hussein Technical\n' +
-                'University with twenty-six years of\n' +
-                'management experience around the\n' +
-                'world. This certified carbon reduction\n' +
-                'manager introduced energy transition\n' +
-                'from its concept to its real life application.\n' +
-                '\n' +
-                'Energy transition is oriented towards the use of renewable energy in place of\n' +
-                'fossil energy to minimize the emission of dioxide carbon and hopefully\n' +
-                'eliminating it completely towards the end of the century. Energy transition\n' +
-                'aims to limit climate change through the disposal of carbon emitters.\n' +
-                '\n' +
-                'In more details, Mr. Samer Zwaydeh explained the methods used in providing\n' +
-                'renewable energy such as solar energy. The trainer went as far as to provide\n' +
-                'examples different examples of the application of energy transition in real life\n' +
-                'and in the current crisis the world is suffering from: corona.\n' +
-                '\n' +
-                'The workshop picked the attention of most of the attendees as the trainer\n' +
-                'introduced energy transition through the current situation by explaining this\n' +
-                'concept use. This workshop proved that energy transition is an important\n' +
-                'carbon-neutral strategy that we should aim to use in life.'
+            description: [
+                {
+                    text:"This workshop was presented by Mr. Samer Zwaydeh, an independent internationally recognized energy expert and lecturer at Al Hussein Technical University with twenty-six years of management experience around the world. This certified carbon reduction manager introduced energy transition from its concept to its real life application."
+                },
+                {
+                    text:"Energy transition is oriented towards the use of renewable energy in place of fossil energy to minimize the emission of dioxide carbon and hopefully eliminating it completely towards the end of the century. Energy transition aims to limit climate change through the disposal of carbon emitters."
+                },
+                {
+                    text:"In more details, Mr. Samer Zwaydeh explained the methods used in providing renewable energy such as solar energy. The trainer went as far as to provide examples different examples of the application of energy transition in real life and in the current crisis the world is suffering from: corona."
+                },
+                {
+                    text:"The workshop picked the attention of most of the attendees as the trainer introduced energy transition through the current situation by explaining this concept use. This workshop proved that energy transition is an important carbon-neutral strategy that we should aim to use in life."
+                }
+            ]
         },
         {
             title: "Zero Hunger Day 2019",
             picture: zhd,
-            description: 'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day\n' +
-                '(Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES\n' +
-                'WiP, IEEE and PES volunteers made food donation based on food donations\n' +
-                'campaigns with main focus on 17 UN Sustainable Development goals(2030).. For\n' +
-                'our chapter , we made a food donation campaign in our unit and we were glad to host\n' +
-                'our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the\n' +
-                'IEEE day and PES zero hunger day at the same Time . The meeting was not only about\n' +
-                'delivering the food donations that we collected but also it was a chance to exchange goals and\n' +
-                'values of both organizations. Everyone was really satisfied with this ZHD first edition so we\n' +
-                'promised more impactful editions in the future'
+            description: [
+                {
+                    text: "On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day (Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES WiP, IEEE and PES volunteers made food donation based on food donations campaigns with main focus on 17 UN Sustainable Development goals(2030)."
+                },
+                {
+                    text:"For our chapter , we made a food donation campaign in our unit and we were glad to host our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the IEEE day and PES zero hunger day at the same Time . The meeting was not only about delivering the food donations that we collected but also it was a chance to exchange goals and values of both organizations."
+                },
+                {
+                    text:"Everyone was really satisfied with this ZHD first edition so we promised more impactful editions in the future."
+                }
+            ]
         },
         // {
         //     title: "Summer School 2.0",
@@ -326,6 +325,55 @@ const Activities = () => {
         //         'consumption and plastic and circular economy'
         // },
 
+    ];
+    const upcommpingEvents=[
+        {
+            title:"Recycle for the life CYCLE",
+            picture:rflc,
+            description:[
+                {
+                    text:'In collaboration with “Emel Tounes“ association, we will be collecting plastic caps in a box that will be prepared by the PES chapter and\n' +
+                        'located in the club room to be accessible to anyone willing to help.\n' +
+                        'All the collected caps will be recycled and transformed to a wheelchair that will be given to a handicap person.\n' +
+                        'This action is a volunteering and an environmental protection one because plastic is a material that Earth cannot digest.'
+                }
+            ]
+
+        },
+        {
+            title:"Youth for CHANGE",
+            picture:yfc,
+            description:[
+                {
+                    text:"YFC consists of school visits in different regions of Tunisia where PES members will help students develop a better understanding of renewable energy."
+                },
+                {
+                    text:"The team will organize a range of training courses and workshops in order to hopefully help nurture a whole generation and ignite a spark of passion in their spirit. PES members will also organize a competition between the participants at the end of the day in every visit to nominate the winning team. \n" +
+                        "From every school, we will have a winning team, we will give them an idea about a project that they should realize."
+                },
+                {
+                    text:"The final will be in INSAT, all the teams will pitch their fresh ideas and there will be awards to encourage and to show them that we do believe that young people will make this world better."
+                },
+
+            ]
+
+        },
+        {
+            title:"REC\'IT UP 3.0 ",
+            picture:rip,
+            description:[
+                {
+                    text:"The first ever ‘REC'It Up’ 24-hours challenge was organized by IEEE Power & Energy Society Chapter INSAT Student Branch."
+                },
+                {
+                    text:"Renewable Energies Challenge “REC iT Up” is an entrepreneurship challenge in which IEEE members participated. In the beginning, the participants attended technical and soft skills training. The participants were divided into teams. They were then required to follow the instructions of the jury to represent their renewable energy related projects.  At the end of the challenge, the jury nominated the winning team based on its project’s innovation, feasibility and business plan."
+                },
+                {
+                    text:"This challenge was open to all the IEEE members from all Student Branches in Tunisia which gave them an opportunity to network with fellow IEEE members from other student branches in Tunisia."
+                }
+            ]
+
+        },
     ];
     return (
         <div>
@@ -375,6 +423,11 @@ const Activities = () => {
                         <div className="row ">
                             <h2>upcoming events</h2>
                             <div className="row upcomming">
+                                {upcommpingEvents.map(
+                                    ({title, picture, description}, index) => <Activity title={title}
+                                                                                            description={description}
+                                                                                            picture={picture}
+                                                                                            key={index}/>)}
                                 {/*<Activity picture={pam} title={'IEEE PES tunisia general  meeting'}*/}
                                 {/*          description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +*/}
                                 {/*          'experience, PES chapter presents to you the PES General Meeting Congress where you\'ll be introduced to this\n' +*/}
@@ -385,29 +438,29 @@ const Activities = () => {
                                 {/*          '\n' +*/}
                                 {/*          'The seminar will include workshops and a conference bringing together professionals, inspiring speakers and\n' +*/}
                                 {/*          'motivational trainers.'}/>*/}
-                                <Activity title={'Recycle for the life CYCLE'} picture={rflc}
-                                          description={'In collaboration with “Emel Tounes“ association, we will be collecting plastic caps in a box that will be prepared by the PES chapter and\n' +
-                                          'located in the club room to be accessible to anyone willing to help.\n' +
-                                          'All the collected caps will be recycled and transformed to a wheelchair that will be given to a handicap person.\n' +
-                                          'This action is a volunteering and an environmental protection one because plastic is a material that Earth cannot digest.'}/>
-                                <Activity title={'Youth for CHANGE'} picture={yfc}
-                                          description={'YFC consists of school visits in different regions of Tunisia where PES members will help students develop a better understanding of\n' +
-                                          'renewable energy.\n' +
-                                          '\n' +
-                                          'The team will organize a range of training courses and workshops in order to hopefully help nurture a whole generation and ignite a spark of\n' +
-                                          'passion in their spirit.\n' +
-                                          '\n' +
-                                          'PES members will also organize a competition between the participants at the end of the day in every visit to nominate the winning team.\n' +
-                                          'From every school, we will have a winning team, we will give them an idea about a project that they should realize.\n' +
-                                          'The final will be in INSAT, all the teams will pitch their fresh ideas and there will be awards to encourage and to show them that we do\n' +
-                                          'believe that young people will make this world better.'}/>
-                                          <Activity title={"REC\'IT UP 3.0 "} picture={rip}
-                                                    description={"If you are an IEEE member and you want to prove your skills\n" +
-                                                    "THIS IS YOUR CHANCE TO SHINE!!   \n" +
-                                                    "Rec’it up ,a 24-hours challenge, will be organized by IEEE PES INSAT chapter in its third edition.  \n" +
-                                                    "The renewable energies challenge is an entrepreneurship challenge which will be open to all the IEEE members  from all student branches and non-members  in Tunisia.\n" +
-                                                    "Don't hesitate to be part of the organizing committee ! \n" +
-                                                    "Fill the form !"}/>
+                                {/*<Activity title={'Recycle for the life CYCLE'} picture={rflc}*/}
+                                {/*          description={'In collaboration with “Emel Tounes“ association, we will be collecting plastic caps in a box that will be prepared by the PES chapter and\n' +*/}
+                                {/*          'located in the club room to be accessible to anyone willing to help.\n' +*/}
+                                {/*          'All the collected caps will be recycled and transformed to a wheelchair that will be given to a handicap person.\n' +*/}
+                                {/*          'This action is a volunteering and an environmental protection one because plastic is a material that Earth cannot digest.'}/>*/}
+                                {/*<Activity title={'Youth for CHANGE'} picture={yfc}*/}
+                                {/*          description={'YFC consists of school visits in different regions of Tunisia where PES members will help students develop a better understanding of\n' +*/}
+                                {/*          'renewable energy.\n' +*/}
+                                {/*          '\n' +*/}
+                                {/*          'The team will organize a range of training courses and workshops in order to hopefully help nurture a whole generation and ignite a spark of\n' +*/}
+                                {/*          'passion in their spirit.\n' +*/}
+                                {/*          '\n' +*/}
+                                {/*          'PES members will also organize a competition between the participants at the end of the day in every visit to nominate the winning team.\n' +*/}
+                                {/*          'From every school, we will have a winning team, we will give them an idea about a project that they should realize.\n' +*/}
+                                {/*          'The final will be in INSAT, all the teams will pitch their fresh ideas and there will be awards to encourage and to show them that we do\n' +*/}
+                                {/*          'believe that young people will make this world better.'}/>*/}
+                                {/*<Activity title={"REC\'IT UP 3.0 "} picture={rip}*/}
+                                {/*          description={"If you are an IEEE member and you want to prove your skills\n" +*/}
+                                {/*          "THIS IS YOUR CHANCE TO SHINE!!   \n" +*/}
+                                {/*          "Rec’it up ,a 24-hours challenge, will be organized by IEEE PES INSAT chapter in its third edition.  \n" +*/}
+                                {/*          "The renewable energies challenge is an entrepreneurship challenge which will be open to all the IEEE members  from all student branches and non-members  in Tunisia.\n" +*/}
+                                {/*          "Don't hesitate to be part of the organizing committee ! \n" +*/}
+                                {/*          "Fill the form !"}/>*/}
 
                             </div>
                             <h2>Latest activities</h2>

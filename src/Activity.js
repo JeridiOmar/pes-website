@@ -26,7 +26,7 @@ const Activity = ({title, description, picture}) => {
   `;
     const [time, setTime] = useState(0);
     useEffect(() => {
-            const writed = new Date("10/23/2020");
+            const writed = new Date("01/15/2021");
             const today = new Date();
             var timeD = today.getTime() - writed.getTime();
             // console.log(today);
@@ -47,7 +47,9 @@ const Activity = ({title, description, picture}) => {
                 <img className="card-img-top" src={picture} alt="Card image cap"/>
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
-                    <p className="card-text card-text1">{description.split(' ').slice(0, 16).join(' ')}
+                    <p className="card-text card-text1">
+                        {/*{description.split(' ').slice(0, 16).join(' ')}*/}
+                        {description[0].text.split(' ').slice(0, 16).join(' ')}
                         ...</p>
                     <p className="card-meta">
 
@@ -58,7 +60,7 @@ const Activity = ({title, description, picture}) => {
                         className="author"><a
                         href="#" title="Posts by Lora"
                         rel="author">Kmar</a></span>
-                        <span className="date">October 24, 2020</span>
+                        <span className="date">January 15, 2021</span>
                         <span className="min-read"><span className="span-reading-time rt-reading-time"><span
                             className="rt-label"></span> <span className="rt-time"> {time}</span> <span
                             className="rt-label rt-postfix"></span></span>days</span>
@@ -75,7 +77,9 @@ const Activity = ({title, description, picture}) => {
                 <Modal.Body>
                     <img src={picture} alt="" height={'500'}/>
                     <div className="modal-text">
-                        <div>{description}
+                        <div>
+                            {description.map(({text},index)=><div key={index}><p>{text}</p></div>)}
+                            {/*{description}*/}
                         </div>
 
                     </div>
