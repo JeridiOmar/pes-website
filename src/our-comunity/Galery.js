@@ -18,6 +18,10 @@ const zhd2019=require('../pictures/community/galleries/zhd2019/*.webp');
 const teambuilding2019=require('../pictures/community/galleries/teambuilding2019/*.webp');
 const publicSpeaking=require('../pictures/community/galleries/publicspeaking/*.webp');
 const yfc1=require('../pictures/community/galleries/yfc1/*.webp');
+const yfc2=require('../pictures/community/galleries/yfc2/*.webp');
+const yfc3=require('../pictures/community/galleries/yfc3/*.webp');
+const workshopIso50001 =require('../pictures/community/galleries/workshop-iso50001/*.webp');
+const sortieSteg =require('../pictures/community/galleries/steg/*.webp');
 const gm=require('../pictures/community/galleries/gm/*.webp');
 /** @jsx jsx */
 const Galery = () => {
@@ -119,6 +123,54 @@ const Galery = () => {
     return (
         <div className={'container'}>
             <div >
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>STEG Khelidia training center industrial visit</h2>
+                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(sortieSteg).map((image)=>(<GaleryImage title={'STEG Khelidia training center industrial visit'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>YFC 4.0 third school</h2>
+                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(yfc3).map((image)=>(<GaleryImage title={'YFC 4.0 third school'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>YFC 4.0 second school</h2>
+                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(yfc2).map((image)=>(<GaleryImage title={'YFC 4.0 second school'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
+                <div  css={galeryStyle}>
+                    <div className="container">
+                        <div className="row ">
+                            <h2 className={'gallery-title'}>Workshop ISO 50001</h2>
+                        </div>
+                    </div>
+                    <Carousel partialVisible={true} swipeable={true}
+                              draggable={true} responsive={responsive} infinite>
+                        {Object.values(workshopIso50001).map((image)=>(<GaleryImage title={'Workshop ISO 50001'} picture={image}/>))}
+
+                    </Carousel>
+                </div>
                 <div  css={galeryStyle}>
                     <div className="container">
                         <div className="row ">

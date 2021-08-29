@@ -52,7 +52,12 @@ const LatestActivities = () => {
                 {
                     text: 'On September 25th 2019, IEEE PES celebrated the 1st IEEE PES Zero Hunger Day (Global) when ambassadors, PES SB chapters, PES Section chapters, PES YP, PES WiP, IEEE and PES volunteers  made food donation based on food donations campaigns with main focus on 17 UN Sustainable Development goals(2030).. For our chapter , we made a food donation campaign in our unit and we were glad to host our collaborator NGO Rotaract Tunis Hope Rotaract Tunis Hope in our SB local to celebrate the IEEE day and PES zero hunger day at the same Time . The meeting was not only about delivering the food donations that we collected but also it was a chance to exchange goals and values of both organizations. Everyone was really satisfied with this ZHD first edition so we  promised more impactful editions in the future.'
                 }
-            ]
+            ],
+            date: {
+                day: "15",
+                month: "01",
+                year: "2021"
+            },
         },
         {
             title: "Youth For Change",
@@ -61,7 +66,12 @@ const LatestActivities = () => {
                 {
                     text: 'Youth for change is an initiative that was first held in 2017 by PES volunteer members. This event’s goal is educating the younger generations about renewable energies in Tunisia as an investment for the future of our country and our planet as a whole. To achieve our goal, PES INSAT volunteers visit preparatory schools in many regions of TUNISIA and provide training sessions in the field of energy, for example how we produce electricity by using the solar energy, wind power, piezoelectric materials and hydro power. After this process, students are divided into teams in order to complete a challenge and the finals is held annually at our institute . Applying what they learnt and working in teams ,young students attempt to solve real-world challenges by conceiving projects related to renewable energies then their projects is put to the test as each team pitches their project idea in front of a global audience of their peers and a panel of judges.. It is fascinating to see this idea come to life as the influence of this experience left an impact on both the volunteers and the students. It was an honour to see their passion filled eyes as they emerge themselves in the process of learning. We are pleased to see the results of our work and are certain that this project will bear fruits in the future as such we hold it annually.'
                 }
-            ]
+            ],
+            date: {
+                day: "15",
+                month: "01",
+                year: "2021"
+            },
         },
         {
             title: "Rec it UP",
@@ -71,7 +81,12 @@ const LatestActivities = () => {
                     text: "The first ever ‘REC iT Up’ 24-hours challenge was organized by IEEE Power & Energy Society Chapter INSAT Student Branch.\n" +
                         "Renewable Energies Challenge “REC iT Up” is an entrepreneurship challenge in which IEEE members participated. In the beginning, the participants attended technical and soft skills training. The participants were divided into teams. They were then required to follow the instructions of the jury to represent their renewable energy related projects.  At the end of the challenge, the jury nominated the winning team based on its project’s innovation, feasibility and business plan. This challenge was open to all the IEEE members from all Student Branches in Tunisia which gave them an opportunity to network with fellow IEEE members from other student branches in Tunisia."
                 }
-            ]
+            ],
+            date: {
+                day: "15",
+                month: "01",
+                year: "2021"
+            },
         },
     ];
     return (
@@ -82,9 +97,10 @@ const LatestActivities = () => {
             <div className="container" style={{'marginBottom': ' 50px'}}>
                 <div className="row " css={cardStyle}>
                     {act.map(
-                        ({title, picture, description}, index) => <Activity title={title}
+                        ({title, picture, description,date}, index) => <Activity title={title}
                                                                             description={description}
                                                                             picture={picture}
+                                                                            date={date}
                                                                             key={index}/>)}
                     {/*<Activity picture={pam} title={'PES anunual meeting'}*/}
                     {/*          description={'In a changing world, we are facing a new reality including the energy transition. Willing to provide you a new\n' +*/}

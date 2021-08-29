@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import logoWhite from "./pictures/logo-white.png";
 
 /** @jsx jsx */
-const Activity = ({title, description, picture}) => {
+const Activity = ({title, description, picture,date}) => {
     const modalStyle = css`
       & img{
         width: 100%;
@@ -25,8 +25,12 @@ const Activity = ({title, description, picture}) => {
 }
   `;
     const [time, setTime] = useState(0);
+    const months = [ "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December" ];
     useEffect(() => {
-            const writed = new Date("01/15/2021");
+            // const writed = new Date("01/15/2021");
+            const dateString=date.month+"/"+date.day+"/"+date.year;
+            const writed = new Date(dateString);
             const today = new Date();
             var timeD = today.getTime() - writed.getTime();
             // console.log(today);
@@ -60,7 +64,7 @@ const Activity = ({title, description, picture}) => {
                         className="author"><a
                         href="#" title="Posts by Lora"
                         rel="author">Kmar</a></span>
-                        <span className="date">January 15, 2021</span>
+                        <span className="date">{months[parseInt(date.month)]+" "+date.day+", "+date.year} </span>
                         <span className="min-read"><span className="span-reading-time rt-reading-time"><span
                             className="rt-label"></span> <span className="rt-time"> {time}</span> <span
                             className="rt-label rt-postfix"></span></span>days</span>

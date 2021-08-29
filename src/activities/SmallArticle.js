@@ -5,7 +5,7 @@ import {Modal} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 /** @jsx jsx */
-const SmallArticle = ({title, picture, text}) => {
+const SmallArticle = ({title, picture, text,date}) => {
     const modalStyle = css`
       & img{
         width: 100%;
@@ -24,8 +24,11 @@ const SmallArticle = ({title, picture, text}) => {
 }
   `;
     const [time, setTime] = useState(0);
+    const months = [ "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December" ];
     useEffect(() => {
-            const writed = new Date("01/15/2021");
+            const dateString=date.month+"/"+date.day+"/"+date.year;
+            const writed = new Date(dateString);
             const today = new Date();
             var timeD = today.getTime() - writed.getTime();
             // console.log(today);
@@ -61,7 +64,7 @@ const SmallArticle = ({title, picture, text}) => {
                     href="#"
                     title="Posts by Lora"
                     rel="author">Kmar</a></span>
-                    <span className="date">January 15, 2021</span>
+                    <span className="date">{months[parseInt(date.month)]+" "+date.day+", "+date.year}</span>
                     <span className="min-read"><span
                         className="span-reading-time rt-reading-time"><span
                         className="rt-label"></span> <span

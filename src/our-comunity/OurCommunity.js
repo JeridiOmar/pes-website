@@ -92,21 +92,7 @@ const OurCommunity = ({location}) => {
         }
     }
     `;
-    // useEffect(
-    //     ()=>{
-    //         $(document).ready(function() {
-    //
-    //             $('#autoWidth').lightSlider({
-    //                 autoWidth:true,
-    //                 loop:true,
-    //                 onSliderLoad: function() {
-    //                     $('#autoWidth').removeClass('cS-hidden');
-    //                 }
-    //             });
-    //         });
-    //
-    //     },[]
-    // );
+
     useEffect(()=>{
         const momButton=document.querySelector("#mom-tab");
         const galleryButton=document.querySelector("#gallery-tab");

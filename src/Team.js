@@ -68,8 +68,7 @@ const Team = () => {
                                 li={'https://www.linkedin.com/in/zeineb-nefzi-8263b419a/'}
                                 text={'zayneb is an industrial chemistry engineering student.\n' +
                                 'She is passionate about artificial intelligence and analytical softwares.\n' +
-                                'She is an ambitious and enthusiastic person. She loves taking risks cause it always push her to the limits and challenge her.\n' +
-                                'Kmar M\'hiri is a'}/>
+                                'She is an ambitious and enthusiastic person. She loves taking risks cause it always push her to the limits and challenge her.\n' }/>
                 </div>
 
             </div>
